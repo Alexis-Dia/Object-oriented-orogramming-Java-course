@@ -27,14 +27,17 @@ public class DataTypesTester {
         System.out.printf("+%d = %d\n", a, c);
         // prefix increment
         a = 5;
-        System.out.printf("++%d = %d\n", a, ++a); // postfix increment
+        System.out.printf("++%d = %d\n", a, ++a);
+        // postfix increment
         a = 5;
-        System.out.printf("%d++ = %d\n", a, a++); // prefix decrement
+        System.out.printf("%d++ = %d\n", a, a++);
+        // prefix decrement
         a = 5;
-        System.out.printf("--%d = %d\n", a, --a); // postfix decrement
+        System.out.printf("--%d = %d\n", a, --a);
+        // postfix decrement
         a = 5;
-
         System.out.printf("%d-- = %d\n", a, a--);
+
         System.out.println("\n***** Bitwise Operators *****");
         c = (byte) (a & b);
         // bitwise AND
