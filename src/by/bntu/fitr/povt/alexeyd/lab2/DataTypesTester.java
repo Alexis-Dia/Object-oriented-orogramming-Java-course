@@ -981,7 +981,6 @@ public class DataTypesTester {
         // not equal to
         System.out.printf("%d != %d --> %b\n", a, b, a != b);
 
-
         System.out.println("\n***** Logical Operations *****");
         // logical AND
         System.out.printf("(%d > %d) && (%d > 0) --> %b\n", a, b, a, (a > b) && (a > 0));
@@ -990,8 +989,7 @@ public class DataTypesTester {
         // logical OR
         System.out.printf("(%d >= %d) || (%d != 0) --> %b\n", a, b, b, (a >= b) || (b != 0));
         // bitwise logical OR
-        System.out.printf("(%d >=%d) |( % d != 0)-- > %b\n ", a, b, b, (a >= b)
-                | (b != 0));
+        System.out.printf("(%d >=%d) |( % d != 0)-- > %b\n ", a, b, b, (a >= b)| (b != 0));
         // logical XOR
         System.out.printf("(%d >= % d) |( % d != 0)-- > %b\n ", a, b, b, (a >= b) ^ (b != 0));
         // logical NOT
@@ -1128,7 +1126,6 @@ public class DataTypesTester {
         System.out.printf("%d == %d --> %b\n", a, b, a == b);
         // not equal to
         System.out.printf("%d != %d --> %b\n", a, b, a != b);
-
 
         System.out.println("\n***** Logical Operations *****");
         // logical AND
