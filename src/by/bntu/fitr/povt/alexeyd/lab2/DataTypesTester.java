@@ -882,7 +882,7 @@ public class DataTypesTester {
 
         byte bt = 111;
         short sh = -32000;
-        char ch = '\u0051';
+        char ch = '\u0059';
         int nt = 123456789;
         long l = 100000000000000000L;
         double d = 1.9d;
