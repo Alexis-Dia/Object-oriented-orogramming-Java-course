@@ -7,8 +7,8 @@ public class Lab02 {
         DataTypesTester.testChar();
         DataTypesTester.testDouble();
         DataTypesTester.testFloat();
-        //DataTypesTester.testLong();
-        //DataTypesTester.testShort();
+        DataTypesTester.testLong();
+        DataTypesTester.testShort();
         DataTypesTester.testInt();
     }
 }
