@@ -301,24 +301,19 @@ public class DataTypesTester {
         System.out.println("\n***** Logical Operations *****");
 
         // logical AND
-        System.out.printf("(%d > %d) && (%d > 0) --> %b\n", a, b, a,
-                (a > b) && (a > 0));
+        System.out.printf("(%d > %d) && (%d > 0) --> %b\n", a, b, a, (a > b) && (a > 0));
 
         // bitwise logical AND
-        System.out.printf("(%d > %d) & (%d > 0) --> %b\n", a, b, a,
-                (a > b) & (a > 0));
+        System.out.printf("(%d > %d) & (%d > 0) --> %b\n", a, b, a, (a > b) & (a > 0));
 
         // logical OR
-        System.out.printf("(%d >= %d) || (%d != 0) --> %b\n", a, b, b,
-                (a >= b) || (b != 0));
+        System.out.printf("(%d >= %d) || (%d != 0) --> %b\n", a, b, b, (a >= b) || (b != 0));
 
         // bitwise logical OR
-        System.out.printf("(%d >= %d) | (%d != 0) --> %b\n", a, b, b,
-                (a >= b) | (b != 0));
+        System.out.printf("(%d >= %d) | (%d != 0) --> %b\n", a, b, b, (a >= b) | (b != 0));
 
         // logical XOR
-        System.out.printf("(%d >= %d) | (%d != 0) --> %b\n", a, b, b,
-                (a >= b) ^ (b != 0));
+        System.out.printf("(%d >= %d) | (%d != 0) --> %b\n", a, b, b, (a >= b) ^ (b != 0));
 
         // logical NOT
         System.out.printf("!(%d >= %d) --> %b\n", a, b, !(a >= b));
@@ -327,8 +322,7 @@ public class DataTypesTester {
 
         System.out.println("\nCondition Operator:");
 
-        System.out.printf("%d > %d ? %d : %d --> %d\n", a, b, a, b,
-                (a > b ? a : b));
+        System.out.printf("%d > %d ? %d : %d --> %d\n", a, b, a, b, (a > b ? a : b));
 
         System.out.println("\nType Cast Operator:");
 
