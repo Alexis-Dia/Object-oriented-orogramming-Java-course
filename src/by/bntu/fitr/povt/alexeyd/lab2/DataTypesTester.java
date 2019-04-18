@@ -3,7 +3,7 @@ package by.bntu.fitr.povt.alexeyd.lab2;
 public class DataTypesTester {
 
     public static void testByte() {
-        byte a = 5, b = 2, c;
+        byte a = -7, b = 2, c;
         System.out.println("\n***** Arithmetical Operators *****");
         // addition
         c = (byte) (a + b);
@@ -329,6 +329,29 @@ public class DataTypesTester {
         System.out.printf("int = double: c = (int)%f --> c = %d\n", d, c);
         // c = (int)bool;
         System.out.printf("int = boolean: c = (int)%b --> Compile Error\n", bool);
+
+        int x1 = 100;
+        int x2 = 145;
+
+        int y1 = ++x1;
+        int y2 = --x2;
+
+        // Вывод для префиксных операций
+        System.out.println("\nPrefix ++, -- test");
+        System.out.println("x1=" + x1 + "; y1=" + y1);
+        System.out.println("x2=" + x2 + "; y2=" + y2);
+
+        // Возвращаем исходные значения
+        x1 = 100;
+        x2 = 145;
+
+        int z1 = x1--;
+        int z2 = x2++;
+
+        // Вывод для постфиксных операций
+        System.out.println("\nPostfix ++, -- test");
+        System.out.println("x1=" + x1 + "; z1=" + z1);
+        System.out.println("x2=" + x2 + "; z2=" + z2);
     }
 
     public static void testDouble() {
