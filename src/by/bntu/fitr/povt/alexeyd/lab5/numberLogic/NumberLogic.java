@@ -3,7 +3,7 @@ package by.bntu.fitr.povt.alexeyd.lab5.numberLogic;
 public class NumberLogic {
 
     private static double sumNumberOfDigit = 2;
-    private static double multipleNumberOfDigit = 2;
+    private static double mulNumberOfDigit = 2;
 
     //Method returns summ all digits
     public static int getSumOfAllDigits(int number) {
@@ -19,13 +19,13 @@ public class NumberLogic {
 
     //Method returns multiplication of all digits
     public static int multipleAllDigits(int number) {
-        int sum = number % 10;
+        int mul = number % 10;
         //Check, if number completely divided to 10 or not, if yes - call this method recursively again
         if (number / 10 < 10) {
-            return sum * number / 10;
+            return mul * number / 10;
         } else {
-            ++multipleNumberOfDigit;
-            return sum * multipleAllDigits(number / 10);
+            ++mulNumberOfDigit;
+            return mul * multipleAllDigits(number / 10);
         }
     }
 
@@ -42,7 +42,7 @@ public class NumberLogic {
             return number;
         }
         double multiplication = multipleAllDigits(number);
-        double degree  = 1 / multipleNumberOfDigit;
+        double degree  = 1 / mulNumberOfDigit;
         double averageGeometric = Math.pow(multiplication, degree);
         return averageGeometric;
     }
