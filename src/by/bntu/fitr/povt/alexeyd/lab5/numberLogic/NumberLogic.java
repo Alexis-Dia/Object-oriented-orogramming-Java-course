@@ -18,14 +18,14 @@ public class NumberLogic {
     }
 
     //Method returns multiplication of all digits
-    public static int multipleAllDigits(int number) {
+    public static int getMulAllDigits(int number) {
         int mul = number % 10;
         //Check, if number completely divided to 10 or not, if yes - call this method recursively again
         if (number / 10 < 10) {
             return mul * number / 10;
         } else {
             ++mulNumberOfDigit;
-            return mul * multipleAllDigits(number / 10);
+            return mul * getMulAllDigits(number / 10);
         }
     }
 
@@ -41,7 +41,7 @@ public class NumberLogic {
         if (number < 11) {
             return number;
         }
-        double multiplication = multipleAllDigits(number);
+        double multiplication = getMulAllDigits(number);
         double degree  = 1 / mulNumberOfDigit;
         double averageGeometric = Math.pow(multiplication, degree);
         return averageGeometric;
