@@ -33,25 +33,21 @@ public class AsciiArt {
                 if (i >=1 && i <= 3) {
                     switch(i) {
                         case 1:
-                            // passes scale 1 to metgod draw
+                            // passes scale 1 to method draw
                             draw(SCALE_1);
                             break;
                         case 2:
-                            // passes scale 2 to metgod draw
+                            // passes scale 2 to method draw
                             draw(SCALE_2);
                             break;
                         case 3:
-                            // passes scale 3 to metgod draw
+                            // passes scale 3 to method draw
                             draw(SCALE_3);
                             break;
                     }
-                    break;
-                } else {
-                    // clears buffer
-                    scanner.nextLine();
                 }
             } else {
-                // clears buffer
+                //clears buffer
                 scanner.nextLine();
             }
         }

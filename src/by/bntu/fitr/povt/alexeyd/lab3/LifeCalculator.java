@@ -4,7 +4,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 
-// Number of laboratory work is 'Basics of the simplest console I / O in Java. Using Java classes and objects'
+// Number of laboratory work is №3. 'Basics of the simplest console I / O in Java. Using Java classes and objects'
 // This programme was created by Alexey Nikolaevich Druzik in 19.04.2019, v1.3. Number of group is 30701117.
 // Main aim of this programme is to develop system which count and print to console full number of years lived using birthday.
 public class LifeCalculator {
