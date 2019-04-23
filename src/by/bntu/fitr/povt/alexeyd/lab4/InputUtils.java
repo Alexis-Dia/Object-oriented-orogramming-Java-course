@@ -2,7 +2,7 @@ package by.bntu.fitr.povt.alexeyd.lab4;
 
 import java.util.Scanner;
 
-public class InputUtils {
+class InputUtils {
 
     //Static method which return length of triangle side.
     static double inputTriangleSide(Scanner scanner, String nameSide) {
