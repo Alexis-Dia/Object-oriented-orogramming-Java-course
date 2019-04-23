@@ -1,11 +1,11 @@
-package by.bntu.fitr.povt.alexeyd.lab4;
+package by.bntu.fitr.povt.alexeyd.lab4.triangleUtils;
 
 import java.util.Scanner;
 
-class InputUtils {
+public class InputUtils {
 
     //Static method which return length of triangle side.
-    static double inputTriangleSide(Scanner scanner, String nameSide) {
+    public static double inputTriangleSide(Scanner scanner, String nameSide) {
         //Initialize length of triangle side
         double sideLength;
         while (true) {

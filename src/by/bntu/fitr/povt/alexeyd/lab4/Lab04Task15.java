@@ -1,5 +1,8 @@
 package by.bntu.fitr.povt.alexeyd.lab4;
 
+import by.bntu.fitr.povt.alexeyd.lab4.triangleLogics.TriangleLogic;
+import by.bntu.fitr.povt.alexeyd.lab4.triangleUtils.InputUtils;
+
 import java.util.Scanner;
 
 // Number of laboratory work is №4. Java Simple Operators (operations). Relational & Logical Operations. Linear Algorithms.

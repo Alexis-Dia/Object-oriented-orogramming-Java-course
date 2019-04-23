@@ -1,9 +1,9 @@
-package by.bntu.fitr.povt.alexeyd.lab4;
+package by.bntu.fitr.povt.alexeyd.lab4.triangleLogics;
 
-class TriangleLogic {
+public class TriangleLogic {
 
     //That method calculates, is it triangle or not.
-    static boolean isTriangle(double a, double b, double c) {
+    public static boolean isTriangle(double a, double b, double c) {
         boolean conditionAB = a + b > c;
         boolean conditionAC = a+ c > b;
         boolean conditionBC = b + c > a;
@@ -12,7 +12,7 @@ class TriangleLogic {
     }
 
     //That method calculates, has triangle equal sides.
-    static boolean triangleHasEqualsSides(double a, double b, double c) {
+    public static boolean triangleHasEqualsSides(double a, double b, double c) {
         boolean conditionA = a == b;
         boolean conditionB = a == c;
         boolean conditionC = b == c;
