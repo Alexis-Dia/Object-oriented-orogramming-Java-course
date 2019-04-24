@@ -20,7 +20,7 @@ import java.util.Scanner;
             int number = InputUtils.getNumberFromInput(scanner);
 
             //Check condition which solve, is it triangle or not.
-            int result = NumberLogic.sumAllDigits(number);
+            int result = NumberLogic.getSumOfAllDigits(number);
 
             System.out.println("Sum of numbers of " + number + " digit =  " + result);
         }

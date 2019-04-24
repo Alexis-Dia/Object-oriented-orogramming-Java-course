@@ -6,14 +6,14 @@ public class NumberLogic {
     private static double multipleNumberOfDigit = 2;
 
     //Method returns summ all digits
-    public static int sumAllDigits(int number) {
+    public static int getSumOfAllDigits(int number) {
         int sum = number % 10;
         //Check, if number completely divided to 10 or not, if yes - call this method recursively again
         if (number / 10 < 10) {
             return sum + number / 10;
         } else {
             ++sumNumberOfDigit;
-            return sum + sumAllDigits(number / 10);
+            return sum + getSumOfAllDigits(number / 10);
         }
     }
 
@@ -33,7 +33,7 @@ public class NumberLogic {
         if (number < 11) {
             return number;
         }
-        double averageArithmetic = sumAllDigits(number) / sumNumberOfDigit;
+        double averageArithmetic = getSumOfAllDigits(number) / sumNumberOfDigit;
         return averageArithmetic;
     }
 
