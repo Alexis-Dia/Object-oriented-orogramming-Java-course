@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab05.numberLogic;
+package by.bntu.fitr.povt.alexeyd.lab5.numberLogic;
 
 public class NumberLogic {
 

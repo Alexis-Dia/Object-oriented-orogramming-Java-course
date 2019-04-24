@@ -1,7 +1,7 @@
-package by.bntu.fitr.povt.alexeyd.lab05;
+package by.bntu.fitr.povt.alexeyd.lab5;
 
-import by.bntu.fitr.povt.alexeyd.lab05.inputUtils.InputUtils;
-import by.bntu.fitr.povt.alexeyd.lab05.numberLogic.NumberLogic;
+import by.bntu.fitr.povt.alexeyd.lab5.inputUtils.InputUtils;
+import by.bntu.fitr.povt.alexeyd.lab5.numberLogic.NumberLogic;
 
 import java.util.Scanner;
 

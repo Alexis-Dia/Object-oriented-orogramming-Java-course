@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab05.inputUtils;
+package by.bntu.fitr.povt.alexeyd.lab5.inputUtils;
 
 import java.util.Scanner;
 
