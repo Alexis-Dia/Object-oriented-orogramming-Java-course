@@ -1,14 +1,13 @@
-package by.bntu.fitr.povt.alexeyd.lab18;
+package by.bntu.fitr.povt.alexeyd.lab18.exercise3.classLogger;
 
 import org.apache.log4j.Logger;
 
-public class Log {
+public class TestParticularClassLogger {
 
-    private static final Logger LOG = Logger.getRootLogger();
+    private static final Logger LOG = Logger.getLogger(TestParticularClassLogger.class);
 
     public static void main(String[] args) {
 
-        //Root loggers - is singleton
         LOG.trace("Send trace message to log");//Когда дебажим и тресируем
         LOG.debug("Send debug message to log");//Когда дебажим и тресируем
         LOG.info("Send info message to log");  //Когда нужен конечный результат выполнения приложения
