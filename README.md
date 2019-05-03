@@ -7,3 +7,4 @@
 # Useful links:
 # 1. https://www.mkyong.com/logging/log4j-log4j-properties-examples/
 # 2. For naming commits use - https://www.conventionalcommits.org/en/v1.0.0-beta.3/
+# 3. Information about XSD validation - https://www.tutorialspoint.com/xsd/xsd_validation.htm
