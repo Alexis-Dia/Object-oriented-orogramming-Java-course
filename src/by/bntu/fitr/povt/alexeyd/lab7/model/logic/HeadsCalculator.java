@@ -17,26 +17,18 @@ public class HeadsCalculator {
     //Method takes parameter - radius of circle and returns length of circle
     public static int calculateHeads(int age) {
         if (age > TWO_HUNDREAD_YEARS) {
-            if (numberOfTwoHundreds == 1 && numberOfTwoHundreds == 1) {
-                numberOfHeads += NUMBER_OF_HEADS_IN_FIRST_200;
-            } else {
-                numberOfHeads += NUMBER_OF_HEADS_IN_NEXT_200 * GROWING_SPEED_1;
-            }
-
-            if (age / TWO_HUNDREAD_YEARS >= 1) {
-                ++numberOfTwoHundreds;
-                //int headsInOneHundred = calculateHeads(ONE_HUNDREAD_YEARS);
-                int difference = age - numberOfTwoHundreds * TWO_HUNDREAD_YEARS;
-                //numberOfHeads += NUMBER_OF_HEADS_IN_NEXT_200 * numberOfTwoHundreds;
-                //numberOfHeads += calculateHeads(difference);
-                numberOfHeads += calculateHeads(difference);
-                return numberOfHeads;
-            } else {
-                int difference = age - numberOfTwoHundreds * TWO_HUNDREAD_YEARS;
-                numberOfHeads += NUMBER_OF_HEADS_IN_FIRST_200;
-                numberOfHeads += calculateHeads(difference, GROWING_SPEED_1);
-                return numberOfHeads;
-            }
+            numberOfTwoHundreds = age / TWO_HUNDREAD_YEARS;
+                if (numberOfTwoHundreds ==  1) {
+                    int difference = age - TWO_HUNDREAD_YEARS;
+                    numberOfHeads += calculateHeads(difference, GROWING_SPEED_1);
+                } else {
+                    int difference = age - numberOfTwoHundreds * TWO_HUNDREAD_YEARS;
+                    numberOfHeads += numberOfTwoHundreds * TWO_HUNDREAD_YEARS;
+                    numberOfHeads += calculateHeads(difference, GROWING_SPEED_1);
+                    numberOfHeads -= NUMBER_OF_HEADS_IN_NEXT_200;
+                }
+            numberOfHeads += NUMBER_OF_HEADS_IN_FIRST_200;
+            return numberOfHeads;
         } else if (age > ONE_HUNDREAD_YEARS && age <= TWO_HUNDREAD_YEARS) {
             int difference = age -  ONE_HUNDREAD_YEARS;
             numberOfHeads += NUMBER_OF_HEADS_IN_FIRST_100;
