@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class UserInput {
 
     //Static method which return number from input.
-    public static double input(String msg) {
+    public static int input(String msg) {
 
         //Create scanner link and initialize it.
         Scanner scanner = new Scanner(System.in);
 
         //Initialize length of triangle side
-        double age;
+        int age;
         while (true) {
             //Print to console triangle side
             System.out.print(msg + " \n ");
-            if (scanner.hasNextDouble()) {
-                age = scanner.nextDouble();
+            if (scanner.hasNextBigInteger()) {
+                age = scanner.nextInt();
                 //Break if character is double and > 0.
                 if (age > 0) {
                     break;
