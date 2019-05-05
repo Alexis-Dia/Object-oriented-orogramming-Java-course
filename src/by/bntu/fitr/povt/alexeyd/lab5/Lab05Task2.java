@@ -11,19 +11,19 @@ import java.util.Scanner;
  * This programme was created by Alexey Nikolaevich Druzik in 23.04.2019, v1.1. Number of group is 30701117.
  * Task №2. Develop a program that count sum of digits in number.
  */
-    public class Lab05Task2 {
+public class Lab05Task2 {
 
-        //Method main - entry point for programme.
-        public static void main(String[] args) {
-            //Create scanner link and initialize it.
-            Scanner scanner = new Scanner(System.in);
+    //Method main - entry point for programme.
+    public static void main(String[] args) {
+        //Create scanner link and initialize it.
+        Scanner scanner = new Scanner(System.in);
 
-            //Getting number from input
-            int number = InputUtils.getNumberFromInput(scanner);
+        //Getting number from input
+        int number = InputUtils.getNumberFromInput(scanner);
 
-            //Check condition which solve, is it triangle or not.
-            int result = NumberLogic.getSumOfAllDigits(number);
+        //Check condition which solve, is it triangle or not.
+        int result = NumberLogic.getSumOfAllDigits(number);
 
-            System.out.println("Sum of numbers of " + number + " digit =  " + result);
-        }
+        System.out.println("Sum of numbers of " + number + " digit =  " + result);
+    }
 }
