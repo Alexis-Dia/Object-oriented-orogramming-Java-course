@@ -23,24 +23,48 @@ public class HeadsCalculator {
         if (age > THREE_HUNDREAD_YEARS) {
             numberOfThreeHundreds = age / THREE_HUNDREAD_YEARS;
                 if (numberOfThreeHundreds ==  1) {
-                    int difference = age - THREE_HUNDREAD_YEARS;
-                    numberOfHeads += difference * GROWING_SPEED_1;
+                    calculateHeadsCase1(age);
                 } else {
-                    int difference = age - numberOfThreeHundreds * THREE_HUNDREAD_YEARS;
-                    numberOfHeads += numberOfThreeHundreds * THREE_HUNDREAD_YEARS;
-                    numberOfHeads += difference * GROWING_SPEED_1;
-                    numberOfHeads -= NUMBER_OF_HEADS_IN_NEXT_300;
+                    calculateHeadsCase2(age);
                 }
             numberOfHeads += NUMBER_OF_HEADS_IN_FIRST_300;
             return numberOfHeads;
         } else if (age > TWO_HUNDREAD_YEARS && age <= THREE_HUNDREAD_YEARS) {
-            int difference = age -  TWO_HUNDREAD_YEARS;
-            numberOfHeads += NUMBER_OF_HEADS_IN_FIRST_200;
-            numberOfHeads += difference * GROWING_SPEED_2;
+            calculateHeadsCase3(age);
             return numberOfHeads;
         } else
             numberOfHeads += age * GROWING_SPEED_3;
             return numberOfHeads;
+    }
+
+    /**
+     * Method returns number of heads for case when age > 300 but < 600
+     * @param age
+     */
+    private static void calculateHeadsCase3(int age) {
+        int difference = age -  TWO_HUNDREAD_YEARS;
+        numberOfHeads += NUMBER_OF_HEADS_IN_FIRST_200;
+        numberOfHeads += difference * GROWING_SPEED_2;
+    }
+
+    /**
+     * Method returns number of heads for case when age >600
+     * @param age
+     */
+    private static void calculateHeadsCase1(int age) {
+        int difference = age - THREE_HUNDREAD_YEARS;
+        numberOfHeads += difference * GROWING_SPEED_1;
+    }
+
+    /**
+     * Method returns number of heads for case when age > 200 and < 300
+     * @param age
+     */
+    private static void calculateHeadsCase2(int age) {
+        int difference = age - numberOfThreeHundreds * THREE_HUNDREAD_YEARS;
+        numberOfHeads += numberOfThreeHundreds * THREE_HUNDREAD_YEARS;
+        numberOfHeads += difference * GROWING_SPEED_1;
+        numberOfHeads -= NUMBER_OF_HEADS_IN_NEXT_300;
     }
 
 }
