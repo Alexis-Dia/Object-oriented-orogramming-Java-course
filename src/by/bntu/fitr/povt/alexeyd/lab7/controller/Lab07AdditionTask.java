@@ -29,7 +29,7 @@ public class Lab07AdditionTask {
         String nextDay = gregorianCalendar.getNextDay();
 
         //Print to the console finaly results:
-        Printer.print("Next day in Gregorian calendar format with year = " + year + ",month = " + month + ",day =  " + day + " : ");
+        Printer.print("Next day in Gregorian calendar format with year = " + year + ", month = " + month + ", day =  " + day + " : ");
         Printer.print(nextDay);
     }
 }
