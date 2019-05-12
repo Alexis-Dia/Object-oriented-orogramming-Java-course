@@ -14,7 +14,7 @@ public class Lab08TaskC5 {
 
     public static void main (String[] args) {
 
-        Printer.print("\nThe program calculate quantity and sum of number digits.\n");
+        Printer.print("\nThe program reverse natural number.\n");
         //Statics method which returns int number from input:
         long number = UserInput.input("\nInput number: ");
 

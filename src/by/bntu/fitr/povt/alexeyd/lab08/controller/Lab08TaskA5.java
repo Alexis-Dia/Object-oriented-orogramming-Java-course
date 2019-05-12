@@ -13,7 +13,7 @@ public class Lab08TaskA5 {
 
     public static void main (String[] args) {
 
-        Printer.print("\nThe program calculate quantity and sum of number digits.\n");
+        Printer.print("\nThe program calculate count of even digits in natural number.\n");
         //Statics method which returns int number from input:
         long number = UserInput.input("\nInput number: ");
 
