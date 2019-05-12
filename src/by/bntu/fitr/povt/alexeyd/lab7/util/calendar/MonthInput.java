@@ -10,10 +10,10 @@ public class MonthInput {
         //Create scanner link and initialize it.
         Scanner scanner = new Scanner(System.in);
 
-        //Initialize length of triangle side
+        //Initialize month
         int month;
         while (true) {
-            //Print to console triangle side
+            //Print to console message
             System.out.print(msg + " \n ");
             if (scanner.hasNextBigInteger()) {
                 month = scanner.nextInt();

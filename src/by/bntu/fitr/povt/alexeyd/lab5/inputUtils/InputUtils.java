@@ -6,10 +6,10 @@ public class InputUtils {
 
     //Static method which return number from input.
     public static int getNumberFromInput(Scanner scanner) {
-        //Initialize length of triangle side
+        //Initialize number
         int sideLength;
         while (true) {
-            //Print to console triangle side
+            //Print to console number
             System.out.print("Input your int number: \n ");
             if (scanner.hasNextInt()) {
                 sideLength = scanner.nextInt();

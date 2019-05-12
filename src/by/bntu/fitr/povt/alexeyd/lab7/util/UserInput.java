@@ -13,7 +13,7 @@ public class UserInput {
         //Initialize length of triangle side
         int age;
         while (true) {
-            //Print to console triangle side
+            //Print to console message
             System.out.print(msg + " \n ");
             if (scanner.hasNextBigInteger()) {
                 age = scanner.nextInt();
