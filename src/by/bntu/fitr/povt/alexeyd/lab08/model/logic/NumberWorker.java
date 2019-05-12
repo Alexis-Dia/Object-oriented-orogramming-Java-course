@@ -5,10 +5,6 @@ public class NumberWorker {
     public static final int ONE_HUNDRED = 100;
     public static final int DECIMAL_NOTATION_BASE = 10;
     public static final int DECIMAL_EVEN_NUMBER = 2;
-    public static final int TWO = 7;
-    public static final int THREE = 3;
-    public static final int FIVE = 5;
-    public static final int SEVEN = 7;
 
     public static int countOfEvenNumber(long number) {
         int count = 0;
