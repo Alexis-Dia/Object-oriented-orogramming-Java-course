@@ -16,7 +16,7 @@ public class Lab07Task1 {
         //Statics method which returns double number from input:
         int age = UserInput.input("Input age:");
 
-        //Methods which take two parameters - sides of rectangle and returns perimeter and area:
+        //Methods which take TWO parameters - sides of rectangle and returns perimeter and area:
         int numberOfHeads = HeadsCalculator.calculateHeads(age);
 
         //Print to the console finaly results:

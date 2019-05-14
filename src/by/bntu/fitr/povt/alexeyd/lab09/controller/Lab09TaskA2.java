@@ -15,7 +15,7 @@ public class Lab09TaskA2 {
 
     public static void main (String[] args) {
 
-        Printer.print("\nThe program calculate count of even digits in natural number.\n");
+        Printer.print("\nThe program calculates number of date in month.\n");
         //Statics method which returns int number from input:
         int number = UserInput.input("\nInput number: ");
 

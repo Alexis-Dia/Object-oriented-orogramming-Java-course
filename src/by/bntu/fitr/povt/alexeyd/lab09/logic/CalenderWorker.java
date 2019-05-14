@@ -1,5 +1,7 @@
 package by.bntu.fitr.povt.alexeyd.lab09.logic;
 
+import by.bntu.fitr.povt.alexeyd.lab09.dto.Border;
+
 public class CalenderWorker {
 
     private static final int[] NUMBERS_OF_DAYS_IN_MONTHS = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };

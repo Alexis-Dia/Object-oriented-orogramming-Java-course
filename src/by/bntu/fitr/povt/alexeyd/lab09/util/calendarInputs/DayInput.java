@@ -1,8 +1,8 @@
-package by.bntu.fitr.povt.alexeyd.lab09.util.calendar;
+package by.bntu.fitr.povt.alexeyd.lab09.util.calendarInputs;
 
 import java.util.Scanner;
 
-public class MonthInput {
+public class DayInput {
 
     //Static method which return number from input.
     public static int input(String msg) {
@@ -10,15 +10,15 @@ public class MonthInput {
         //Create scanner link and initialize it.
         Scanner scanner = new Scanner(System.in);
 
-        //Initialize month
-        int month;
+        //Initialize day
+        int day;
         while (true) {
             //Print to console message
             System.out.print(msg + " \n\t ");
             if (scanner.hasNextBigInteger()) {
-                month = scanner.nextInt();
-                //Break if character is double and > 0 and <=12.
-                if (month > 0 && month <= 12) {
+                day = scanner.nextInt();
+                //Break if character is and > 0 and <= 31.
+                if (day > 0 && day <= 31) {
                     break;
                 }
             } else {
@@ -26,6 +26,6 @@ public class MonthInput {
                 scanner.nextLine();
             }
         }
-        return month;
+        return day;
     }
 }

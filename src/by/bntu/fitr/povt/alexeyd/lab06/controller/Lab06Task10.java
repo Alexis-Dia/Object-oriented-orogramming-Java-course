@@ -16,7 +16,7 @@ public class Lab06Task10 {
         double a = UserInput.input("Input a:");
         double b = UserInput.input("Input b:");
 
-        //Methods which take two parameters - sides of rectangle and returns perimeter and area:
+        //Methods which take TWO parameters - sides of rectangle and returns perimeter and area:
         double s = RectangleCalculator.calculateArea(a, b);
         double p = RectangleCalculator.calculatePerimeter(a, b);
 
