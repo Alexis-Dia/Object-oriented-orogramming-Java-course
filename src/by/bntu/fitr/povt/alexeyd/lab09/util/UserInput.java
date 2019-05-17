@@ -18,7 +18,7 @@ public class UserInput {
         int inputNumber;
         while (true) {
             //Print to console msg
-            System.out.println(msg + " \n\t ");
+            System.out.println(msg + " ");
             if (scanner.hasNextBigInteger()) {
                 inputNumber = scanner.nextInt();
                 break;
