@@ -1,9 +1,6 @@
 package by.bntu.fitr.povt.alexeyd.lab06;
 
 import by.bntu.fitr.povt.alexeyd.lab06.controller.Controller;
-import by.bntu.fitr.povt.alexeyd.lab06.model.RectangleCalculator;
-import by.bntu.fitr.povt.alexeyd.lab06.util.UserInput;
-import by.bntu.fitr.povt.alexeyd.lab06.view.Printer;
 
 /**
  * Number of laboratory work is №6. Flow Controls. Conditional Statements.
