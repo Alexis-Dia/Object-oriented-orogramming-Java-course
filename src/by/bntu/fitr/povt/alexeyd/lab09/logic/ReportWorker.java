@@ -10,11 +10,11 @@ public class ReportWorker {
     private static String print(double percent) {
         if (percent == 100) {
             return "excellent";
-        } else if (percent <= 99 || percent >= 80 ) {
+        } else if (percent <= 99 && percent >= 80 ) {
             return "very good";
-        } else if (percent < 80 || percent >= 60 ) {
+        } else if (percent < 80 && percent >= 60 ) {
             return "«very good";
-        } else if (percent < 60 || percent >= 40 ) {
+        } else if (percent < 60 && percent >= 40 ) {
             return "«very good";
         }
         return "bad";

@@ -48,7 +48,6 @@ public class Lab09TaskE {
                     ++numberOfRightAnswers;
             }
             String report = ReportWorker.printReport(NUMBER_OF_TASK, numberOfRightAnswers);
-            //String report = ReportWorker.printReport(NUMBER_OF_TASK, 10);
             Printer.print("Right answers: " + numberOfRightAnswers + " of 10");
             Printer.print("Your mark: " + numberOfRightAnswers + " (" + report + ")");
             runTest = DialogUserInput.input("Do you want to continue running program? (Yes or No)");
