@@ -1,8 +1,8 @@
-package by.bntu.fitr.povt.alexeyd.lab7.util.calendar;
+package by.bntu.fitr.povt.alexeyd.lab07.util.calendar;
 
 import java.util.Scanner;
 
-public class DayInput {
+public class YearInput {
 
     //Static method which return number from input.
     public static int input(String msg) {
@@ -10,15 +10,15 @@ public class DayInput {
         //Create scanner link and initialize it.
         Scanner scanner = new Scanner(System.in);
 
-        //Initialize day
-        int day;
+        //Initialize year
+        int year;
         while (true) {
             //Print to console message
             System.out.print(msg + " \n ");
             if (scanner.hasNextBigInteger()) {
-                day = scanner.nextInt();
-                //Break if character is and > 0 and <= 31.
-                if (day > 0 && day <= 31) {
+                year = scanner.nextInt();
+                //Break if character is double and 999 and <= 9999.
+                if (year > 999 && year <= 9999) {
                     break;
                 }
             } else {
@@ -26,6 +26,6 @@ public class DayInput {
                 scanner.nextLine();
             }
         }
-        return day;
+        return year;
     }
 }

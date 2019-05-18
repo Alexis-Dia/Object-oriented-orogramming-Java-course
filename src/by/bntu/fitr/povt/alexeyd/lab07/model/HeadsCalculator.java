@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab7.model.logic;
+package by.bntu.fitr.povt.alexeyd.lab07.model;
 
 public class HeadsCalculator {
 

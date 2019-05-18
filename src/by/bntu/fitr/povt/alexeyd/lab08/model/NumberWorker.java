@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab08.model.logic;
+package by.bntu.fitr.povt.alexeyd.lab08.model;
 
 public class NumberWorker {
 

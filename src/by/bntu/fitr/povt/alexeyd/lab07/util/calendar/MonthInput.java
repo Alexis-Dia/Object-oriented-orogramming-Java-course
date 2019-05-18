@@ -1,8 +1,8 @@
-package by.bntu.fitr.povt.alexeyd.lab7.util;
+package by.bntu.fitr.povt.alexeyd.lab07.util.calendar;
 
 import java.util.Scanner;
 
-public class UserInput {
+public class MonthInput {
 
     //Static method which return number from input.
     public static int input(String msg) {
@@ -10,15 +10,15 @@ public class UserInput {
         //Create scanner link and initialize it.
         Scanner scanner = new Scanner(System.in);
 
-        //Initialize length of triangle side
-        int age;
+        //Initialize month
+        int month;
         while (true) {
             //Print to console message
             System.out.print(msg + " \n ");
             if (scanner.hasNextBigInteger()) {
-                age = scanner.nextInt();
-                //Break if character is double and > 0.
-                if (age > 0) {
+                month = scanner.nextInt();
+                //Break if character is double and > 0 and <=12.
+                if (month > 0 && month <= 12) {
                     break;
                 }
             } else {
@@ -26,6 +26,6 @@ public class UserInput {
                 scanner.nextLine();
             }
         }
-        return age;
+        return month;
     }
 }

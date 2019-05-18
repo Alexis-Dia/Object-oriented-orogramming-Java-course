@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab06.model.logic;
+package by.bntu.fitr.povt.alexeyd.lab06.model;
 
 public class CircleCalculator {
 

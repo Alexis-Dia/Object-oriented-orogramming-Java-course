@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab7.view;
+package by.bntu.fitr.povt.alexeyd.lab07.view;
 
 public class Printer {
 

@@ -1,8 +1,8 @@
-package by.bntu.fitr.povt.alexeyd.lab7.util.calendar;
+package by.bntu.fitr.povt.alexeyd.lab07.util;
 
 import java.util.Scanner;
 
-public class YearInput {
+public class UserInput {
 
     //Static method which return number from input.
     public static int input(String msg) {
@@ -10,15 +10,15 @@ public class YearInput {
         //Create scanner link and initialize it.
         Scanner scanner = new Scanner(System.in);
 
-        //Initialize year
-        int year;
+        //Initialize length of triangle side
+        int age;
         while (true) {
             //Print to console message
             System.out.print(msg + " \n ");
             if (scanner.hasNextBigInteger()) {
-                year = scanner.nextInt();
-                //Break if character is double and 999 and <= 9999.
-                if (year > 999 && year <= 9999) {
+                age = scanner.nextInt();
+                //Break if character is double and > 0.
+                if (age > 0) {
                     break;
                 }
             } else {
@@ -26,6 +26,6 @@ public class YearInput {
                 scanner.nextLine();
             }
         }
-        return year;
+        return age;
     }
 }
