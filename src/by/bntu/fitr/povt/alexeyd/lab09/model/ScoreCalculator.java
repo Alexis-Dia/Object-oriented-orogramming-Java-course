@@ -1,13 +1,13 @@
-package by.bntu.fitr.povt.alexeyd.lab09.logic;
+package by.bntu.fitr.povt.alexeyd.lab09.model;
 
-public class ReportWorker {
+public class ScoreCalculator {
 
-    public static String printReport(int numberOfAllAnswers, int numberOfRightAnswers) {
+    public static String getResult(int numberOfAllAnswers, int numberOfRightAnswers) {
         double percent = (100 * numberOfRightAnswers) / numberOfAllAnswers;
-        return print(percent);
+        return calculate(percent);
     }
 
-    private static String print(double percent) {
+    private static String calculate(double percent) {
         if (percent == 100) {
             return "excellent";
         } else if (percent <= 99 && percent >= 80 ) {

@@ -14,7 +14,7 @@ public class Lab08TaskE5 {
 
     public static void main (String[] args) {
 
-        Printer.print("\nThe program calculate prime number by index.\n");
+        Printer.print("\nThe program getResult prime number by index.\n");
         //Statics method which returns int number from input:
         long index = UserInput.input("\nInput index of prime number: ");
 

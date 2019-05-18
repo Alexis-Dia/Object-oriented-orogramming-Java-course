@@ -6,7 +6,7 @@ public class Printer {
      * Print to the console finaly result
      * @param msg
      */
-    public static void print(String msg) {
+    public void print(String msg) {
         System.out.println(msg);
     }
 

@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab09.logic;
+package by.bntu.fitr.povt.alexeyd.lab09.model;
 
 import java.util.Random;
 

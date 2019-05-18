@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.Scanner;
 
-// Java example program to calculate age from date of birth
+// Java example program to getResult age from date of birth
 // Works only in Java 8 and above
 public class CalculateAgeJava8 {
 
