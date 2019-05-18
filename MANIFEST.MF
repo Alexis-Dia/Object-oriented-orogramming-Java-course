@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+Main-Class: by.bntu.fitr.povt.alexeyd.lab09.controller.Lab09TaskE
