@@ -38,7 +38,7 @@ public class CalenderWorker {
     public String getNumberOfDaysInMonth(int numberOfMonth) {
         int index = numberOfMonth - 1;
         if (index >= START_INDEX && index <= END_INDEX) {
-            return setNumberOfDaysInMonth(index);
+            return getNumberByIndex(index);
         } else {
             return ERR_MONTH_MSG;
         }
@@ -75,7 +75,7 @@ public class CalenderWorker {
         return zodiacSign;
     }
 
-    private String setNumberOfDaysInMonth(int indexOfMonth) {
+    private String getNumberByIndex(int indexOfMonth) {
        return String.valueOf(NUMBERS_OF_DAYS_IN_MONTHS[indexOfMonth]);
     }
 

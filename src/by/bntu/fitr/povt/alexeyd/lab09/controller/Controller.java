@@ -29,11 +29,11 @@ public class Controller {
         int number = UserInput.input("\nInput number: ");
 
         //Int default constructor:
-        String answer = calenderWorker.getNumberOfDaysInMonth(number);
+        String numbersOfDays = calenderWorker.getNumberOfDaysInMonth(number);
 
         //Print to the console count of even number:
         printer.print("\nNumber of days in month for " + number + " is:");
-        printer.print("\n\t" + answer);
+        printer.print("\n\t" + numbersOfDays);
     }
 
     public void executeTask2 () {
