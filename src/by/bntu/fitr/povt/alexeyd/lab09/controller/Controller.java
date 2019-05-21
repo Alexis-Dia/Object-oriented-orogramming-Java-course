@@ -13,6 +13,7 @@ public class Controller {
 
     private static final int INIT_VALUE = 0;
     private static final int NUMBER_OF_TASK = 10;
+    public static final String CONGRATULATIONS = "Congratulations!!!!";
 
     private Printer printer = new Printer();
 
@@ -21,6 +22,8 @@ public class Controller {
     private RowGenerator rowGenerator = new RowGenerator();
 
     private NumberGuesser numberGuesser = new NumberGuesser();
+
+    private UserInput input = new UserInput();
 
     public void executeTask1 () {
 
@@ -88,12 +91,12 @@ public class Controller {
     }
 
     public void executeTask5 () {
-        printer.print("\nThe program calculates happy numbers.");
+        printer.print("\nThe program checks answers.");
         printer.print("\nInput the answer after the example and press <Enter>.");
 
         int count = INIT_VALUE;
         int numberOfRightAnswers = INIT_VALUE;
-        boolean runTest = false;
+        boolean runTest;
         do {
             //Increase count in each cycle
             ++count;
@@ -125,8 +128,18 @@ public class Controller {
 
     public void executeTask6 () {
         System.out.println("Input left and right:");
-        int left = UserInput.input("\nInput number: ");
-        int right = UserInput.input("\nInput number: ");
-        numberGuesser.guess(rowGenerator.generate(left, right));
+        int left = UserInput.input("Input number: ");
+        int right = UserInput.input("Input number: ");
+        int random = rowGenerator.generate(left, right);
+
+        boolean flag = false;
+        while (!flag) {
+            int userAnswer = input.input(("Input number: "));
+            String result = numberGuesser.validateResult(random, userAnswer);
+            printer.print(result);
+            if (result == CONGRATULATIONS) {
+                flag = true;
+            }
+        }
     }
 }
