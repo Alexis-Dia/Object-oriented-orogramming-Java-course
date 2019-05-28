@@ -10,7 +10,10 @@
 
 # Creating jar:
 # jar cmf META-INF/MANIFEST.MF lab.jar by/bntu/fitr/povt/alexeyd/lab1/Main.class
-# jar cmf META-INF/MANIFEST.MF lab09TaskE.jar by/bntu/fitr/povt/alexeyd/lab09/
+# Compile project to ObjectOrientedProgramming/out:
+# javac -d E:\Bntu\java\myLabs\ObjectOrientedProgramming\out -sourcepath E:\Bntu\java\myLabs\ObjectOrientedProgramming\src E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab09\Lab09TaskE.java
+# cd ObjectOrientedProgramming/out
+# jar cmf ../MANIFEST.MF lab09TaskE.jar by/bntu/fitr/povt/alexeyd/lab09/
 
 # Running jar:
 # java -jar lab.jar
