@@ -64,7 +64,7 @@ public class Controller {
         int results;
         do {
             //Statics method which returns int number from input:
-            rank = EvenUserInput.input("Input even number: ");
+            rank = EvenUserInput.input("Input even number from 1 to 9: ");
 
             //Int default constructor by birthDay:
             results = NumberWorker.calculateHappyNumbers(rank);

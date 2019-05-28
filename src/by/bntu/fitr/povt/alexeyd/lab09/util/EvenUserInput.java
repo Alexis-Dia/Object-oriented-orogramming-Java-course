@@ -21,7 +21,7 @@ public class EvenUserInput {
             System.out.println(msg + " \n\t ");
             if (scanner.hasNextBigInteger()) {
                 inputNumber = scanner.nextInt();
-                if (inputNumber > 0 && inputNumber % 2 == 0) {
+                if (inputNumber > 0 && inputNumber % 2 == 0 && inputNumber < 9) {
                     break;
                 }
             } else {

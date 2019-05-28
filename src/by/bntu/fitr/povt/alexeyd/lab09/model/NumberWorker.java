@@ -2,11 +2,13 @@ package by.bntu.fitr.povt.alexeyd.lab09.model;
 
 public class NumberWorker {
 
+    private static final int MAX_NUMBER = 8;
+
     public static int calculateHappyNumbers(int rank) {
         int sum = 0;
         int i, j, k;
         int maxNumberByRank = getMaxNumberByRank(rank);
-        int[] ticket = new int[6];
+        int[] ticket = new int[MAX_NUMBER];
         for (i = 1; i <= maxNumberByRank; i++) {
             for (k = i, j = 0; j < rank; j++, k /= 10)
                 ticket[j] = k % 10;
