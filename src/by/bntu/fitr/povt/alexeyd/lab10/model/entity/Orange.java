@@ -2,23 +2,29 @@ package by.bntu.fitr.povt.alexeyd.lab10.model.entity;
 
 public class Orange extends Product{
 
-    private double diametr;
+    private double diameter;
     private double vitaminC;
+    private boolean organic;
+    private String sort;
+    private String form;
 
     public Orange() {}
 
-    public Orange(boolean helpChildren, int weight, double price, double diametr, double vitaminC) {
+    public Orange(boolean helpChildren, int weight, double price, double diameter, double vitaminC, boolean organic, String sort, String form) {
         super(helpChildren, weight, price);
-        this.diametr = diametr;
+        this.diameter = diameter;
         this.vitaminC = vitaminC;
+        this.organic = organic;
+        this.sort = sort;
+        this.form = form;
     }
 
-    public double getDiametr() {
-        return diametr;
+    public double getDiameter() {
+        return diameter;
     }
 
-    public void setDiametr(double diametr) {
-        this.diametr = diametr;
+    public void setDiameter(double diameter) {
+        this.diameter = diameter;
     }
 
     public double getVitaminC() {
@@ -29,11 +35,38 @@ public class Orange extends Product{
         this.vitaminC = vitaminC;
     }
 
+    public boolean isOrganic() {
+        return organic;
+    }
+
+    public void setOrganic(boolean organic) {
+        this.organic = organic;
+    }
+
+    public String getSort() {
+        return sort;
+    }
+
+    public void setSort(String sort) {
+        this.sort = sort;
+    }
+
+    public String getForm() {
+        return form;
+    }
+
+    public void setForm(String form) {
+        this.form = form;
+    }
+
     @Override
     public String toString() {
         return "Orange{" +
-                "diametr=" + diametr +
+                "diameter=" + diameter +
                 ", vitaminC=" + vitaminC +
+                ", organic=" + organic +
+                ", sort='" + sort + '\'' +
+                ", form='" + form + '\'' +
                 '}';
     }
 }
