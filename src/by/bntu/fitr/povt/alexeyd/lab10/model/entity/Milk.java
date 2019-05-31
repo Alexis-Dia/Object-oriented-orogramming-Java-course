@@ -2,11 +2,22 @@ package by.bntu.fitr.povt.alexeyd.lab10.model.entity;
 
 public class Milk extends Product{
 
+    public static int milkAmount;
     private int volume;
     private double fat;
     private double carbons;
     private boolean processed;
     private boolean organic;
+
+    /* static initialization block (it's called only once) */
+    static {
+        milkAmount = 0;
+    }
+
+    /* initialization block (it's called every time an object is created)*/
+    {
+        milkAmount++;
+    }
 
     public Milk() {}
 

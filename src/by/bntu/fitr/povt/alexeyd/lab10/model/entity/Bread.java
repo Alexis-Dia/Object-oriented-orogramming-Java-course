@@ -2,11 +2,22 @@ package by.bntu.fitr.povt.alexeyd.lab10.model.entity;
 
 public class Bread extends Product{
 
+    public static int bredAmount;
     private boolean organic;
     private String sort;
     private String flour;
     private String color;
     private String shape;
+
+    /* static initialization block (it's called only once) */
+    static {
+        bredAmount = 0;
+    }
+
+    /* initialization block (it's called every time an object is created)*/
+    {
+        bredAmount++;
+    }
 
     public Bread() {}
 

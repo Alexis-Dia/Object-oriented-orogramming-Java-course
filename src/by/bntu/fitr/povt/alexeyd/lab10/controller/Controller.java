@@ -10,8 +10,7 @@ import by.bntu.fitr.povt.alexeyd.lab10.view.Printer;
 public class Controller {
 
     public void executeMainTask() {
-
-        Bucket bucket = new Bucket("POIT10701217");
+       Bucket bucket = new Bucket("POIT30701117");
 
         bucket.bread = new Bread(true, 500, 1.2, true, "Borodinskiy",
                 "Chilli", "Brown", "Square");

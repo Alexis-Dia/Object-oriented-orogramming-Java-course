@@ -2,11 +2,22 @@ package by.bntu.fitr.povt.alexeyd.lab10.model.entity;
 
 public class Orange extends Product{
 
+    public static int orangeAmount;
     private double diameter;
     private double vitaminC;
     private boolean organic;
     private String sort;
     private String form;
+
+    /* static initialization block (it's called only once) */
+    static {
+        orangeAmount = 0;
+    }
+
+    /* initialization block (it's called every time an object is created)*/
+    {
+        orangeAmount++;
+    }
 
     public Orange() {}
 
