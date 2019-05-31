@@ -47,6 +47,38 @@ public class Bucket {
         this.orange = bucket.orange;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Product getBread() {
+        return bread;
+    }
+
+    public void setBread(Product bread) {
+        this.bread = bread;
+    }
+
+    public Product getMilk() {
+        return milk;
+    }
+
+    public void setMilk(Product milk) {
+        this.milk = milk;
+    }
+
+    public Product getOrange() {
+        return orange;
+    }
+
+    public void setOrange(Product orange) {
+        this.orange = orange;
+    }
+
     @Override
     public String toString() {
         return "Bucket{" +
