@@ -1,12 +1,13 @@
 package by.bntu.fitr.povt.alexeyd.lab10.model.entity;
 
+import java.util.Arrays;
+
 public class Bucket {
 
-    public static final int DEFAULT_PRODUCT_AMOUNT = 3;
-    public String name;
-    public Product bread;
-    public Product milk;
-    public Product orange;
+    private static final int DEFAULT_SIZE = 10;
+
+    private Product[] container = new Product[DEFAULT_SIZE];
+    private String name;
 
     /**
      * default constructor (constructor without parameters)
@@ -22,70 +23,60 @@ public class Bucket {
         this.name = name;
     }
 
-    /**
-     * constructor with parameters
-     * @param name
-     * @param bread
-     * @param milk
-     * @param orange
-     */
-    public Bucket(String name, Bread bread, Milk milk, Orange orange) {
-        this.name = name;
-        this.bread = bread;
-        this.milk = milk;
-        this.orange = orange;
-}
-
-    /**
-     * copy-constructor
-     * @param bucket
-     */
-    public Bucket(Bucket bucket) {
-        this.name = bucket.name;
-        this.bread = bucket.bread;
-        this.milk = bucket.milk;
-        this.orange = bucket.orange;
+    public void addProduct(Product product) {
+        container[Product.productAmount - 1] = product;
     }
 
-    public String getName() {
-        return name;
+    public int getIndexById(Product[] container, int id) {
+        for (int i = 0; i < Product.productAmount; i++) {
+            if (container[i].getId() == id) {
+                return i;
+            }
+        }
+        return -1;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public Product[] deleteProductByIndex(int index) {
+        int oldSize = container.length;
+
+        Product[] half1 = new Product[index - 1];
+        for(int i = 0; i < index - 1; i++) {
+            half1[i] = container[i];
+        }
+
+        Product[] half2 = new Product[oldSize - index];
+        for (int j = 0; j < oldSize - index; j++) {
+            half2[j] = container[j];
+        }
+
+        Product[] concat = combine(half1, half2);
+        this.container = concat;
+        Product.increaseCount();
+
+        return concat;
     }
 
-    public Product getBread() {
-        return bread;
+    public Product[] getContainer() {
+        return container;
     }
 
-    public void setBread(Product bread) {
-        this.bread = bread;
+    private void setContainer(Product[] container) {
+        this.container = container;
     }
 
-    public Product getMilk() {
-        return milk;
-    }
-
-    public void setMilk(Product milk) {
-        this.milk = milk;
-    }
-
-    public Product getOrange() {
-        return orange;
-    }
-
-    public void setOrange(Product orange) {
-        this.orange = orange;
+    private static Product[] combine(Product[] a, Product[] b){
+        int length = a.length + b.length;
+        Product[] result = new Product[length];
+        System.arraycopy(a, 0, result, 0, a.length);
+        System.arraycopy(b, 0, result, a.length, b.length);
+        return result;
     }
 
     @Override
     public String toString() {
         return "Bucket{" +
-                "name='" + name + '\'' +
-                ", bread=" + bread +
-                ", milk=" + milk +
-                ", orange=" + orange +
+                "container=" + (container == null ? null : Arrays.asList(container)) +
+                ", name='" + name + '\'' +
                 '}';
     }
 }

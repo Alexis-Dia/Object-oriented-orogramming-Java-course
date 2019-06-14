@@ -21,8 +21,8 @@ public class Orange extends Product{
 
     public Orange() {}
 
-    public Orange(boolean helpChildren, int weight, double price, double diameter, double vitaminC, boolean organic, String sort, String form) {
-        super(helpChildren, weight, price);
+    public Orange(boolean helpChildren, int weight, double price, double diameter, double vitaminC, boolean organic, String sort, String form, int id) {
+        super(helpChildren, weight, price, id);
         this.diameter = diameter;
         this.vitaminC = vitaminC;
         this.organic = organic;

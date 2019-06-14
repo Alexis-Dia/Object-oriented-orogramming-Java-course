@@ -21,8 +21,8 @@ public class Milk extends Product{
 
     public Milk() {}
 
-    public Milk(boolean helpChildren, int weight, double price, int volume, double fat, double carbons, boolean processed, boolean organic) {
-        super(helpChildren, weight, price);
+    public Milk(boolean helpChildren, int weight, double price, int volume, double fat, double carbons, boolean processed, boolean organic, int id) {
+        super(helpChildren, weight, price, id);
         this.volume = volume;
         this.fat = fat;
         this.carbons = carbons;

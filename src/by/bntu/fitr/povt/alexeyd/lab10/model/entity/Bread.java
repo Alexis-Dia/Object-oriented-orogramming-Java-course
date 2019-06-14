@@ -21,8 +21,8 @@ public class Bread extends Product{
 
     public Bread() {}
 
-    public Bread(boolean helpChildren, int weight, double price, boolean organic, String sort, String flour, String color, String shape) {
-        super(helpChildren, weight, price);
+    public Bread(boolean helpChildren, int weight, double price, boolean organic, String sort, String flour, String color, String shape, int id) {
+        super(helpChildren, weight, price, id);
         this.organic = organic;
         this.sort = sort;
         this.flour = flour;

@@ -1,26 +1,37 @@
 package by.bntu.fitr.povt.alexeyd.lab10.model.logic;
 
 import by.bntu.fitr.povt.alexeyd.lab10.model.entity.Bucket;
+import by.bntu.fitr.povt.alexeyd.lab10.model.entity.Product;
 
 public class ShopAssistance {
 
     public static double calculateAvgPrice(Bucket bucket) {
-        double total = bucket.bread.getPrice()
-                + bucket.milk.getPrice()
-                + bucket.orange.getPrice();
-        return total / Bucket.DEFAULT_PRODUCT_AMOUNT;
+        double total = 0.0;
+        Product[] products = bucket.getContainer();
+        for (int i = 0; i < Product.productAmount; i++) {
+            total += products[i].getPrice();
+        }
+
+        return total / Product.productAmount;
     }
 
     public static double calculateAvgWeight(Bucket bucket) {
-        return  bucket.bread.getWeight()
-                + bucket.milk.getWeight()
-                + bucket.orange.getWeight();
+        Product[] products = bucket.getContainer();
+        double weight = 0.0;
+        for (int i = 0; i < Product.productAmount ; i++) {
+            weight += products[i].getWeight();
+        }
+        return  weight;
     }
 
     public static boolean getPrize(Bucket bucket) {
-        return bucket.bread.isHelpChildren()
-                || bucket.milk.isHelpChildren()
-                || bucket.orange.isHelpChildren();
+        Product[] products = bucket.getContainer();
+        for (int i = 0; i < Product.productAmount; i++) {
+            if (products[i].isHelpChildren()) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }

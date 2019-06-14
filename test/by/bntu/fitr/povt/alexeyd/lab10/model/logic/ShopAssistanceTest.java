@@ -16,12 +16,12 @@ public class ShopAssistanceTest {
         double expected = 3.0;
         Bucket bucket = new Bucket("POIT30701117");
 
-        bucket.bread = new Bread(true, 500, 1.0, true, "Borodinskiy",
-                "Chilli", "Brown", "Square");
-        bucket.orange = new Orange(false, 110, 5.0, 11, 0.1,
-                true, "Rosso", "Elipse");
-        bucket.milk = new Milk(false, 450, 3.0, 500, 3.2, 7.7,
-                false, true);
+        bucket.addProduct(new Bread(true, 500, 1.0, true, "Borodinskiy",
+                "Chilli", "Brown", "Square", 1012234));
+        bucket.addProduct(new Orange(false, 110, 5.0, 11, 0.1,
+                true, "Rosso", "Elipse", 201243));
+        bucket.addProduct(new Milk(false, 450, 3.0, 500, 3.2, 7.7,
+                false, true, 45134343));
         assertEquals("Calculate avg price is correct.",
                 expected, ShopAssistance.calculateAvgPrice(bucket), 0);
     }
