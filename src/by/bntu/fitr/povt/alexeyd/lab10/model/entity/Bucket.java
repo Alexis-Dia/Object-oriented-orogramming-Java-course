@@ -6,9 +6,13 @@ public class Bucket {
 
     private static final int DEFAULT_SIZE = 10;
 
-    private Product[] container = new Product[DEFAULT_SIZE];
+    private Product[] container;
     private String name;
 
+    {
+        container = new Product[DEFAULT_SIZE];
+    }
+    
     /**
      * default constructor (constructor without parameters)
      */
