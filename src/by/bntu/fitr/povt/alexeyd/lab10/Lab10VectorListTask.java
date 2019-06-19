@@ -10,6 +10,7 @@ public class Lab10VectorListTask {
 
     public static void main(String[] args) {
         Controller controller = new Controller();
+        controller.toString();
         controller.executeAdditionExamTask();
     }
 }

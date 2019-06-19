@@ -22,4 +22,12 @@ public class Printer {
         System.out.print("]");
     }
 
+    /**
+     * Print to the console finaly result
+     * @param ob
+     */
+    public static void print(Object ob) {
+        System.out.println(ob);
+    }
+
 }

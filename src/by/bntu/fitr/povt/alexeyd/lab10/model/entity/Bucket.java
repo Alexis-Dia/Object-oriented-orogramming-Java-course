@@ -1,7 +1,5 @@
 package by.bntu.fitr.povt.alexeyd.lab10.model.entity;
 
-import java.util.Arrays;
-
 public class Bucket {
 
     private static final int DEFAULT_SIZE = 10;
@@ -27,6 +25,13 @@ public class Bucket {
         this.name = name;
     }
 
+    /**
+     * Here we can use container another type. For example, if it been LinkedList we would use him instead default ArrayList
+     */
+    public Bucket(Product[] container) {
+        this.container = container;
+    }
+
     public void addProduct(Product product) {
         container[Product.productAmount - 1] = product;
     }
@@ -40,6 +45,7 @@ public class Bucket {
         return -1;
     }
 
+    //FIX ME
     public Product[] deleteProductByIndex(int index) {
         int oldSize = container.length;
 
@@ -78,9 +84,12 @@ public class Bucket {
 
     @Override
     public String toString() {
-        return "Bucket{" +
-                "container=" + (container == null ? null : Arrays.asList(container)) +
-                ", name='" + name + '\'' +
-                '}';
+        StringBuffer msg = new StringBuffer("List of products: \n");
+        for (int i = 0; i < container.length; i++) {
+            if (container[i] != null) {
+                msg.append(container[i]).append("\n");
+            }
+        }
+        return msg.toString();
     }
 }
