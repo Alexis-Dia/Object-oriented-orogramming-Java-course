@@ -21,6 +21,16 @@ public class Bread extends Product{
 
     public Bread() {}
 
+    /* copy -constructor (type of constructor with parameters)*/
+    public Bread(Bread bread) {
+        super(bread.isHelpChildren(), bread.getWeight(), bread.getPrice(), bread.getId());
+        this.organic = bread.organic;
+        this.sort = bread.sort;
+        this.flour = bread.flour;
+        this.color = bread.color;
+        this.shape = bread.shape;
+    }
+
     public Bread(boolean helpChildren, int weight, double price, boolean organic, String sort, String flour, String color, String shape, int id) {
         super(helpChildren, weight, price, id);
         this.organic = organic;

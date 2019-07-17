@@ -23,8 +23,7 @@ public class Controller {
         bucket.addProduct(new Milk(false, 450, 2.1, 500, 3.2, 7.7,
                 false, true, 32635623));
         System.out.println("Found index: " + bucket.getIndexById(bucket.getContainer(), 73483438));
-        bucket.deleteProductByIndex(2);
-
+        //bucket.deleteProductByIndex(2);
         double avgBucketPrice = ShopAssistance.calculateAvgPrice(bucket);
         double avgBucketWeight = ShopAssistance.calculateAvgWeight(bucket);
         boolean prize = ShopAssistance.getPrize(bucket);
@@ -32,6 +31,7 @@ public class Controller {
         printer.print("\nAvg bucket price = " + avgBucketPrice);
         printer.print("\nAvg bucket weight = " + avgBucketWeight);
         printer.print(prize ? "\nYou won a prize!" : "\n");
+        printer.print(bucket);
     }
 
     public void executeAdditionExamTask() {
