@@ -11,6 +11,7 @@
 # Creating jar:
 # jar cmf META-INF/MANIFEST.MF lab.jar by/bntu/fitr/povt/alexeyd/lab1/Main.class
 # Compile project to ObjectOrientedProgramming/out:
+# javac -d /Users/alekseydruzik/InteliJIdeaProjects/BNTU/HibernateLessonsBasicLevel/out/ -classpath "/Users/alekseydruzik/InteliJIdeaProjects/BNTU/HibernateLessonsBasicLevel/src/resources/jars/*" -sourcepath /Users/alekseydruzik/InteliJIdeaProjects/BNTU/HibernateLessonsBasicLevel/src/ /Users/alekseydruzik/InteliJIdeaProjects/BNTU/HibernateLessonsBasicLevel/src/by/bntu/fitr/povt/task18/Main.java
 # javac -d E:\Bntu\java\myLabs\ObjectOrientedProgramming\out -sourcepath E:\Bntu\java\myLabs\ObjectOrientedProgramming\src E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab09\Lab09TaskE.java
 # cd ObjectOrientedProgramming/out
 # jar cmf ../MANIFEST.MF lab09TaskE.jar by/bntu/fitr/povt/alexeyd/lab09/
