@@ -15,6 +15,8 @@
 # javac -d E:\Bntu\java\myLabs\ObjectOrientedProgramming\out -sourcepath E:\Bntu\java\myLabs\ObjectOrientedProgramming\src E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab09\Lab09TaskE.java
 # cd ObjectOrientedProgramming/out
 # jar cmf ../MANIFEST.MF lab09TaskE.jar by/bntu/fitr/povt/alexeyd/lab09/
+# For adding resources to jar, just copy manually your resource-folder to out-folder and add resources/ :
+# jar cmf ../MANIFEST.MF myJdbcApp.jar by/bntu/fitr/povt/task18/ resources/
 
 # Running jar:
 # java -jar lab.jar
