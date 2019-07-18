@@ -13,6 +13,8 @@
 # Compile project to ObjectOrientedProgramming/out:
 # javac -d /Users/alekseydruzik/InteliJIdeaProjects/BNTU/HibernateLessonsBasicLevel/out/ -classpath "/Users/alekseydruzik/InteliJIdeaProjects/BNTU/HibernateLessonsBasicLevel/src/resources/jars/*" -sourcepath /Users/alekseydruzik/InteliJIdeaProjects/BNTU/HibernateLessonsBasicLevel/src/ /Users/alekseydruzik/InteliJIdeaProjects/BNTU/HibernateLessonsBasicLevel/src/by/bntu/fitr/povt/task18/Main.java
 # javac -d E:\Bntu\java\myLabs\ObjectOrientedProgramming\out -sourcepath E:\Bntu\java\myLabs\ObjectOrientedProgramming\src E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab09\Lab09TaskE.java
+# javac -d E:\IdeadProjects\helloWorldProj\Hibernate-lessons-basic-level\out -sourcepath E:\IdeadProjects\helloWorldProj\Hibernate-lessons-basic-level\src -classpath "E:\IdeadProjects\helloWorldProj\Hibernate-lessons-basic-level\src\resources\jars\*" E:\IdeadProjects\helloWorldProj\Hibernate-lessons-basic-level\src\by\bntu\fitr\povt\task18\Main.java
+
 # cd ObjectOrientedProgramming/out
 # jar cmf ../MANIFEST.MF lab09TaskE.jar by/bntu/fitr/povt/alexeyd/lab09/
 # For adding resources to jar, just copy manually your resource-folder to out-folder and add resources/ :
