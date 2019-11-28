@@ -39,7 +39,8 @@ public class ArrayWorker {
                 if (count == 0) {
                     firstPositiveIndex = i;
                 } else {
-                    firstPositiveIndex = i;
+                    secondPositiveIndex = i;
+                    break;
                 }
                 count++;
             }
@@ -52,9 +53,9 @@ public class ArrayWorker {
 
     public static int sumOfElements(int[] array, int firstPositiveIndex, int secondPositiveIndex) {
         int sum = 0;
-        for (int i = firstPositiveIndex; i < array.length; i++) {
+        for (int i = firstPositiveIndex; i < secondPositiveIndex - 1; i++) {
             if (i < secondPositiveIndex) {
-                sum =+ array[i];
+                sum += array[i+1];
             }
         }
         return sum;
