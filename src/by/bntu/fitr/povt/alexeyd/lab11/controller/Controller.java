@@ -11,10 +11,14 @@ public class Controller {
     public void executeAdditionTask() {
         int size = 10;
         int[] array = new int[size];
-        ArrayInitializer.rndInit(array, -10, 10);
+        //ArrayInitializer.rndInit(array, -10, 10);
+        ArrayInitializer.initFromScaner(array);
         printer.printArr(array);
         //int[] array = new int[] {0, -4, -6, 5, -6, -9, -3, -2, 8, 5};
         //int[] array = new int[] {-4, -4, -6, -5, -6, -9, 3, -2, -8, 5};
+
+
+
         int maxAbsValue = ArrayWorker.findElementByMaxModule(array);
 
         int[] arrOfIndexes = ArrayWorker.getArrIndexes(array);

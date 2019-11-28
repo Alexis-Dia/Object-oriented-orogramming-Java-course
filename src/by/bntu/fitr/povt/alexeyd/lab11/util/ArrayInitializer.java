@@ -10,4 +10,10 @@ public class ArrayInitializer {
         }
     }
 
+    public static void initFromScaner(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) UserInput.input("Input number of " + i + " element: ");
+        }
+    }
+
 }
