@@ -29,4 +29,35 @@ public class ArrayWorker {
         }
         return positiveArr;
     }
+
+    public static int[] getArrIndexes(int[] array) {
+        int firstPositiveIndex = -1;
+        int secondPositiveIndex = -1;
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > 0 && count <= 2) {
+                if (count == 0) {
+                    firstPositiveIndex = i;
+                } else {
+                    firstPositiveIndex = i;
+                }
+                count++;
+            }
+        }
+        if (firstPositiveIndex != -1 && secondPositiveIndex != -1) {
+            return new int[] {firstPositiveIndex, secondPositiveIndex};
+        }
+        return new int[] {};
+    }
+
+    public static int sumOfElements(int[] array, int firstPositiveIndex, int secondPositiveIndex) {
+        int sum = 0;
+        for (int i = firstPositiveIndex; i < array.length; i++) {
+            if (i < secondPositiveIndex) {
+                sum =+ array[i];
+            }
+        }
+        return sum;
+    }
+
 }
