@@ -8,7 +8,7 @@ import by.bntu.fitr.povt.alexeyd.lab12.controller.Controller;
  * Lab12 Additional task A. Find the maximum among all the elements of those rows of a given matrix that are ordered
  * (either ascending or descending).
  */
-public class Lab11AdditionTaskA {
+public class Lab12AdditionTaskA {
 
     public static void main(String[] args) {
         Controller controller = new Controller();

@@ -12,4 +12,15 @@ public class Printer {
         }
         print("\n");
     }
+
+    public static void printMultiArr(int[][] arr) {
+        print("Initial multi array = \n");
+        for (int row = 0; row < arr.length; row++) {
+            for (int col = 0; col < arr[row].length; col++) {
+                print(arr[row][col] + " ");
+            }
+            print("\n");
+        }
+        print("\n");
+    }
 }

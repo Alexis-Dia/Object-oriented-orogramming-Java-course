@@ -1,33 +1,24 @@
 package by.bntu.fitr.povt.alexeyd.lab12.logic;
 
 public class ArrayWorker {
-    public static int findElementByMaxModule(int[] array) {
+    public static int findMaxElement(int[] array) {
         int elementIndex = 0;
-        int maxAbsValue = array[elementIndex];
+        int maxValue = array[elementIndex];
         for (int i: array) {
-            if (Math.abs(i) > maxAbsValue) {
-                maxAbsValue = Math.abs(i);
+            if (i > maxValue) {
+                maxValue = i;
             }
         }
-        return maxAbsValue;
+        return maxValue;
     }
 
-    public static int[] sumOfElements(int[] array) {
-        int indexOfFirstPositive = -1;
-        int indexOfSecondPositive = -1;
-        int[] positiveArr = new int[2];
-        int count = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (count > 2) {
-                break;
-            } else {
-                if (i > 0) {
-                    positiveArr[count] = array[i];
-                }
-            }
-            count++;
+    public static int getResultElement(int[][] array) {
+        System.out.println(array.length + "\n");
+        int[] a = array[0];
+        for (int row = 0; row < array.length; row++) {
+            System.out.println(array.length + "\n");
         }
-        return positiveArr;
+        return -1;
     }
 
     public static int[] getArrIndexes(int[] array) {
@@ -59,6 +50,24 @@ public class ArrayWorker {
             }
         }
         return sum;
+    }
+
+    public static boolean checkIsAsc(int[] data) {
+        for (int i = 0; i < data.length-1; i++) {
+            if (data[i] > data[i+1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean checkIsDesc(int[] data) {
+        for (int i = 0; i < data.length-1; i++) {
+            if (data[i] < data[i+1]) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
