@@ -58,4 +58,30 @@ public class UserInput {
         }
         return inputNumber;
     }
+
+    /**
+     *
+     * @param msg
+     * @return number from input
+     */
+    public static int inputNumber(String msg) {
+
+        //Create scanner link and initialize it.
+        Scanner scanner = new Scanner(System.in);
+
+        //Initialize unputNumber
+        long inputNumber;
+        while (true) {
+            //Print to console msg
+            System.out.print(msg + " ");
+            if (scanner.hasNextBigInteger()) {
+                inputNumber = scanner.nextInt();
+                break;
+            } else {
+                //clears buffer
+                scanner.nextLine();
+            }
+        }
+        return (int) inputNumber;
+    }
 }

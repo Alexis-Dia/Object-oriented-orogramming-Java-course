@@ -9,7 +9,7 @@ public class UserInput {
      * @param msg
      * @return number from input
      */
-    public static long input(String msg) {
+    public static int input(String msg) {
 
         //Create scanner link and initialize it.
         Scanner scanner = new Scanner(System.in);
@@ -27,6 +27,6 @@ public class UserInput {
                 scanner.nextLine();
             }
         }
-        return inputNumber;
+        return (int) inputNumber;
     }
 }

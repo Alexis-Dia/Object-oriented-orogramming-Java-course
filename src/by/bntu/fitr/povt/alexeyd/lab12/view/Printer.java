@@ -23,4 +23,24 @@ public class Printer {
         }
         print("\n");
     }
+
+    /**
+     * Print to the console finaly result
+     * @param arr
+     */
+    public static void print(int[] arr) {
+        System.out.print("[");
+        for (int element: arr) {
+            System.out.print(element + " ");
+        };
+        System.out.print("]");
+    }
+
+    /**
+     * Print to the console finaly result
+     * @param ob
+     */
+    public static void print(Object ob) {
+        System.out.println(ob);
+    }
 }
