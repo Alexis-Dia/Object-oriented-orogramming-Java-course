@@ -1,6 +1,6 @@
 package by.bntu.fitr.povt.alexeyd.lab13.model.entity;
 
-public class Product {
+public class Product implements Comparable<Product> {
 
     public static int productAmount;
     private boolean helpChildren;
@@ -71,5 +71,10 @@ public class Product {
                 ", price=" + price +
                 ", id=" + id +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Product o) {
+        return 0;
     }
 }

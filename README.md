@@ -29,3 +29,4 @@
 # 3. Information about XSD validation - https://www.tutorialspoint.com/xsd/xsd_validation.htm
 # 4. Creating jar - https://docs.oracle.com/javase/tutorial/deployment/jar/defman.html
 # 5. Creating jar - https://introcs.cs.princeton.edu/java/85application/jar/jar.html
+# 6. Sorting in Collections-framework - https://www.javaworld.com/article/3323403/java-challengers-5-sorting-with-comparable-and-comparator-in-java.html
