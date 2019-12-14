@@ -4,6 +4,8 @@ public class Bucket {
 
     private static final int DEFAULT_ROW_SIZE = 10;
     private static final int DEFAULT_COLUMN_SIZE = 10;
+    public static final int FIRST_ELEMENT_INDEX = 0;
+    public static final int NOT_FOUND_INDEX = -1;
 
     private Product[][] container;
     private String name;
@@ -34,7 +36,20 @@ public class Bucket {
     }
 
     public void addProduct(Product product, int subgroup) {
-        container[subgroup][Product.productAmount - 1] = product;
+        int indexOfLastElement = getIndexOfLastElement(subgroup);
+        if (indexOfLastElement != NOT_FOUND_INDEX) {
+            container[subgroup][indexOfLastElement] = product;
+        }
+    }
+
+    private int getIndexOfLastElement(int subgroup) {
+        int indexOfLastElement = FIRST_ELEMENT_INDEX;
+        for (int i = 0; i < container[subgroup].length; i++) {
+            if (container[subgroup][i] != null) {
+                return i+1;
+            }
+        }
+        return indexOfLastElement;
     }
 
     public int getIndexById(Product[][] container, int id, int subgroup) {
@@ -50,23 +65,12 @@ public class Bucket {
 
     //FIX ME
     public Product[][] deleteProductByIndex(int index, int subgroup) {
-        int oldSize = container.length;
-
-        Product[][] half1 = new Product[subgroup][index - 1];
-        for(int i = 0; i < index - 1; i++) {
-            half1[subgroup][i] = container[subgroup][i];
+        if (container[subgroup][index] != null) {
+            Product.increaseCount();
         }
+        container[subgroup][index] = null;
 
-        Product[][] half2 = new Product[subgroup][oldSize - index];
-        for (int j = 0; j < oldSize - index; j++) {
-            half2[subgroup][j] = container[subgroup][j];
-        }
-
-        Product[][] concat = combine(half1, half2, subgroup);
-        this.container = concat;
-        Product.increaseCount();
-
-        return concat;
+        return container;
     }
 
     public Product[][] getContainer() {
