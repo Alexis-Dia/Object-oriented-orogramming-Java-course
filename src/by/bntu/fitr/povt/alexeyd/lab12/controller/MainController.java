@@ -4,6 +4,7 @@ import by.bntu.fitr.povt.alexeyd.lab12.model.entity.*;
 import by.bntu.fitr.povt.alexeyd.lab12.model.logic.NumberLogic;
 import by.bntu.fitr.povt.alexeyd.lab12.model.logic.ShopAssistance;
 import by.bntu.fitr.povt.alexeyd.lab12.model.logic.VectorAssistance;
+import by.bntu.fitr.povt.alexeyd.lab12.util.SubGroup;
 import by.bntu.fitr.povt.alexeyd.lab12.util.UserInput;
 import by.bntu.fitr.povt.alexeyd.lab12.view.Printer;
 
@@ -17,20 +18,22 @@ public class MainController {
         Bucket bucket = new Bucket("POIT30701117");
 
         bucket.addProduct(new Bread(true, 500, 1.2, true, "Borodinskiy",
-            "Chilli", "Brown", "Square", 1276234));
+            "Chilli", "Brown", "Square", 1276234), SubGroup.BREAD.getGroupCode());
         bucket.addProduct(new Orange(false, 110, 0.7, 11, 0.1,
-            true, "Rosso", "Elipse", 73483438));
+            true, "Rosso", "Elipse", 73483438), SubGroup.FRUIT.getGroupCode());
         bucket.addProduct(new Milk(false, 450, 2.1, 500, 3.2, 7.7,
-            false, true, 32635623));
-        System.out.println("Found index: " + bucket.getIndexById(bucket.getContainer(), 73483438));
-        //bucket.deleteProductByIndex(2);
+            false, true, 32635623), SubGroup.MILK.getGroupCode());
+        bucket.addProduct(new Milk(false, 450, 2.3, 500, 5.2, 9.7,
+            false, true, 32635624), SubGroup.MILK.getGroupCode());
+        System.out.println("Found index: " + bucket.getIndexById(bucket.getContainer(), 73483438, SubGroup.FRUIT.getGroupCode()));
+        bucket.deleteProductByIndex(1, SubGroup.MILK.getGroupCode());
         double avgBucketPrice = ShopAssistance.calculateAvgPrice(bucket);
         double avgBucketWeight = ShopAssistance.calculateAvgWeight(bucket);
         boolean prize = ShopAssistance.getPrize(bucket);
 
         printer.print("\nAvg bucket price = " + avgBucketPrice);
         printer.print("\nAvg bucket weight = " + avgBucketWeight);
-        printer.print(prize ? "\nYou won a prize!" : "\n");
+        printer.print(prize ? "\nYou won a prize!\n" : "\n");
         printer.print(bucket);
     }
 
