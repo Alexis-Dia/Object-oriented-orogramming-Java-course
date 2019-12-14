@@ -9,6 +9,7 @@ import by.bntu.fitr.povt.alexeyd.lab13.util.UserInput;
 import by.bntu.fitr.povt.alexeyd.lab13.view.Printer;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class MainController {
@@ -29,11 +30,12 @@ public class MainController {
         products.add(new Milk(false, 450, 2.3, 500, 5.2, 9.7,
             false, true, 32635624));
         System.out.println("Found index: " + products.get(SubGroup.FRUIT.getGroupCode()));
-        products.remove(3);
+        //products.remove(3);
         double avgBucketPrice = ShopAssistance.calculateAvgPrice(products);
         double avgBucketWeight = ShopAssistance.calculateAvgWeight(products);
         boolean prize = ShopAssistance.getPrize(products);
 
+        Collections.sort(products);
         printer.print("\nAvg bucket price = " + avgBucketPrice);
         printer.print("\nAvg bucket weight = " + avgBucketWeight);
         printer.print(prize ? "\nYou won a prize!\n" : "\n");
