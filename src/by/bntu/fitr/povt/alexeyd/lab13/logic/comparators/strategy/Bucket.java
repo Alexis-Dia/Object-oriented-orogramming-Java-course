@@ -11,7 +11,7 @@ public abstract class Bucket {
 
     Comparator comparator;
 
-    ArrayList<Product> products;
+    List<Product> products;
 
     public abstract void addProduct(Product product);
 
@@ -27,11 +27,8 @@ public abstract class Bucket {
         Collections.sort(products, comparator);
     }
 
-    public ArrayList<Product> getList() {
+    public List <Product> getList() {
         return products;
     }
 
-    public void setList(ArrayList<Product> products) {
-        this.products = products;
-    }
 }

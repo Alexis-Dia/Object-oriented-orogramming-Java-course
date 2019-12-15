@@ -52,7 +52,7 @@ public class MainController {
                 false, true, 32635621));
         bucket.setComparator(new ComparatorByFatAndCarbons());
         bucket.performSorting();
-        ArrayList<Product> list = ((MilkBucket) bucket).getAll();
+        List<Product> list = ((MilkBucket) bucket).getAll();
         printer.print(list);
 
 /*        printer.print("\nAvg bucket price = " + avgBucketPrice);

@@ -17,7 +17,7 @@ public class MilkBucket extends Bucket {
         comparator = new ComparatorByPriceAndId();
     }
 
-    public ArrayList<Product> getAll() {
+    public List<Product> getAll() {
         return getList();
     }
 
