@@ -1,5 +1,6 @@
 package by.bntu.fitr.povt.alexeyd.lab13.controller;
 
+import by.bntu.fitr.povt.alexeyd.lab13.logic.comparators.ComparatorByPriceAndId;
 import by.bntu.fitr.povt.alexeyd.lab13.model.entity.*;
 import by.bntu.fitr.povt.alexeyd.lab13.model.logic.NumberLogic;
 import by.bntu.fitr.povt.alexeyd.lab13.model.logic.ShopAssistance;
@@ -25,8 +26,8 @@ public class MainController {
             "Chilli", "Brown", "Square", 1276234));
         products.add(new Orange(false, 110, 0.7, 11, 0.1,
             true, "Rosso", "Elipse", 73483438));
-        products.add(new Milk(false, 450, 2.1, 500, 3.2, 7.7,
-            false, true, 32635623));
+        products.add(new Milk(false, 450, 2.3, 500, 3.2, 7.7,
+            false, true, 32635625));
         products.add(new Milk(false, 450, 2.3, 500, 5.2, 9.7,
             false, true, 32635624));
         System.out.println("Found index: " + products.get(SubGroup.FRUIT.getGroupCode()));
@@ -35,7 +36,8 @@ public class MainController {
         double avgBucketWeight = ShopAssistance.calculateAvgWeight(products);
         boolean prize = ShopAssistance.getPrize(products);
 
-        Collections.sort(products);
+        //Collections.sort(products);
+        Collections.sort(products, new ComparatorByPriceAndId());
         printer.print("\nAvg bucket price = " + avgBucketPrice);
         printer.print("\nAvg bucket weight = " + avgBucketWeight);
         printer.print(prize ? "\nYou won a prize!\n" : "\n");
