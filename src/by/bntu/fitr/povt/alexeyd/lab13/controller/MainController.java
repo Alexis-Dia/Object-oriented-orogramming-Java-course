@@ -1,6 +1,10 @@
 package by.bntu.fitr.povt.alexeyd.lab13.controller;
 
-import by.bntu.fitr.povt.alexeyd.lab13.logic.comparators.ComparatorByPriceAndId;
+import by.bntu.fitr.povt.alexeyd.lab1.Main;
+import by.bntu.fitr.povt.alexeyd.lab13.logic.comparators.strategy.Bucket;
+import by.bntu.fitr.povt.alexeyd.lab13.logic.comparators.strategy.ComparatorByFatAndCarbons;
+import by.bntu.fitr.povt.alexeyd.lab13.logic.comparators.strategy.ComparatorByPriceAndId;
+import by.bntu.fitr.povt.alexeyd.lab13.logic.comparators.strategy.MilkBucket;
 import by.bntu.fitr.povt.alexeyd.lab13.model.entity.*;
 import by.bntu.fitr.povt.alexeyd.lab13.model.logic.NumberLogic;
 import by.bntu.fitr.povt.alexeyd.lab13.model.logic.ShopAssistance;
@@ -38,10 +42,23 @@ public class MainController {
 
         //Collections.sort(products);
         Collections.sort(products, new ComparatorByPriceAndId());
-        printer.print("\nAvg bucket price = " + avgBucketPrice);
+
+        Bucket bucket = new MilkBucket();
+        bucket.addProduct(new Milk(false, 450, 0.3, 500, 1.2, 7.7,
+                false, true, 32635625));
+        bucket.addProduct(new Milk(false, 450, 1.2, 500, 0.2, 0.7,
+                false, true, 32635624));
+        bucket.addProduct(new Milk(false, 450, 1.1, 500, 2.1, 0.1,
+                false, true, 32635621));
+        bucket.setComparator(new ComparatorByFatAndCarbons());
+        bucket.performSorting();
+        ArrayList<Product> list = ((MilkBucket) bucket).getAll();
+        printer.print(list);
+
+/*        printer.print("\nAvg bucket price = " + avgBucketPrice);
         printer.print("\nAvg bucket weight = " + avgBucketWeight);
         printer.print(prize ? "\nYou won a prize!\n" : "\n");
-        printer.print(products);
+        printer.print(products);*/
     }
 
     public void executeAdditionExamTask() {
