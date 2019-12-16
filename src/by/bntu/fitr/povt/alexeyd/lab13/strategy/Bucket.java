@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab13.logic.comparators.strategy;
+package by.bntu.fitr.povt.alexeyd.lab13.strategy;
 
 import by.bntu.fitr.povt.alexeyd.lab13.model.entity.Product;
 

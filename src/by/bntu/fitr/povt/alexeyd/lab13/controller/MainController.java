@@ -1,23 +1,34 @@
 package by.bntu.fitr.povt.alexeyd.lab13.controller;
 
-import by.bntu.fitr.povt.alexeyd.lab1.Main;
-import by.bntu.fitr.povt.alexeyd.lab13.logic.comparators.strategy.Bucket;
-import by.bntu.fitr.povt.alexeyd.lab13.logic.comparators.strategy.ComparatorByFatAndCarbons;
-import by.bntu.fitr.povt.alexeyd.lab13.logic.comparators.strategy.ComparatorByPriceAndId;
-import by.bntu.fitr.povt.alexeyd.lab13.logic.comparators.strategy.MilkBucket;
+import by.bntu.fitr.povt.alexeyd.lab13.logic.comparator.ComparatorByFatAndCarbons;
+import by.bntu.fitr.povt.alexeyd.lab13.logic.comparator.ComparatorByPriceAndId;
+import by.bntu.fitr.povt.alexeyd.lab13.logic.comparator.ComparatorByShapeAndDiameter;
+import by.bntu.fitr.povt.alexeyd.lab13.logic.comparator.ComparatorBySortAndFlavor;
 import by.bntu.fitr.povt.alexeyd.lab13.model.entity.*;
 import by.bntu.fitr.povt.alexeyd.lab13.model.logic.NumberLogic;
 import by.bntu.fitr.povt.alexeyd.lab13.model.logic.ShopAssistance;
 import by.bntu.fitr.povt.alexeyd.lab13.model.logic.VectorAssistance;
+import by.bntu.fitr.povt.alexeyd.lab13.strategy.Bucket;
+import by.bntu.fitr.povt.alexeyd.lab13.strategy.MilkBucket;
 import by.bntu.fitr.povt.alexeyd.lab13.util.SubGroup;
 import by.bntu.fitr.povt.alexeyd.lab13.util.UserInput;
 import by.bntu.fitr.povt.alexeyd.lab13.view.Printer;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class MainController {
+
+    private static final String COMPARE_BY_FAT_AND_CARBONS = "CompareByFatAndCarbons";
+    private static final String COMPARE_BY_SORT_AND_FLAVOR = "CompareBySortAndFlavor";
+    private static final String COMPARE_BY_SHAPE_AND_DIAMETER = "CompareByShapeAndDiameter";
+    private static final Map<String, Comparator> STRATEGIES_MAP;
+
+    static {
+        STRATEGIES_MAP = new HashMap<>();
+        STRATEGIES_MAP.put(COMPARE_BY_FAT_AND_CARBONS, new ComparatorByFatAndCarbons());
+        STRATEGIES_MAP.put(COMPARE_BY_SORT_AND_FLAVOR, new ComparatorBySortAndFlavor());
+        STRATEGIES_MAP.put(COMPARE_BY_SHAPE_AND_DIAMETER, new ComparatorByShapeAndDiameter());
+    }
 
     private static final int SIZE = 100;
     private Printer printer = new Printer();
@@ -50,15 +61,14 @@ public class MainController {
                 false, true, 32635624));
         bucket.addProduct(new Milk(false, 450, 1.1, 500, 2.1, 0.1,
                 false, true, 32635621));
-        bucket.setComparator(new ComparatorByFatAndCarbons());
+        bucket.setComparator(STRATEGIES_MAP.get(COMPARE_BY_FAT_AND_CARBONS));
         bucket.performSorting();
-        List<Product> list = ((MilkBucket) bucket).getAll();
-        printer.print(list);
+        products = ((MilkBucket) bucket).getAll();
 
-/*        printer.print("\nAvg bucket price = " + avgBucketPrice);
+        printer.print("\nAvg bucket price = " + avgBucketPrice);
         printer.print("\nAvg bucket weight = " + avgBucketWeight);
         printer.print(prize ? "\nYou won a prize!\n" : "\n");
-        printer.print(products);*/
+        printer.print(products);
     }
 
     public void executeAdditionExamTask() {

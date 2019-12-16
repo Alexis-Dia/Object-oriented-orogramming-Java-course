@@ -30,3 +30,9 @@
 # 4. Creating jar - https://docs.oracle.com/javase/tutorial/deployment/jar/defman.html
 # 5. Creating jar - https://introcs.cs.princeton.edu/java/85application/jar/jar.html
 # 6. Sorting in Collections-framework - https://www.javaworld.com/article/3323403/java-challengers-5-sorting-with-comparable-and-comparator-in-java.html
+
+# Java patterns:
+# 1. https://github.com/SergioMyJava/Head_First_Design_Patterns_O-Reilly
+# 2. https://github.com/marhuzz/JavaPatterns/tree/master/src/ru/unlimit/javapro/patterns
+# 3. https://github.com/synergytrainings18/patterns/tree/master/Tatevik.Arakelyan
+# 4. https://github.com/chacovi/design-patterns-head-first-book/
