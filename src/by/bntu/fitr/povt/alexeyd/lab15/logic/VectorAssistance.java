@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab15.model.logic;
+package by.bntu.fitr.povt.alexeyd.lab15.logic;
 
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.VectorContainer;
 
