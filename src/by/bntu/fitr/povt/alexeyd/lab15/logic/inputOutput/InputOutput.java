@@ -10,7 +10,7 @@ public class InputOutput {
         //BinaryStreamWorker.write(fileName);
         //BinaryStreamWorker.read(fileName);
 
-        //CharacterStreamWorker.write(fileCharacterName);
+        CharacterStreamWorker.write(fileCharacterName);
         CharacterStreamWorker.read(fileCharacterNameUnix);
     }
 }

@@ -1,5 +1,8 @@
 package by.bntu.fitr.povt.alexeyd.lab15.controller;
 
+import by.bntu.fitr.povt.alexeyd.lab15.factory.DataGenerator;
+import by.bntu.fitr.povt.alexeyd.lab15.factory.DataStore;
+import by.bntu.fitr.povt.alexeyd.lab15.factory.MyDataStore;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorByFatAndCarbons;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorByPriceAndId;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorByShapeAndDiameter;
@@ -35,6 +38,13 @@ public class MainController {
     private UserInput userInput = new UserInput();
 
     public void executeMainTask() {
+
+        DataStore dataStore = new MyDataStore();
+        DataGenerator dataGenerator = dataStore.orderData("text");
+        String fileName = "C:\\Test\\text3.txt";
+        String data = dataGenerator.read(fileName);
+        System.out.println(data);
+
         List<Product> products = new ArrayList();
 
         products.add(new Bread(true, 500, 1.2, true, "Borodinskiy",
