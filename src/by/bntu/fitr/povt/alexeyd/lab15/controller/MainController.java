@@ -41,20 +41,14 @@ public class MainController {
 
         DataStore dataStore = new MyDataStore();
         DataGenerator dataGenerator = dataStore.orderData("text");
-        String fileName = "C:\\Test\\text3.txt";
-        String data = dataGenerator.read(fileName);
+        //String fileName = "C:\\Test\\text3.txt";
+        String fileCharacterNameUnix = "src/resources/bread.txt";
+        String data = dataGenerator.read(fileCharacterNameUnix);
+        String[][] rowArr = ShopAssistance.serializeData(data);
         System.out.println(data);
 
-        List<Product> products = new ArrayList();
+        List<Product> products = ShopAssistance.parseProduct(rowArr);
 
-        products.add(new Bread(true, 500, 1.2, true, "Borodinskiy",
-            "Chilli", "Brown", "Square", 1276234));
-        products.add(new Orange(false, 110, 0.7, 11, 0.1,
-            true, "Rosso", "Elipse", 73483438));
-        products.add(new Milk(false, 450, 2.3, 500, 3.2, 7.7,
-            false, true, 32635625));
-        products.add(new Milk(false, 450, 2.3, 500, 5.2, 9.7,
-            false, true, 32635624));
         System.out.println("Found index: " + products.get(SubGroup.FRUIT.getGroupCode()));
         //products.remove(3);
         double avgBucketPrice = ShopAssistance.calculateAvgPrice(products);
@@ -63,17 +57,6 @@ public class MainController {
 
         //Collections.sort(products);
         Collections.sort(products, new ComparatorByPriceAndId());
-
-        Bucket bucket = new MilkBucket();
-        bucket.addProduct(new Milk(false, 450, 0.3, 500, 1.2, 7.7,
-                false, true, 32635625));
-        bucket.addProduct(new Milk(false, 450, 1.2, 500, 0.2, 0.7,
-                false, true, 32635624));
-        bucket.addProduct(new Milk(false, 450, 1.1, 500, 2.1, 0.1,
-                false, true, 32635621));
-        bucket.setComparator(STRATEGIES_MAP.get(COMPARE_BY_FAT_AND_CARBONS));
-        bucket.performSorting();
-        products = ((MilkBucket) bucket).getAll();
 
         printer.print("\nAvg bucket price = " + avgBucketPrice);
         printer.print("\nAvg bucket weight = " + avgBucketWeight);
