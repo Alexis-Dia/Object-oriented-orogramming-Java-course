@@ -1,6 +1,6 @@
 package by.bntu.fitr.povt.alexeyd.lab15.factory;
 
-public abstract class DataStore {
+public abstract class DataStoreFactory {
 
     abstract DataGenerator runFactory(String item);
 

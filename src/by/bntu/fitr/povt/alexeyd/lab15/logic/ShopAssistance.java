@@ -7,35 +7,32 @@ import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Product;
 import java.util.ArrayList;
 import java.util.List;
 
+import static by.bntu.fitr.povt.alexeyd.lab15.util.Constant.*;
+
 public class ShopAssistance {
 
-    public static final int MAX_NUMBER_OF_FIELDS = 10;
-    public static final String BRACET_LEFT_STRING = "{";
-    public static final String BRACET_RIGHT_STRING = "}";
-    public static final String EMPTY_STRING = "";
-    public static final String COMMA = ",";
-    public static final String NEW_LINE_SYMBOL = "\n";
-    public static final String COLON = ":";
-    public static final int FIELD_NAME_NUMBER = 0;
-    public static final int VALUE_NUMBER = 1;
-    public static final int DEFAULT_WEIGHT = 0;
-    public static final double DEFAULT_PRICE = 0.0;
-    public static final boolean DEFAULT_ORGANIC = false;
-    public static final boolean DEFAULT_HELP_CHILDREN = false;
-    public static final int DEFAULT_ID = 0;
-    public static final String DEFAULT_SORT = null;
-    public static final String DEFAULT_FLOUR = null;
-    public static final String DEFAULT_COLOR = null;
-    public static final String DEFAULT_SHAPE = null;
-    public static final String HELP_CHILDREN = "helpChildren";
-    public static final String WEIGHT = "weight";
-    public static final String PRICE = "price";
-    public static final String ORGANIC = "organic";
-    public static final String ID = "id";
-    public static final String SORT = "sort";
-    public static final String FLOUR = "flour";
-    public static final String COLOR = "color";
-    public static final String SHAPE = "shape";
+    private static final int MAX_NUMBER_OF_FIELDS = 10;
+    private static final String COLON = ":";
+    private static final int FIELD_NAME_NUMBER = 0;
+    private static final int VALUE_NUMBER = 1;
+    private static final int DEFAULT_WEIGHT = 0;
+    private static final double DEFAULT_PRICE = 0.0;
+    private static final boolean DEFAULT_ORGANIC = false;
+    private static final boolean DEFAULT_HELP_CHILDREN = false;
+    private static final int DEFAULT_ID = 0;
+    private static final String DEFAULT_SORT = null;
+    private static final String DEFAULT_FLOUR = null;
+    private static final String DEFAULT_COLOR = null;
+    private static final String DEFAULT_SHAPE = null;
+    private static final String HELP_CHILDREN = "helpChildren";
+    private static final String WEIGHT = "weight";
+    private static final String PRICE = "price";
+    private static final String ORGANIC = "organic";
+    private static final String ID = "id";
+    private static final String SORT = "sort";
+    private static final String FLOUR = "flour";
+    private static final String COLOR = "color";
+    private static final String SHAPE = "shape";
 
     public static double calculateAvgPrice(List<Product> list) {
         double total = 0.0;
@@ -105,6 +102,7 @@ public class ShopAssistance {
     public static String[][] serializeData (String data) {
         String strNew = data.replace(BRACET_LEFT_STRING, EMPTY_STRING);
         strNew = strNew.replace(BRACET_RIGHT_STRING, EMPTY_STRING);
+        strNew = strNew.replace(CARRITAGR_RETURN_SYMBOL, EMPTY_STRING);
         String[] parts = strNew.split(COMMA);
         String[][] arr = new String[parts.length][MAX_NUMBER_OF_FIELDS];
         for (int i = 0; i <parts.length ; i++) {

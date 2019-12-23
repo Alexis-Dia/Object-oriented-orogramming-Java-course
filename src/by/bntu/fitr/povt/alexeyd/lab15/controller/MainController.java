@@ -1,18 +1,17 @@
 package by.bntu.fitr.povt.alexeyd.lab15.controller;
 
 import by.bntu.fitr.povt.alexeyd.lab15.factory.DataGenerator;
-import by.bntu.fitr.povt.alexeyd.lab15.factory.DataStore;
-import by.bntu.fitr.povt.alexeyd.lab15.factory.MyDataStore;
+import by.bntu.fitr.povt.alexeyd.lab15.factory.DataStoreFactory;
+import by.bntu.fitr.povt.alexeyd.lab15.factory.MyDataStoreFactory;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.NumberLogic;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.ShopAssistance;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.VectorAssistance;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorByFatAndCarbons;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorByPriceAndId;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorByShapeAndDiameter;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorBySortAndFlavor;
-import by.bntu.fitr.povt.alexeyd.lab15.model.entity.*;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.NumberLogic;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.ShopAssistance;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.VectorAssistance;
-import by.bntu.fitr.povt.alexeyd.lab15.strategy.Bucket;
-import by.bntu.fitr.povt.alexeyd.lab15.strategy.MilkBucket;
+import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Product;
+import by.bntu.fitr.povt.alexeyd.lab15.model.entity.VectorContainer;
 import by.bntu.fitr.povt.alexeyd.lab15.util.SubGroup;
 import by.bntu.fitr.povt.alexeyd.lab15.util.UserInput;
 import by.bntu.fitr.povt.alexeyd.lab15.view.Printer;
@@ -25,6 +24,7 @@ public class MainController {
     private static final String COMPARE_BY_SORT_AND_FLAVOR = "CompareBySortAndFlavor";
     private static final String COMPARE_BY_SHAPE_AND_DIAMETER = "CompareByShapeAndDiameter";
     private static final Map<String, Comparator> STRATEGIES_MAP;
+    private static final String SRC_RESOURCES_PATH = "src/resources/bread.txt";
 
     static {
         STRATEGIES_MAP = new HashMap<>();
@@ -39,11 +39,9 @@ public class MainController {
 
     public void executeMainTask() {
 
-        DataStore dataStore = new MyDataStore();
-        DataGenerator dataGenerator = dataStore.orderData("text");
-        //String fileName = "C:\\Test\\text3.txt";
-        String fileCharacterNameUnix = "src/resources/bread.txt";
-        String data = dataGenerator.read(fileCharacterNameUnix);
+        DataStoreFactory dataStoreFactory = new MyDataStoreFactory();
+        DataGenerator dataGenerator = dataStoreFactory.orderData(MyDataStoreFactory.RANDOM);
+        String data = dataGenerator.read(SRC_RESOURCES_PATH);
         String[][] rowArr = ShopAssistance.serializeData(data);
         System.out.println(data);
 
