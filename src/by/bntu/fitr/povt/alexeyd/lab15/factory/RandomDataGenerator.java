@@ -24,9 +24,9 @@ public class RandomDataGenerator implements DataGenerator {
     private int numberOfProducts = new Random().nextInt(MAX_NUMBER_OF_PRODUCT) + MIN_NUMBER_OF_PRODUCTS;
 
     @Override
-    public String read(String fileName) {
+    public String read() {
         String rowData = EMPTY_STRING;
-        for (int i = 0; i < numberOfProducts - 1; i++) {
+        for (int i = 0; i <= numberOfProducts - 1; i++) {
             int id = new Random().nextInt(MAX_ID) + MIN_ID;
             double price = new Random().nextDouble()*PRICE_PERCENT + MIN_PRICE;
             boolean helpChildren = Math.random() < HALF;

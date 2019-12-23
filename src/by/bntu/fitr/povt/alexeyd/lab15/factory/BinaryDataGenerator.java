@@ -4,10 +4,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import static by.bntu.fitr.povt.alexeyd.lab15.util.Constant.SRC_RESOURCES_INPUT_BINARY_PATH;
+
 public class BinaryDataGenerator implements DataGenerator {
 
+    private String fileName = SRC_RESOURCES_INPUT_BINARY_PATH;
+
     // before JDK 6.0
-    public String read(String fileName) {
+    public String read() {
         InputStream inputStream = null;
         String data = "";
         try {
@@ -17,7 +21,6 @@ public class BinaryDataGenerator implements DataGenerator {
             while ((temp = inputStream.read()) != -1) {
                 char symbol = ((char) temp);
                 data += String.valueOf(symbol);
-                //System.out.println(temp + " ");
             }
         } catch (IOException e) {
             e.printStackTrace();

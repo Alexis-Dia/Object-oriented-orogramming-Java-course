@@ -27,7 +27,6 @@ public class MainController {
     private static final String COMPARE_BY_SORT_AND_FLAVOR = "CompareBySortAndFlavor";
     private static final String COMPARE_BY_SHAPE_AND_DIAMETER = "CompareByShapeAndDiameter";
     private static final Map<String, Comparator> STRATEGIES_MAP;
-    private static final String SRC_RESOURCES_PATH = "src/resources/bread.txt";
 
     static {
         STRATEGIES_MAP = new HashMap<>();
@@ -43,13 +42,11 @@ public class MainController {
     public void executeMainTask() {
 
         DataStoreFactory dataStoreFactory = new MyDataStoreFactory();
-        DataGenerator dataGenerator = dataStoreFactory.orderData(MyDataStoreFactory.RANDOM);
-        String data = dataGenerator.read(SRC_RESOURCES_PATH);
+        DataGenerator dataGenerator = dataStoreFactory.orderData(MyDataStoreFactory.BINARY);
+        String data = dataGenerator.read();
         String[][] rowArr = ShopAssistance.serializeData(data);
 
         List<Product> products = ShopAssistance.parseProduct(rowArr);
-
-        System.out.println("Found index: " + products.get(SubGroup.FRUIT.getGroupCode()));
         //products.remove(3);
         double avgBucketPrice = ShopAssistance.calculateAvgPrice(products);
         double avgBucketWeight = ShopAssistance.calculateAvgWeight(products);
@@ -59,8 +56,9 @@ public class MainController {
         Collections.sort(products, new ComparatorByPriceAndId());
 
         PrintFactory printFactory = new MyPrintFactory();
-        Printer printer = printFactory.order(MyPrintFactory.CONSOLE);
+        Printer printer = printFactory.order(MyPrintFactory.BINARY);
 
+        printer.write("Found index: " + products.get(SubGroup.FRUIT.getGroupCode()));
         printer.write("\nAvg bucket price = " + avgBucketPrice);
         printer.write("\nAvg bucket weight = " + avgBucketWeight);
         printer.write(prize ? "\nYou won a prize!\n" : "\n");
