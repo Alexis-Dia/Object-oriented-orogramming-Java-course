@@ -1,10 +1,8 @@
 package by.bntu.fitr.povt.alexeyd.lab15.factory;
 
-public class MyDataStoreFactory extends DataStoreFactory {
+import static by.bntu.fitr.povt.alexeyd.lab15.util.Constant.*;
 
-    public static final String RANDOM = "random";
-    public static final String TEXT = "text";
-    public static final String BINARY = "binary";
+public class MyDataStoreFactory extends DataStoreFactory {
 
     DataGenerator runFactory(String item) {
         if (item.equals(RANDOM)) {

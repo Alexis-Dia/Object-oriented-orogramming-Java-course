@@ -3,6 +3,7 @@ package by.bntu.fitr.povt.alexeyd.lab15.controller;
 import by.bntu.fitr.povt.alexeyd.lab15.factory.DataGenerator;
 import by.bntu.fitr.povt.alexeyd.lab15.factory.DataStoreFactory;
 import by.bntu.fitr.povt.alexeyd.lab15.factory.MyDataStoreFactory;
+import by.bntu.fitr.povt.alexeyd.lab15.factory.decorator.SimpleInputDecorator;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.NumberLogic;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.ShopAssistance;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.VectorAssistance;
@@ -12,12 +13,11 @@ import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorByShapeAndDiam
 import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorBySortAndFlavor;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Product;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.VectorContainer;
+import by.bntu.fitr.povt.alexeyd.lab15.util.Constant;
 import by.bntu.fitr.povt.alexeyd.lab15.util.SubGroup;
 import by.bntu.fitr.povt.alexeyd.lab15.util.UserInput;
-import by.bntu.fitr.povt.alexeyd.lab15.view.ConsolePrinter;
-import by.bntu.fitr.povt.alexeyd.lab15.view.MyPrintFactory;
-import by.bntu.fitr.povt.alexeyd.lab15.view.PrintFactory;
-import by.bntu.fitr.povt.alexeyd.lab15.view.Printer;
+import by.bntu.fitr.povt.alexeyd.lab15.view.*;
+import by.bntu.fitr.povt.alexeyd.lab15.view.decorator.SimpleOutputDecorator;
 
 import java.util.*;
 
@@ -42,7 +42,11 @@ public class MainController {
     public void executeMainTask() {
 
         DataStoreFactory dataStoreFactory = new MyDataStoreFactory();
-        DataGenerator dataGenerator = dataStoreFactory.orderData(MyDataStoreFactory.BINARY);
+        DataGenerator dataGenerator = dataStoreFactory.orderData(Constant.TEXT);
+
+        //Input decorator pattern in action
+        dataGenerator = new SimpleInputDecorator(dataGenerator);
+
         String data = dataGenerator.read();
         String[][] rowArr = ShopAssistance.serializeData(data);
 
@@ -56,7 +60,9 @@ public class MainController {
         Collections.sort(products, new ComparatorByPriceAndId());
 
         PrintFactory printFactory = new MyPrintFactory();
-        Printer printer = printFactory.order(MyPrintFactory.BINARY);
+        Printer printer = printFactory.order(Constant.TEXT);
+        //Output decorator pattern in action
+        printer = new SimpleOutputDecorator(printer);
 
         printer.write("Found index: " + products.get(SubGroup.FRUIT.getGroupCode()));
         printer.write("\nAvg bucket price = " + avgBucketPrice);

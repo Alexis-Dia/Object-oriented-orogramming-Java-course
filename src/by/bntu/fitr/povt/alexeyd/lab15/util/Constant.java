@@ -7,6 +7,11 @@ public class Constant {
     public static final String SRC_RESOURCES_OUTPUT_TEXT_PATH = "src/resources/output.txt";
     public static final String SRC_RESOURCES_OUTPUT_BINARY_PATH = "src/resources/output.xjf";
 
+    public static final String CONSOLE = "console";
+    public static final String TEXT = "text";
+    public static final String BINARY = "binary";
+    public static final String RANDOM = "random";
+
     public static final String UTF_8 = "UTF-8";
     public static final String EMPTY_STRING = "";
     public static final String BRACET_LEFT_STRING = "{";

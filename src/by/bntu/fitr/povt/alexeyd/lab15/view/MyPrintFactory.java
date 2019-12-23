@@ -1,10 +1,8 @@
 package by.bntu.fitr.povt.alexeyd.lab15.view;
 
-public class MyPrintFactory extends PrintFactory {
+import static by.bntu.fitr.povt.alexeyd.lab15.util.Constant.*;
 
-    public static final String CONSOLE = "console";
-    public static final String TEXT = "text";
-    public static final String BINARY = "binary";
+public class MyPrintFactory extends PrintFactory {
 
     @Override
     Printer createFactory(String item) {
