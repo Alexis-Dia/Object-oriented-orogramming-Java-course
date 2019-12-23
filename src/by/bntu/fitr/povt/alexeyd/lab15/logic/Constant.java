@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab15.util;
+package by.bntu.fitr.povt.alexeyd.lab15.logic;
 
 public class Constant {
 

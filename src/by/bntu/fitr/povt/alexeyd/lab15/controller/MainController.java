@@ -4,20 +4,18 @@ import by.bntu.fitr.povt.alexeyd.lab15.factory.DataGenerator;
 import by.bntu.fitr.povt.alexeyd.lab15.factory.DataStoreFactory;
 import by.bntu.fitr.povt.alexeyd.lab15.factory.MyDataStoreFactory;
 import by.bntu.fitr.povt.alexeyd.lab15.factory.decorator.SimpleInputDecorator;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.NumberLogic;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.Constant;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.ShopAssistance;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.VectorAssistance;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorByFatAndCarbons;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorByPriceAndId;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorByShapeAndDiameter;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorBySortAndFlavor;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.SubGroup;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.comparator.ComparatorByFatAndCarbons;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.comparator.ComparatorByPriceAndId;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.comparator.ComparatorByShapeAndDiameter;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.comparator.ComparatorBySortAndFlavor;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Product;
-import by.bntu.fitr.povt.alexeyd.lab15.model.entity.VectorContainer;
-import by.bntu.fitr.povt.alexeyd.lab15.util.Constant;
-import by.bntu.fitr.povt.alexeyd.lab15.util.SubGroup;
-import by.bntu.fitr.povt.alexeyd.lab15.util.UserInput;
-import by.bntu.fitr.povt.alexeyd.lab15.view.*;
-import by.bntu.fitr.povt.alexeyd.lab15.view.decorator.SimpleOutputDecorator;
+import by.bntu.fitr.povt.alexeyd.lab15.view.MyPrintFactory;
+import by.bntu.fitr.povt.alexeyd.lab15.view.PrintFactory;
+import by.bntu.fitr.povt.alexeyd.lab15.view.Printer;
+import by.bntu.fitr.povt.alexeyd.lab15.view.decorator.UpperCaseOutputDecorator;
 
 import java.util.*;
 
@@ -35,16 +33,12 @@ public class MainController {
         STRATEGIES_MAP.put(COMPARE_BY_SHAPE_AND_DIAMETER, new ComparatorByShapeAndDiameter());
     }
 
-    private static final int SIZE = 100;
-    private ConsolePrinter printer = new ConsolePrinter();
-    private UserInput userInput = new UserInput();
-
     public void executeMainTask() {
 
         DataStoreFactory dataStoreFactory = new MyDataStoreFactory();
         DataGenerator dataGenerator = dataStoreFactory.orderData(Constant.TEXT);
 
-        //Input decorator pattern in action
+        /*Input decorator pattern in action*/
         dataGenerator = new SimpleInputDecorator(dataGenerator);
 
         String data = dataGenerator.read();
@@ -56,13 +50,25 @@ public class MainController {
         double avgBucketWeight = ShopAssistance.calculateAvgWeight(products);
         boolean prize = ShopAssistance.getPrize(products);
 
+        /*Strategy pattern in action*//*
+/*        Bucket bucket = new MilkBucket();
+        bucket.addProduct(new Milk(false, 450, 0.3, 500, 1.2, 7.7,
+            false, true, 32635625));
+        bucket.addProduct(new Milk(false, 450, 1.2, 500, 0.2, 0.7,
+            false, true, 32635624));
+        bucket.addProduct(new Milk(false, 450, 1.1, 500, 2.1, 0.1,
+            false, true, 32635621));
+        bucket.setComparator(STRATEGIES_MAP.get(COMPARE_BY_FAT_AND_CARBONS));
+        bucket.performSorting();
+        products = ((MilkBucket) bucket).getAll();*/
+
         //Collections.sort(products);
         Collections.sort(products, new ComparatorByPriceAndId());
 
         PrintFactory printFactory = new MyPrintFactory();
         Printer printer = printFactory.order(Constant.TEXT);
-        //Output decorator pattern in action
-        printer = new SimpleOutputDecorator(printer);
+        /*Output decorator pattern in action*/
+        printer = new UpperCaseOutputDecorator(printer);
 
         printer.write("Found index: " + products.get(SubGroup.FRUIT.getGroupCode()));
         printer.write("\nAvg bucket price = " + avgBucketPrice);
@@ -71,39 +77,4 @@ public class MainController {
         printer.write(products.toString());
     }
 
-    public void executeAdditionExamTask() {
-        VectorContainer vectorContainer = new VectorContainer("SuperVector");
-        vectorContainer.addElement(3);
-        vectorContainer.addElement(2);
-        vectorContainer.addElement(7);
-        vectorContainer.addElement(8);
-        vectorContainer.addElement(1);
-        vectorContainer.addElement(1);
-
-        int[] arr = vectorContainer.getContainer();
-        int[] modifiedArr = VectorAssistance.getModifiedArray(vectorContainer);
-        printer.write(arr);
-        printer.write("");
-        printer.write(modifiedArr);
-
-    }
-
-    public void executeAdditionTask() {
-        printer.write("The program guesses user number from 1 to 100, using two algorithms - binary and using" +
-            " random number generator.\n");
-
-        //Statics method which returns int number from input:
-        int[] arr = NumberLogic.initArr(SIZE);
-        int number = userInput.inputNumber("\nInput number from 1 to 99: ");
-
-
-        //Getting indexes bu using two different search-methods - by binary and by randomly
-        int indexByUsingBynary = NumberLogic.binarySearch(arr, 0, SIZE, number);
-        int indexByUsingRandom = NumberLogic.randomSearch(arr, SIZE, number);
-
-        //Print results
-        printer.write("indexByUsingBynary = " + indexByUsingBynary);
-        printer.write("indexByUsingRandom = " + indexByUsingRandom);
-
-    }
 }

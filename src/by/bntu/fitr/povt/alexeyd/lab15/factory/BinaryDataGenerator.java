@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import static by.bntu.fitr.povt.alexeyd.lab15.util.Constant.SRC_RESOURCES_INPUT_BINARY_PATH;
+import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.SRC_RESOURCES_INPUT_BINARY_PATH;
 
 public class BinaryDataGenerator implements DataGenerator {
 

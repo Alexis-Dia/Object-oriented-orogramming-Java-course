@@ -1,6 +1,6 @@
 package by.bntu.fitr.povt.alexeyd.lab15.view;
 
-import static by.bntu.fitr.povt.alexeyd.lab15.util.Constant.*;
+import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.*;
 
 public class MyPrintFactory extends PrintFactory {
 

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static by.bntu.fitr.povt.alexeyd.lab15.util.Constant.*;
+import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.*;
 
 public class ShopAssistance {
 

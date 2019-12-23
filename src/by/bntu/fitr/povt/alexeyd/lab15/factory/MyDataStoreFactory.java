@@ -1,6 +1,6 @@
 package by.bntu.fitr.povt.alexeyd.lab15.factory;
 
-import static by.bntu.fitr.povt.alexeyd.lab15.util.Constant.*;
+import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.*;
 
 public class MyDataStoreFactory extends DataStoreFactory {
 

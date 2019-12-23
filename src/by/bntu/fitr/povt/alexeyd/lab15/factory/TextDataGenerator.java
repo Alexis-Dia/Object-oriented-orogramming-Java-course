@@ -2,7 +2,7 @@ package by.bntu.fitr.povt.alexeyd.lab15.factory;
 
 import java.io.*;
 
-import static by.bntu.fitr.povt.alexeyd.lab15.util.Constant.SRC_RESOURCES_INPUT_TEXT_PATH;
+import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.SRC_RESOURCES_INPUT_TEXT_PATH;
 
 public class TextDataGenerator implements DataGenerator {
 

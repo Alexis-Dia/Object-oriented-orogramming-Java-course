@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab15.strategy;
+package by.bntu.fitr.povt.alexeyd.lab15.logic.strategy;
 
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Product;
 

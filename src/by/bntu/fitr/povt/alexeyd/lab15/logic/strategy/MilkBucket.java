@@ -1,6 +1,6 @@
-package by.bntu.fitr.povt.alexeyd.lab15.strategy;
+package by.bntu.fitr.povt.alexeyd.lab15.logic.strategy;
 
-import by.bntu.fitr.povt.alexeyd.lab15.logic.comparator.ComparatorByPriceAndId;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.comparator.ComparatorByPriceAndId;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Milk;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Product;
 
