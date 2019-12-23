@@ -14,6 +14,9 @@ import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Product;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.VectorContainer;
 import by.bntu.fitr.povt.alexeyd.lab15.util.SubGroup;
 import by.bntu.fitr.povt.alexeyd.lab15.util.UserInput;
+import by.bntu.fitr.povt.alexeyd.lab15.view.ConsolePrinter;
+import by.bntu.fitr.povt.alexeyd.lab15.view.MyPrintFactory;
+import by.bntu.fitr.povt.alexeyd.lab15.view.PrintFactory;
 import by.bntu.fitr.povt.alexeyd.lab15.view.Printer;
 
 import java.util.*;
@@ -34,7 +37,7 @@ public class MainController {
     }
 
     private static final int SIZE = 100;
-    private Printer printer = new Printer();
+    private ConsolePrinter printer = new ConsolePrinter();
     private UserInput userInput = new UserInput();
 
     public void executeMainTask() {
@@ -43,7 +46,6 @@ public class MainController {
         DataGenerator dataGenerator = dataStoreFactory.orderData(MyDataStoreFactory.RANDOM);
         String data = dataGenerator.read(SRC_RESOURCES_PATH);
         String[][] rowArr = ShopAssistance.serializeData(data);
-        System.out.println(data);
 
         List<Product> products = ShopAssistance.parseProduct(rowArr);
 
@@ -56,10 +58,13 @@ public class MainController {
         //Collections.sort(products);
         Collections.sort(products, new ComparatorByPriceAndId());
 
-        printer.print("\nAvg bucket price = " + avgBucketPrice);
-        printer.print("\nAvg bucket weight = " + avgBucketWeight);
-        printer.print(prize ? "\nYou won a prize!\n" : "\n");
-        printer.print(products);
+        PrintFactory printFactory = new MyPrintFactory();
+        Printer printer = printFactory.order(MyPrintFactory.CONSOLE);
+
+        printer.write("\nAvg bucket price = " + avgBucketPrice);
+        printer.write("\nAvg bucket weight = " + avgBucketWeight);
+        printer.write(prize ? "\nYou won a prize!\n" : "\n");
+        printer.write(products.toString());
     }
 
     public void executeAdditionExamTask() {
@@ -73,14 +78,14 @@ public class MainController {
 
         int[] arr = vectorContainer.getContainer();
         int[] modifiedArr = VectorAssistance.getModifiedArray(vectorContainer);
-        printer.print(arr);
-        printer.print("");
-        printer.print(modifiedArr);
+        printer.write(arr);
+        printer.write("");
+        printer.write(modifiedArr);
 
     }
 
     public void executeAdditionTask() {
-        printer.print("The program guesses user number from 1 to 100, using two algorithms - binary and using" +
+        printer.write("The program guesses user number from 1 to 100, using two algorithms - binary and using" +
             " random number generator.\n");
 
         //Statics method which returns int number from input:
@@ -93,8 +98,8 @@ public class MainController {
         int indexByUsingRandom = NumberLogic.randomSearch(arr, SIZE, number);
 
         //Print results
-        printer.print("indexByUsingBynary = " + indexByUsingBynary);
-        printer.print("indexByUsingRandom = " + indexByUsingRandom);
+        printer.write("indexByUsingBynary = " + indexByUsingBynary);
+        printer.write("indexByUsingRandom = " + indexByUsingRandom);
 
     }
 }

@@ -3,11 +3,11 @@ package by.bntu.fitr.povt.alexeyd.lab15.controller;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.ArrayWorker;
 import by.bntu.fitr.povt.alexeyd.lab15.util.ArrayInitializer;
 import by.bntu.fitr.povt.alexeyd.lab15.util.UserInput;
-import by.bntu.fitr.povt.alexeyd.lab15.view.Printer;
+import by.bntu.fitr.povt.alexeyd.lab15.view.ConsolePrinter;
 
 public class Controller {
 
-    private Printer printer = new Printer();
+    private ConsolePrinter printer = new ConsolePrinter();
 
     public void executeAdditionTaskA() {
 
@@ -31,7 +31,7 @@ public class Controller {
             boolean isOrderedByDesc = ArrayWorker.checkIsDesc(flatArr);
             if (isOrderedByAsc || isOrderedByDesc) {
                 int maxValueInOrderedRow = ArrayWorker.findMaxElement(flatArr);
-                printer.print("Max value in ordered row =  " + row + ", is: "  +  + maxValueInOrderedRow + "\n");
+                printer.write("Max value in ordered row =  " + row + ", is: "  +  + maxValueInOrderedRow + "\n");
             }
         }
 

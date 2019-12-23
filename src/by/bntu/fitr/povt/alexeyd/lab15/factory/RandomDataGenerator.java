@@ -26,7 +26,7 @@ public class RandomDataGenerator implements DataGenerator {
     @Override
     public String read(String fileName) {
         String rowData = EMPTY_STRING;
-        for (int i = 0; i < numberOfProducts; i++) {
+        for (int i = 0; i < numberOfProducts - 1; i++) {
             int id = new Random().nextInt(MAX_ID) + MIN_ID;
             double price = new Random().nextDouble()*PRICE_PERCENT + MIN_PRICE;
             boolean helpChildren = Math.random() < HALF;
@@ -49,7 +49,19 @@ public class RandomDataGenerator implements DataGenerator {
                     "id:" + id + NEW_LINE_SYMBOL +
                     BRACET_RIGHT_STRING + COMMA + NEW_LINE_SYMBOL;
         }
+        rowData = removeLastComma(rowData);
         return rowData;
+    }
+
+    public String removeLastComma(String str) {
+        if (str != null && str.length() > 0) {
+            int lastIndexOf = str.lastIndexOf(COMMA);
+            StringBuilder sb = new StringBuilder(str);
+            sb.deleteCharAt(lastIndexOf);
+            String resultString = sb.toString();
+            return resultString;
+        }
+        return str;
     }
 
     private String generateRandomString() {

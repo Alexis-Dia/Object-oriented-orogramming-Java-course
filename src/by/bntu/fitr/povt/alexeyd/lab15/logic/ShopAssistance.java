@@ -3,8 +3,8 @@ package by.bntu.fitr.povt.alexeyd.lab15.logic;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Bread;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Product;
 
-
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static by.bntu.fitr.povt.alexeyd.lab15.util.Constant.*;
@@ -103,14 +103,17 @@ public class ShopAssistance {
         String strNew = data.replace(BRACET_LEFT_STRING, EMPTY_STRING);
         strNew = strNew.replace(BRACET_RIGHT_STRING, EMPTY_STRING);
         strNew = strNew.replace(CARRITAGR_RETURN_SYMBOL, EMPTY_STRING);
+        strNew = strNew.replace(NEW_LINE_SYMBOL + NEW_LINE_SYMBOL, NEW_LINE_SYMBOL);
         String[] parts = strNew.split(COMMA);
         String[][] arr = new String[parts.length][MAX_NUMBER_OF_FIELDS];
         for (int i = 0; i <parts.length ; i++) {
             String[] line  = parts[i].split(NEW_LINE_SYMBOL);
             for (int j = 0; j <line.length ; j++) {
                 if (!line[j].equals(EMPTY_STRING)) {
-                    if (j>0 && line[i].equals(EMPTY_STRING)) {
+                    if (j>0 && !line[i].equals(EMPTY_STRING)) {
                         arr[i][j-1] = line[j];
+                    } else {
+                        arr[i][j] = line[j];
                     }
                 }
             }
@@ -158,6 +161,13 @@ public class ShopAssistance {
             products.add(new Bread(helpChildren, weight, price, organic, sort, flour, color, shape, id));
         }
         return products;
+    }
+
+    public static String [] removeNullElement(String args[]) {
+        args = Arrays.stream(args)
+            .filter(s -> (s != "\n" && s.length() > 0))
+            .toArray(String[]::new);
+        return args;
     }
 
 }
