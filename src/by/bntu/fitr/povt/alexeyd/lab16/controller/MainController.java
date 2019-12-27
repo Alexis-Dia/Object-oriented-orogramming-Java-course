@@ -48,8 +48,6 @@ public class MainController {
 
         InputUtil.write(SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH, products);
 
-        List<Product> products2 = InputUtil.readBinary(SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH);
-
         //products.remove(3);
         double avgBucketPrice = ShopAssistance.calculateAvgPrice(products);
         double avgBucketWeight = ShopAssistance.calculateAvgWeight(products);

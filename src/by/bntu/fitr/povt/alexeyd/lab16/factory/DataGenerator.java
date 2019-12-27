@@ -7,7 +7,5 @@ import java.util.List;
 
 public interface DataGenerator {
 
-    List<Product> products = new ArrayList<>();
-
     List<Product> read();
 }
