@@ -1,5 +1,8 @@
 package by.bntu.fitr.povt.alexeyd.lab16.factory;
 
+import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
+import by.bntu.fitr.povt.alexeyd.lab16.logic.ShopAssistance;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -23,9 +26,9 @@ public class RandomDataGenerator implements DataGenerator {
     private static final double HALF = 0.5;
     private int numberOfProducts = new Random().nextInt(MAX_NUMBER_OF_PRODUCT) + MIN_NUMBER_OF_PRODUCTS;
 
-    @Override
-    public String read() {
+    public List<Product> read() {
         String rowData = EMPTY_STRING;
+        List<Product> products;
         for (int i = 0; i <= numberOfProducts - 1; i++) {
             int id = new Random().nextInt(MAX_ID) + MIN_ID;
             double price = new Random().nextDouble()*PRICE_PERCENT + MIN_PRICE;
@@ -50,10 +53,11 @@ public class RandomDataGenerator implements DataGenerator {
                     BRACET_RIGHT_STRING + COMMA + NEW_LINE_SYMBOL;
         }
         rowData = removeLastComma(rowData);
-        return rowData;
+        products = prepareData(rowData);
+        return products;
     }
 
-    public String removeLastComma(String str) {
+    private String removeLastComma(String str) {
         if (str != null && str.length() > 0) {
             int lastIndexOf = str.lastIndexOf(COMMA);
             StringBuilder sb = new StringBuilder(str);
@@ -128,5 +132,10 @@ public class RandomDataGenerator implements DataGenerator {
         private static Colour randomColour() {
             return VALUES.get(RANDOM.nextInt(SIZE));
         }
+    }
+
+    private List<Product> prepareData(String data) {
+        String[][] rowArr = ShopAssistance.prepareData(data);
+        return ShopAssistance.parseProduct(rowArr);
     }
 }

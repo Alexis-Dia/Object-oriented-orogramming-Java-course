@@ -99,7 +99,7 @@ public class ShopAssistance {
         return result;
     }
 
-    public static String[][] serializeData (String data) {
+    public static String[][] prepareData(String data) {
         String strNew = data.replace(BRACET_LEFT_STRING, EMPTY_STRING);
         strNew = strNew.replace(BRACET_RIGHT_STRING, EMPTY_STRING);
         strNew = strNew.replace(CARRITAGR_RETURN_SYMBOL, EMPTY_STRING);

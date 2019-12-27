@@ -6,6 +6,7 @@ import by.bntu.fitr.povt.alexeyd.lab16.factory.DataStoreFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.factory.MyDataStoreFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.factory.decorator.SimpleInputDecorator;
 import by.bntu.fitr.povt.alexeyd.lab16.logic.Constant;
+import by.bntu.fitr.povt.alexeyd.lab16.logic.FileWorkerSinceJDK7WithAutomaticSerialization;
 import by.bntu.fitr.povt.alexeyd.lab16.logic.ShopAssistance;
 import by.bntu.fitr.povt.alexeyd.lab16.logic.SubGroup;
 import by.bntu.fitr.povt.alexeyd.lab16.logic.strategy.comparator.ComparatorByFatAndCarbons;
@@ -18,6 +19,9 @@ import by.bntu.fitr.povt.alexeyd.lab16.view.Printer;
 import by.bntu.fitr.povt.alexeyd.lab16.view.decorator.UpperCaseOutputDecorator;
 
 import java.util.*;
+
+import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.BINARY_SERIALIZABLE;
+import static by.bntu.fitr.povt.alexeyd.lab16.logic.Constant.SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH;
 
 public class MainController {
 
@@ -36,15 +40,16 @@ public class MainController {
     public void executeMainTask() {
 
         DataStoreFactory dataStoreFactory = new MyDataStoreFactory();
-        DataGenerator dataGenerator = dataStoreFactory.orderData(Constant.TEXT);
+        DataGenerator dataGenerator = dataStoreFactory.orderData(BINARY_SERIALIZABLE);
 
         /*Input decorator pattern in action*/
         dataGenerator = new SimpleInputDecorator(dataGenerator);
+        List<Product> products = dataGenerator.read();
 
-        String data = dataGenerator.read();
-        String[][] rowArr = ShopAssistance.serializeData(data);
+        FileWorkerSinceJDK7WithAutomaticSerialization.write(SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH, products);
 
-        List<Product> products = ShopAssistance.parseProduct(rowArr);
+        List<Product> products2 = FileWorkerSinceJDK7WithAutomaticSerialization.read(SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH);
+
         //products.remove(3);
         double avgBucketPrice = ShopAssistance.calculateAvgPrice(products);
         double avgBucketWeight = ShopAssistance.calculateAvgWeight(products);

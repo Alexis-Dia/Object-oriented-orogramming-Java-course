@@ -6,7 +6,6 @@ public abstract class DataStoreFactory {
 
     public DataGenerator orderData(String item) {
         DataGenerator dataGenerator = runFactory(item);
-
         return dataGenerator;
     }
 

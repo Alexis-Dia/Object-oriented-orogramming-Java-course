@@ -2,6 +2,8 @@ package by.bntu.fitr.povt.alexeyd.lab16.logic;
 
 public class Constant {
 
+    public static final String SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH = "src/resources/products.bin";
+
     public static final String SRC_RESOURCES_INPUT_TEXT_PATH = "src/resources/inputBread.txt";
     public static final String SRC_RESOURCES_INPUT_BINARY_PATH = "src/resources/inputBread.xjf";
     public static final String SRC_RESOURCES_OUTPUT_TEXT_PATH = "src/resources/output.txt";

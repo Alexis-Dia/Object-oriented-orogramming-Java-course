@@ -1,12 +1,28 @@
 package by.bntu.fitr.povt.alexeyd.lab16.entity;
 
-public class Product implements Comparable<Product> {
+import java.io.IOException;
+import java.io.ObjectStreamException;
+import java.io.Serializable;
+
+public class Product implements Comparable<Product>, Serializable {
 
     public static int productAmount;
     private boolean helpChildren;
     private int weight;
     private double price;
     private int id;
+
+    private void writeObject(java.io.ObjectOutputStream out) throws IOException {
+        out.defaultWriteObject();
+    }
+
+    private void readObject(java.io.ObjectInputStream in) throws IOException, ClassNotFoundException {
+        in.defaultReadObject();
+    }
+
+    private void readObjectNoData() throws ObjectStreamException {
+
+    }
 
     /* static initialization block (it's called only once) */
     static {
