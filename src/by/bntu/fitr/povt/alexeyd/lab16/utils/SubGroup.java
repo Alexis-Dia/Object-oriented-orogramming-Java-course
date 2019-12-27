@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab16.logic;
+package by.bntu.fitr.povt.alexeyd.lab16.utils;
 
 public enum SubGroup {
     FRUIT(0),

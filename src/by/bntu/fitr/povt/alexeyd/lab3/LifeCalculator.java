@@ -25,7 +25,7 @@ public class LifeCalculator {
         System.out.print("Input your year of birth: ");
         int birthYear = scanner.nextInt();
 
-        // business logic (the main part of the program)
+        // business utils (the main part of the program)
         GregorianCalendar calendar = new GregorianCalendar();
 
         int currentDay = calendar.get(Calendar.DAY_OF_MONTH);

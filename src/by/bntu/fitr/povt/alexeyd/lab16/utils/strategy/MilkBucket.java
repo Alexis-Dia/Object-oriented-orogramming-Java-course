@@ -1,8 +1,8 @@
-package by.bntu.fitr.povt.alexeyd.lab16.logic.strategy;
+package by.bntu.fitr.povt.alexeyd.lab16.utils.strategy;
 
 import by.bntu.fitr.povt.alexeyd.lab16.entity.Milk;
 import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
-import by.bntu.fitr.povt.alexeyd.lab16.logic.strategy.comparator.ComparatorByPriceAndId;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.ComparatorByPriceAndId;
 
 import java.util.List;
 

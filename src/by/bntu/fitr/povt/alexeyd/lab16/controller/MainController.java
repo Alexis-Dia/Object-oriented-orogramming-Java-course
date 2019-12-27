@@ -5,14 +5,14 @@ import by.bntu.fitr.povt.alexeyd.lab16.factory.DataGenerator;
 import by.bntu.fitr.povt.alexeyd.lab16.factory.DataStoreFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.factory.MyDataStoreFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.factory.decorator.SimpleInputDecorator;
-import by.bntu.fitr.povt.alexeyd.lab16.logic.Constant;
-import by.bntu.fitr.povt.alexeyd.lab16.logic.FileWorkerSinceJDK7WithAutomaticSerialization;
-import by.bntu.fitr.povt.alexeyd.lab16.logic.ShopAssistance;
-import by.bntu.fitr.povt.alexeyd.lab16.logic.SubGroup;
-import by.bntu.fitr.povt.alexeyd.lab16.logic.strategy.comparator.ComparatorByFatAndCarbons;
-import by.bntu.fitr.povt.alexeyd.lab16.logic.strategy.comparator.ComparatorByPriceAndId;
-import by.bntu.fitr.povt.alexeyd.lab16.logic.strategy.comparator.ComparatorByShapeAndDiameter;
-import by.bntu.fitr.povt.alexeyd.lab16.logic.strategy.comparator.ComparatorBySortAndFlavor;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.Constant;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.InputUtil;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.ShopAssistance;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.SubGroup;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.ComparatorByFatAndCarbons;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.ComparatorByPriceAndId;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.ComparatorByShapeAndDiameter;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.ComparatorBySortAndFlavor;
 import by.bntu.fitr.povt.alexeyd.lab16.view.MyPrintFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.view.PrintFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.view.Printer;
@@ -21,7 +21,7 @@ import by.bntu.fitr.povt.alexeyd.lab16.view.decorator.UpperCaseOutputDecorator;
 import java.util.*;
 
 import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.BINARY_SERIALIZABLE;
-import static by.bntu.fitr.povt.alexeyd.lab16.logic.Constant.SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH;
+import static by.bntu.fitr.povt.alexeyd.lab16.utils.Constant.SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH;
 
 public class MainController {
 
@@ -46,9 +46,9 @@ public class MainController {
         dataGenerator = new SimpleInputDecorator(dataGenerator);
         List<Product> products = dataGenerator.read();
 
-        FileWorkerSinceJDK7WithAutomaticSerialization.write(SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH, products);
+        InputUtil.write(SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH, products);
 
-        List<Product> products2 = FileWorkerSinceJDK7WithAutomaticSerialization.read(SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH);
+        List<Product> products2 = InputUtil.readBinary(SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH);
 
         //products.remove(3);
         double avgBucketPrice = ShopAssistance.calculateAvgPrice(products);

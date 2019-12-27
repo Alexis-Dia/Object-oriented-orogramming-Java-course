@@ -1,7 +1,7 @@
 package by.bntu.fitr.povt.alexeyd.lab16.factory;
 
 import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
-import by.bntu.fitr.povt.alexeyd.lab16.logic.ShopAssistance;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.ShopAssistance;
 
 import java.util.Arrays;
 import java.util.Collections;

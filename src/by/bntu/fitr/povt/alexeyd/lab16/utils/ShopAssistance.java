@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab16.logic;
+package by.bntu.fitr.povt.alexeyd.lab16.utils;
 
 import by.bntu.fitr.povt.alexeyd.lab16.entity.Bread;
 import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;

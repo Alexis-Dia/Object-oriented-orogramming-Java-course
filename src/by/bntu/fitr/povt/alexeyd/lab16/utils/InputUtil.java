@@ -1,11 +1,11 @@
-package by.bntu.fitr.povt.alexeyd.lab16.logic;
+package by.bntu.fitr.povt.alexeyd.lab16.utils;
 
 import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
 
 import java.io.*;
 import java.util.List;
 
-public class FileWorkerSinceJDK7WithAutomaticSerialization {
+public class InputUtil {
 
     public static void write(String fileName, List<Product> product) {
         ObjectOutputStream stream = null;
@@ -32,7 +32,33 @@ public class FileWorkerSinceJDK7WithAutomaticSerialization {
 
     }
 
-    public static List<Product> read(String fileName) {
+    public static String readBinary(String fileName) {
+        InputStream inputStream = null;
+        String data = "";
+        try {
+            inputStream = new FileInputStream(fileName);
+
+            int temp;
+            while ((temp = inputStream.read()) != -1) {
+                char symbol = ((char) temp);
+                data += String.valueOf(symbol);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return data;
+    }
+
+    public static List<Product> readUsingObjectInputStream(String fileName) {
         List<Product> student = null;
         ObjectInputStream stream = null;
         try {

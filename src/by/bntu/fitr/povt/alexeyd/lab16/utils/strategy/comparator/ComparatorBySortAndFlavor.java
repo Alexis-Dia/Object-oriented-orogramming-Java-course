@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab16.logic.strategy.comparator;
+package by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator;
 
 import by.bntu.fitr.povt.alexeyd.lab16.entity.Bread;
 
