@@ -1,6 +1,7 @@
 package by.bntu.fitr.povt.alexeyd.lab16.factory;
 
 import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.InputUtil;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.ShopAssistance;
 
 import java.io.FileReader;
@@ -16,26 +17,10 @@ public class TextDataGenerator implements DataGenerator {
 
     // after JDK 6.0
     public List<Product> read() {
-        String data = "";
-        List<Product> products;
-        try(Reader stream = new FileReader(fileName)) {
-            int temp;
-
-            while ((temp = stream.read()) != -1) {
-                char symbol = ((char) temp);
-                data += String.valueOf(symbol);
-                //System.out.println(temp + " ");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        products = prepareData(data);
-        return products;
-    }
-
-    private List<Product> prepareData(String data) {
+        String data = InputUtil.readText(fileName);
         String[][] rowArr = ShopAssistance.prepareData(data);
-        return ShopAssistance.parseProduct(rowArr);
+        List<Product> products = ShopAssistance.parseProduct(rowArr);
+        return products;
     }
 
 }

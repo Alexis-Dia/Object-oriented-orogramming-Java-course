@@ -32,6 +32,23 @@ public class InputUtil {
 
     }
 
+    // after JDK 6.0
+    public static String readText(String fileName) {
+        String data = "";
+        try(Reader stream = new FileReader(fileName)) {
+            int temp;
+
+            while ((temp = stream.read()) != -1) {
+                char symbol = ((char) temp);
+                data += String.valueOf(symbol);
+                //System.out.println(temp + " ");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return data;
+    }
+
     public static String readBinary(String fileName) {
         InputStream inputStream = null;
         String data = "";
