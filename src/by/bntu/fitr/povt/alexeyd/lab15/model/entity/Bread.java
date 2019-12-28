@@ -83,11 +83,15 @@ public class Bread extends Product {
     @Override
     public String toString() {
         return "Bread{" +
-                "organic=" + organic +
-                ", sort='" + sort + '\'' +
-                ", flour='" + flour + '\'' +
-                ", color='" + color + '\'' +
-                ", shape='" + shape + '\'' +
-                '}';
+            "organic=" + organic +
+            ", sort='" + sort + '\'' +
+            ", flour='" + flour + '\'' +
+            ", color='" + color + '\'' +
+            ", shape='" + shape + '\'' +
+            ", helpChildren=" + isHelpChildren() + '\'' +
+            ", weight=" + getWeight() + '\'' +
+            ", price=" + getPrice() + '\'' +
+            ", id=" + getId() + '\'' +
+            '}';
     }
 }

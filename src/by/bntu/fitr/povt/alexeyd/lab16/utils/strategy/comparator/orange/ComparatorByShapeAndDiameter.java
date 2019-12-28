@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator;
+package by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.orange;
 
 import by.bntu.fitr.povt.alexeyd.lab16.entity.Orange;
 

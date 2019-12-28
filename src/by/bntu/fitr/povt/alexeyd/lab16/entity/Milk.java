@@ -78,6 +78,10 @@ public class Milk extends Product {
                 ", carbons=" + carbons +
                 ", processed=" + processed +
                 ", organic=" + organic +
+                ", helpChildren=" + isHelpChildren() + '\'' +
+                ", weight=" + getWeight() + '\'' +
+                ", price=" + getPrice() + '\'' +
+                ", id=" + getId() + '\'' +
                 '}';
     }
 }

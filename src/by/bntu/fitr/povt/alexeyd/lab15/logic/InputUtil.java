@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab16.utils;
+package by.bntu.fitr.povt.alexeyd.lab15.logic;
 
 import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
 
@@ -73,30 +73,5 @@ public class InputUtil {
             }
         }
         return data;
-    }
-
-    public static List<Product> readUsingObjectInputStream(String fileName) {
-        List<Product> student = null;
-        ObjectInputStream stream = null;
-        try {
-            stream = new ObjectInputStream(   //Allows immediately write primitives
-                new BufferedInputStream(
-                    new FileInputStream(fileName)));
-
-            student= (List<Product>) stream.readObject();
-
-        } catch (IOException | ClassNotFoundException exception) { //since JDK7.0
-            System.out.println(exception);
-        } finally {
-            if (stream != null) {
-                try {
-                    stream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-
-        }
-        return student;
     }
 }

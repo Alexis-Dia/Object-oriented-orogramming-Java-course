@@ -78,6 +78,10 @@ public class Orange extends Product {
                 ", organic=" + organic +
                 ", sort='" + sort + '\'' +
                 ", form='" + form + '\'' +
+                ", helpChildren=" + isHelpChildren() + '\'' +
+                ", weight=" + getWeight() + '\'' +
+                ", price=" + getPrice() + '\'' +
+                ", id=" + getId() + '\'' +
                 '}';
     }
 }

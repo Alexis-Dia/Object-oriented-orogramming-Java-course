@@ -28,7 +28,14 @@ public class RandomDataGenerator implements DataGenerator {
 
     public List<Product> read() {
         String rowData = EMPTY_STRING;
-        List<Product> products;
+        rowData = initializeProduct(rowData);
+        rowData = removeLastComma(rowData);
+        String[][] rowArr = ShopAssistance.prepareData(rowData);
+        List<Product> products = ShopAssistance.parseProduct(rowArr);
+        return products;
+    }
+
+    private String initializeProduct(String rowData) {
         for (int i = 0; i <= numberOfProducts - 1; i++) {
             int id = new Random().nextInt(MAX_ID) + MIN_ID;
             double price = new Random().nextDouble()*PRICE_PERCENT + MIN_PRICE;
@@ -52,9 +59,7 @@ public class RandomDataGenerator implements DataGenerator {
                     "id:" + id + NEW_LINE_SYMBOL +
                     BRACET_RIGHT_STRING + COMMA + NEW_LINE_SYMBOL;
         }
-        rowData = removeLastComma(rowData);
-        products = prepareData(rowData);
-        return products;
+        return rowData;
     }
 
     private String removeLastComma(String str) {
@@ -134,8 +139,4 @@ public class RandomDataGenerator implements DataGenerator {
         }
     }
 
-    private List<Product> prepareData(String data) {
-        String[][] rowArr = ShopAssistance.prepareData(data);
-        return ShopAssistance.parseProduct(rowArr);
-    }
 }

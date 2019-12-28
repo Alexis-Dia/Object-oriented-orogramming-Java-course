@@ -1,5 +1,7 @@
 package by.bntu.fitr.povt.alexeyd.lab16.factory;
 
+import by.bntu.fitr.povt.alexeyd.lab16.utils.Constant;
+
 import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.*;
 
 public class MyDataStoreFactory extends DataStoreFactory {
@@ -11,6 +13,8 @@ public class MyDataStoreFactory extends DataStoreFactory {
             return new TextDataGenerator();
         } else if (item.equals(BINARY)) {
             return new BinaryDataGenerator();
+        } else if(item.equals(Constant.BINARY_SERIALIZABLE) || item.equals(Constant.CUSTOM_BINARY_SERIALIZABLE)) {
+            return new SerializableBinaryDataGenerator();
         } else return null;
     }
 }

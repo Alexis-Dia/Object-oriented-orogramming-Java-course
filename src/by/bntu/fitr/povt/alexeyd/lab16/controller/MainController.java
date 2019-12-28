@@ -6,22 +6,19 @@ import by.bntu.fitr.povt.alexeyd.lab16.factory.DataStoreFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.factory.MyDataStoreFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.factory.decorator.SimpleInputDecorator;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.Constant;
-import by.bntu.fitr.povt.alexeyd.lab16.utils.InputUtil;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.ShopAssistance;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.SubGroup;
-import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.ComparatorByFatAndCarbons;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.ComparatorByPriceAndId;
-import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.ComparatorByShapeAndDiameter;
-import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.ComparatorBySortAndFlavor;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.bread.ComparatorBySortAndFlavor;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.milk.ComparatorByFatAndCarbons;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.orange.ComparatorByShapeAndDiameter;
 import by.bntu.fitr.povt.alexeyd.lab16.view.MyPrintFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.view.PrintFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.view.Printer;
+import by.bntu.fitr.povt.alexeyd.lab16.view.decorator.LowerCaseOutputDecorator;
 import by.bntu.fitr.povt.alexeyd.lab16.view.decorator.UpperCaseOutputDecorator;
 
 import java.util.*;
-
-import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.BINARY_SERIALIZABLE;
-import static by.bntu.fitr.povt.alexeyd.lab16.utils.Constant.SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH;
 
 public class MainController {
 
@@ -40,20 +37,20 @@ public class MainController {
     public void executeMainTask() {
 
         DataStoreFactory dataStoreFactory = new MyDataStoreFactory();
-        DataGenerator dataGenerator = dataStoreFactory.orderData(BINARY_SERIALIZABLE);
+        DataGenerator dataGenerator = dataStoreFactory.orderData(Constant.TEXT);
 
-        /*Input decorator pattern in action*/
+        /*Input decorator pattern in action:*/
         dataGenerator = new SimpleInputDecorator(dataGenerator);
         List<Product> products = dataGenerator.read();
 
-        InputUtil.write(SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH, products);
+        //InputUtil.write(SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH, products);
 
         //products.remove(3);
         double avgBucketPrice = ShopAssistance.calculateAvgPrice(products);
         double avgBucketWeight = ShopAssistance.calculateAvgWeight(products);
         boolean prize = ShopAssistance.getPrize(products);
 
-        /*Strategy pattern in action*//*
+        /*Strategy pattern in action:*//*
 /*        Bucket bucket = new MilkBucket();
         bucket.addProduct(new Milk(false, 450, 0.3, 500, 1.2, 7.7,
             false, true, 32635625));
@@ -69,9 +66,10 @@ public class MainController {
         Collections.sort(products, new ComparatorByPriceAndId());
 
         PrintFactory printFactory = new MyPrintFactory();
-        Printer printer = printFactory.order(Constant.TEXT);
-        /*Output decorator pattern in action*/
-        printer = new UpperCaseOutputDecorator(printer);
+        Printer printer = printFactory.order(Constant.BINARY);
+
+        /*Output decorator pattern in action:*/
+        printer = new LowerCaseOutputDecorator(new UpperCaseOutputDecorator(printer));
 
         printer.write("Found index: " + products.get(SubGroup.FRUIT.getGroupCode()));
         printer.write("\nAvg bucket price = " + avgBucketPrice);

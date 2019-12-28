@@ -15,6 +15,7 @@ import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Product;
 import by.bntu.fitr.povt.alexeyd.lab15.view.MyPrintFactory;
 import by.bntu.fitr.povt.alexeyd.lab15.view.PrintFactory;
 import by.bntu.fitr.povt.alexeyd.lab15.view.Printer;
+import by.bntu.fitr.povt.alexeyd.lab15.view.decorator.LowerCaseOutputDecorator;
 import by.bntu.fitr.povt.alexeyd.lab15.view.decorator.UpperCaseOutputDecorator;
 
 import java.util.*;
@@ -38,19 +39,16 @@ public class MainController {
         DataStoreFactory dataStoreFactory = new MyDataStoreFactory();
         DataGenerator dataGenerator = dataStoreFactory.orderData(Constant.TEXT);
 
-        /*Input decorator pattern in action*/
+        /*Input decorator pattern in action:*/
         dataGenerator = new SimpleInputDecorator(dataGenerator);
+        List<Product> products = dataGenerator.read();
 
-        String data = dataGenerator.read();
-        String[][] rowArr = ShopAssistance.serializeData(data);
-
-        List<Product> products = ShopAssistance.parseProduct(rowArr);
         //products.remove(3);
         double avgBucketPrice = ShopAssistance.calculateAvgPrice(products);
         double avgBucketWeight = ShopAssistance.calculateAvgWeight(products);
         boolean prize = ShopAssistance.getPrize(products);
 
-        /*Strategy pattern in action*//*
+        /*Strategy pattern in action:*//*
 /*        Bucket bucket = new MilkBucket();
         bucket.addProduct(new Milk(false, 450, 0.3, 500, 1.2, 7.7,
             false, true, 32635625));
@@ -67,8 +65,9 @@ public class MainController {
 
         PrintFactory printFactory = new MyPrintFactory();
         Printer printer = printFactory.order(Constant.TEXT);
-        /*Output decorator pattern in action*/
-        printer = new UpperCaseOutputDecorator(printer);
+
+        /*Output decorator pattern in action:*/
+        printer = new LowerCaseOutputDecorator(new UpperCaseOutputDecorator(printer));
 
         printer.write("Found index: " + products.get(SubGroup.FRUIT.getGroupCode()));
         printer.write("\nAvg bucket price = " + avgBucketPrice);

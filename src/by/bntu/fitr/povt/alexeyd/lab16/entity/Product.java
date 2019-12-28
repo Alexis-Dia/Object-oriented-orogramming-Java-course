@@ -82,11 +82,11 @@ public class Product implements Comparable<Product>, Serializable {
     @Override
     public String toString() {
         return "Product{" +
-                "helpChildren=" + helpChildren +
-                ", weight=" + weight +
-                ", price=" + price +
-                ", id=" + id +
-                '}';
+            "helpChildren=" + helpChildren +
+            ", weight=" + weight +
+            ", price=" + price +
+            ", id=" + id +
+            '}';
     }
 
     @Override

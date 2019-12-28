@@ -73,11 +73,15 @@ public class Orange extends Product {
     @Override
     public String toString() {
         return "Orange{" +
-                "diameter=" + diameter +
-                ", vitaminC=" + vitaminC +
-                ", organic=" + organic +
-                ", sort='" + sort + '\'' +
-                ", form='" + form + '\'' +
-                '}';
+            "diameter=" + diameter +
+            ", vitaminC=" + vitaminC +
+            ", organic=" + organic +
+            ", sort='" + sort + '\'' +
+            ", form='" + form + '\'' +
+            ", helpChildren=" + isHelpChildren() + '\'' +
+            ", weight=" + getWeight() + '\'' +
+            ", price=" + getPrice() + '\'' +
+            ", id=" + getId() + '\'' +
+            '}';
     }
 }

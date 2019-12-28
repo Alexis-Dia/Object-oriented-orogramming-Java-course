@@ -1,6 +1,8 @@
 package by.bntu.fitr.povt.alexeyd.lab15.logic;
 
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Bread;
+import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Milk;
+import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Orange;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Product;
 
 import java.util.ArrayList;
@@ -12,13 +14,19 @@ import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.*;
 public class ShopAssistance {
 
     private static final int MAX_NUMBER_OF_FIELDS = 10;
+    private static final int DEFAULT_VOLUME = 0;
     private static final String COLON = ":";
     private static final int FIELD_NAME_NUMBER = 0;
     private static final int VALUE_NUMBER = 1;
     private static final int DEFAULT_WEIGHT = 0;
     private static final double DEFAULT_PRICE = 0.0;
+    private static final double DEFAULT_FAT = 0.0;
+    private static final double DEFAULT_VITAMIN_C = 0.0;
+    private static final double DEFAULT_DIAMETER = 0.0;
+    private static final double DEFAULT_CARBONS = 0.0;
     private static final boolean DEFAULT_ORGANIC = false;
     private static final boolean DEFAULT_HELP_CHILDREN = false;
+    private static final boolean DEFAULT_PROCESSED = true;
     private static final int DEFAULT_ID = 0;
     private static final String DEFAULT_SORT = null;
     private static final String DEFAULT_FLOUR = null;
@@ -33,6 +41,14 @@ public class ShopAssistance {
     private static final String FLOUR = "flour";
     private static final String COLOR = "color";
     private static final String SHAPE = "shape";
+    private static final String VOLUME = "volume";
+    private static final String FAT = "fat";
+    private static final String CARBONS = "carbons";
+    private static final String PROCESSED = "processed";
+    private static final String VITAMIN_C = "vitaminC";
+    private static final String FORM = "form";
+    private static final String DEFAULT_FORM = "Form isn't exists";
+    private static final String DIAMETER = "diameter";
 
     public static double calculateAvgPrice(List<Product> list) {
         double total = 0.0;
@@ -99,7 +115,7 @@ public class ShopAssistance {
         return result;
     }
 
-    public static String[][] serializeData (String data) {
+    public static String[][] prepareData (String data) {
         String strNew = data.replace(BRACET_LEFT_STRING, EMPTY_STRING);
         strNew = strNew.replace(BRACET_RIGHT_STRING, EMPTY_STRING);
         strNew = strNew.replace(CARRITAGR_RETURN_SYMBOL, EMPTY_STRING);
@@ -125,14 +141,21 @@ public class ShopAssistance {
         List<Product> products = new ArrayList();
         for (int i = 0; i <rowData.length ; i++) {
             boolean helpChildren = DEFAULT_HELP_CHILDREN;
+            boolean organic = DEFAULT_ORGANIC;
+            boolean processed = DEFAULT_PROCESSED;
             int weight = DEFAULT_WEIGHT;
             double price = DEFAULT_PRICE;
-            boolean organic = DEFAULT_ORGANIC;
+            double fat = DEFAULT_FAT;
+            double carbons = DEFAULT_CARBONS;
+            double diameter = DEFAULT_DIAMETER;
+            double vitaminC = DEFAULT_VITAMIN_C;
+            int volume = DEFAULT_VOLUME;
             int id = DEFAULT_ID;
             String sort = DEFAULT_SORT;
             String flour = DEFAULT_FLOUR;
             String color = DEFAULT_COLOR;
             String shape = DEFAULT_SHAPE;
+            String form = DEFAULT_FORM;
             for (int j = 0; j <rowData[i].length ; j++) {
                 String data = rowData[i][j];
                 if (data != null) {
@@ -155,10 +178,30 @@ public class ShopAssistance {
                         color = rowData[i][j].split(COLON)[VALUE_NUMBER];
                     } else if (fieldName.equals(SHAPE)) {
                         shape = rowData[i][j].split(COLON)[VALUE_NUMBER];
+                    } else if (fieldName.equals(VOLUME)) {
+                        volume = Integer.parseInt(rowData[i][j].split(COLON)[VALUE_NUMBER]);
+                    } else if (fieldName.equals(FAT)) {
+                        fat = Double.parseDouble(rowData[i][j].split(COLON)[VALUE_NUMBER]);
+                    } else if (fieldName.equals(CARBONS)) {
+                        carbons = Double.parseDouble(rowData[i][j].split(COLON)[VALUE_NUMBER]);
+                    } else if (fieldName.equals(PROCESSED)) {
+                        processed = Boolean.parseBoolean(rowData[i][j].split(COLON)[VALUE_NUMBER]);
+                    } else if (fieldName.equals(DIAMETER)) {
+                        diameter = Double.parseDouble(rowData[i][j].split(COLON)[VALUE_NUMBER]);
+                    } else if (fieldName.equals(VITAMIN_C)) {
+                        vitaminC = Double.parseDouble(rowData[i][j].split(COLON)[VALUE_NUMBER]);
+                    } else if (fieldName.equals(FORM)) {
+                        form = rowData[i][j].split(COLON)[VALUE_NUMBER];
                     }
                 }
             }
-            products.add(new Bread(helpChildren, weight, price, organic, sort, flour, color, shape, id));
+            if (shape != DEFAULT_SHAPE) {
+                products.add(new Bread(helpChildren, weight, price, organic, sort, flour, color, shape, id));
+            } else if (fat != DEFAULT_FAT) {
+                products.add(new Milk(helpChildren, weight, price, volume, fat, carbons, processed, organic, id));
+            } else if (diameter != DEFAULT_DIAMETER) {
+                products.add(new Orange(helpChildren, weight, price, diameter, vitaminC, organic, sort, form, id));
+            }
         }
         return products;
     }

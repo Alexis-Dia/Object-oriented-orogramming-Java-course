@@ -1,6 +1,10 @@
 package by.bntu.fitr.povt.alexeyd.lab15.factory;
 
-import java.io.*;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.InputUtil;
+import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Product;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.ShopAssistance;
+
+import java.util.List;
 
 import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.SRC_RESOURCES_INPUT_TEXT_PATH;
 
@@ -8,21 +12,11 @@ public class TextDataGenerator implements DataGenerator {
 
     private String fileName = SRC_RESOURCES_INPUT_TEXT_PATH;
 
-    // after JDK 6.0
-    public String read() {
-        String data = "";
-        try(Reader stream = new FileReader(fileName)) {
-            int temp;
-
-            while ((temp = stream.read()) != -1) {
-                char symbol = ((char) temp);
-                data += String.valueOf(symbol);
-                //System.out.println(temp + " ");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return data;
+    public List<Product> read() {
+        String data = InputUtil.readText(fileName);
+        String[][] rowArr = ShopAssistance.prepareData(data);
+        List<Product> products = ShopAssistance.parseProduct(rowArr);
+        return products;
     }
 
 }
