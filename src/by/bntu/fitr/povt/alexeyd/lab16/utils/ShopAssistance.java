@@ -213,7 +213,7 @@ public class ShopAssistance {
         return args;
     }
 
-    public List<Product> getExampleOfProductList() {
+    public static List<Product> getExampleOfProductList() {
         List<Product> list = new ArrayList<>();
         list.add(new Milk(false, 450, 0.3, 500, 1.2, 7.7,
             false, true, 32635625));

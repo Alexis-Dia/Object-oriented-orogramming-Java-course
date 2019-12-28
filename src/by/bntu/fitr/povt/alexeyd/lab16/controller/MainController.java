@@ -34,7 +34,7 @@ public class MainController {
 
     public void executeMainTask() {
 
-        //InputUtil.write(Constant.SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH, list);
+        //InputUtil.write(Constant.SRC_RESOURCES_OUTPUT_BINARY_SERIALIZABLE_PATH, ShopAssistance.getExampleOfProductList());
 
         DataStoreFactory dataStoreFactory = new MyDataStoreFactory();
         DataGenerator dataGenerator = dataStoreFactory.orderData(Constant.InputName.BINARY_SERIALIZABLE.getName());

@@ -1,6 +1,10 @@
 package by.bntu.fitr.povt.alexeyd.lab16.entity;
 
-public class Bread extends Product {
+import java.io.IOException;
+import java.io.ObjectStreamException;
+import java.io.Serializable;
+
+public class Bread extends Product implements Serializable {
 
     public static int bredAmount;
     private boolean organic;
@@ -93,5 +97,17 @@ public class Bread extends Product {
             ", price=" + getPrice() + '\'' +
             ", id=" + getId() + '\'' +
             '}';
+    }
+
+    private void writeObject(java.io.ObjectOutputStream out) throws IOException {
+        out.defaultWriteObject();
+    }
+
+    private void readObject(java.io.ObjectInputStream in) throws IOException, ClassNotFoundException {
+        in.defaultReadObject();
+    }
+
+    private void readObjectNoData() throws ObjectStreamException {
+
     }
 }

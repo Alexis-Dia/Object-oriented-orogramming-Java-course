@@ -2,7 +2,7 @@ package by.bntu.fitr.povt.alexeyd.lab16.utils;
 
 public class Constant {
 
-    public static final String SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH = "src/resources/serializedOutputProducts2.xjf";
+    public static final String SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH = "src/resources/serializedOutputProducts.xjf";
 
     public static final String SRC_RESOURCES_INPUT_TEXT_PATH = "src/resources/inputProduct.txt";
     public static final String SRC_RESOURCES_INPUT_BINARY_PATH = "src/resources/inputProduct.xjf";
