@@ -48,16 +48,8 @@ public class MainController {
         double avgBucketWeight = ShopAssistance.calculateAvgWeight(products);
         boolean prize = ShopAssistance.getPrize(products);
 
-        /*Strategy pattern in action:*//*
-/*        Bucket bucket = new MilkBucket();
-        bucket.addProduct(new Milk(false, 450, 0.3, 500, 1.2, 7.7,
-            false, true, 32635625));
-        bucket.addProduct(new Milk(false, 450, 1.2, 500, 0.2, 0.7,
-            false, true, 32635624));
-        bucket.addProduct(new Milk(false, 450, 1.1, 500, 2.1, 0.1,
-            false, true, 32635621));
-        bucket.setComparator(STRATEGIES_MAP.get(COMPARE_BY_FAT_AND_CARBONS));
-        bucket.performSorting();
+        /*Strategy pattern in action:*/
+/*        Bucket bucket = ShopAssistance.getExampleOfBucket(STRATEGIES_MAP, COMPARE_BY_FAT_AND_CARBONS);
         products = ((MilkBucket) bucket).getAll();*/
 
         //Collections.sort(products);

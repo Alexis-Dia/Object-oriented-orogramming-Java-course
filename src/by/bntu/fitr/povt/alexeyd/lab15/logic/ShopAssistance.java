@@ -4,10 +4,10 @@ import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Bread;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Milk;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Orange;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Product;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.Bucket;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.MilkBucket;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.*;
 
@@ -222,6 +222,19 @@ public class ShopAssistance {
         list.add(new Milk(false, 450, 1.1, 500, 2.1, 0.1,
             false, true, 32635621));
         return list;
+    }
+
+    public static Bucket getExampleOfBucket(Map<String, Comparator> strategiesMap, String nameOfComparator) {
+        Bucket bucket = new MilkBucket();
+        bucket.addProduct(new Milk(false, 450, 0.3, 500, 1.2, 7.7,
+            false, true, 32635625));
+        bucket.addProduct(new Milk(false, 450, 1.2, 500, 0.2, 0.7,
+            false, true, 32635624));
+        bucket.addProduct(new Milk(false, 450, 1.1, 500, 2.1, 0.1,
+            false, true, 32635621));
+        bucket.setComparator(strategiesMap.get(nameOfComparator));
+        bucket.performSorting();
+        return bucket;
     }
 
 }
