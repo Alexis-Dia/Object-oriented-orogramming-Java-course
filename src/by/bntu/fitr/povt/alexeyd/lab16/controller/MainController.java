@@ -15,8 +15,6 @@ import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.orange.Comparat
 import by.bntu.fitr.povt.alexeyd.lab16.view.MyPrintFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.view.PrintFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.view.Printer;
-import by.bntu.fitr.povt.alexeyd.lab16.view.decorator.LowerCaseOutputDecorator;
-import by.bntu.fitr.povt.alexeyd.lab16.view.decorator.UpperCaseOutputDecorator;
 
 import java.util.*;
 
@@ -39,7 +37,7 @@ public class MainController {
         //InputUtil.write(Constant.SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH, list);
 
         DataStoreFactory dataStoreFactory = new MyDataStoreFactory();
-        DataGenerator dataGenerator = dataStoreFactory.orderData(Constant.BINARY_SERIALIZABLE);
+        DataGenerator dataGenerator = dataStoreFactory.orderData(Constant.InputName.BINARY_SERIALIZABLE.getName());
 
         /*Input decorator pattern in action:*/
         dataGenerator = new SimpleInputDecorator(dataGenerator);
@@ -66,16 +64,16 @@ public class MainController {
         Collections.sort(products, new ComparatorByPriceAndId());
 
         PrintFactory printFactory = new MyPrintFactory();
-        Printer printer = printFactory.order(Constant.BINARY);
+        Printer printer = printFactory.order(Constant.OutputName.BINARY.getName());
 
         /*Output decorator pattern in action:*/
-        printer = new LowerCaseOutputDecorator(new UpperCaseOutputDecorator(printer));
+        //printer = new LowerCaseOutputDecorator(new UpperCaseOutputDecorator(printer));
 
-        printer.write("Found index: " + products.get(SubGroup.FRUIT.getGroupCode()));
-        printer.write("\nAvg bucket price = " + avgBucketPrice);
-        printer.write("\nAvg bucket weight = " + avgBucketWeight);
-        printer.write(prize ? "\nYou won a prize!\n" : "\n");
-        printer.write(products.toString());
+        printer.printToConsole("Found index: " + products.get(SubGroup.FRUIT.getGroupCode()));
+        printer.printToConsole("\nAvg bucket price = " + avgBucketPrice);
+        printer.printToConsole("\nAvg bucket weight = " + avgBucketWeight);
+        printer.printToConsole(prize ? "\nYou won a prize!\n" : "\n");
+        printer.write(products);
     }
 
 }

@@ -213,4 +213,15 @@ public class ShopAssistance {
         return args;
     }
 
+    public List<Product> getExampleOfProductList() {
+        List<Product> list = new ArrayList<>();
+        list.add(new Milk(false, 450, 0.3, 500, 1.2, 7.7,
+            false, true, 32635625));
+        list.add(new Milk(false, 450, 1.2, 500, 0.2, 0.7,
+            false, true, 32635624));
+        list.add(new Milk(false, 450, 1.1, 500, 2.1, 0.1,
+            false, true, 32635621));
+        return list;
+    }
+
 }

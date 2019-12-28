@@ -1,8 +1,12 @@
 package by.bntu.fitr.povt.alexeyd.lab16.view;
 
+import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
+
+import java.util.List;
+
 public class ConsolePrinter implements Printer {
-    public void write(String msg) {
-        System.out.print(msg);
+    public void write(List<Product> products) {
+        System.out.print(products);
     }
 
     public void printMultiArr(int[][] arr) {
