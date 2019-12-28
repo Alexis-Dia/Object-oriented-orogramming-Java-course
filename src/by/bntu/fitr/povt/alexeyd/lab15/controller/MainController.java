@@ -37,7 +37,7 @@ public class MainController {
     public void executeMainTask() {
 
         DataStoreFactory dataStoreFactory = new MyDataStoreFactory();
-        DataGenerator dataGenerator = dataStoreFactory.orderData(Constant.TEXT);
+        DataGenerator dataGenerator = dataStoreFactory.orderData(Constant.OutputName.TEXT.getName());
 
         /*Input decorator pattern in action:*/
         dataGenerator = new SimpleInputDecorator(dataGenerator);
@@ -56,7 +56,7 @@ public class MainController {
         Collections.sort(products, new ComparatorByPriceAndId());
 
         PrintFactory printFactory = new MyPrintFactory();
-        Printer printer = printFactory.order(Constant.TEXT);
+        Printer printer = printFactory.order(Constant.OutputName.BINARY.getName());
 
         /*Output decorator pattern in action:*/
         printer = new LowerCaseOutputDecorator(new UpperCaseOutputDecorator(printer));

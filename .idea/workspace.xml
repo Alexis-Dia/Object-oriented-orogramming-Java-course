@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b893f174-81af-46ff-8cfb-4415b386b15c" name="Default" comment="Fixed Lab03.">
-      <change afterPath="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/Lab10MainTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Bread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Bucket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Milk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Orange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/logic/ShopAssistance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/view/Printer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectOrientedProgramming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectOrientedProgramming.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab15/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab15/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/outputProduct.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/outputProduct.txt" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,311 +17,69 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Orange.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-              <folding>
-                <element signature="e#424#425#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#604#605#0" expanded="true" />
-                <element signature="e#652#653#0" expanded="true" />
-                <element signature="e#692#693#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Milk.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-              <folding>
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="e#413#414#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#520#521#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#584#585#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Bread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-              <folding>
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
-                <element signature="e#629#630#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-              <folding>
-                <element signature="e#401#402#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#813#814#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Bucket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/Lab10MainTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/controller/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/logic/ShopAssistance.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Arquillian JUnit Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>BORDER_12</find>
-      <find>msg</find>
-      <find>NUMBER_OF_TASK</find>
-      <find>numberOfRightAnswers</find>
-      <find>Printer</find>
-      <find>etNumberOfDaysInMonth</find>
-      <find>runTest</find>
-      <find>EvenUserInput.input</find>
-      <find>.input</find>
-      <find>onSale</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab1/Main.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab2/Lab02.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab2/DataTypesTester.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/view/Printer.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/util/calendar/MonthInput.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/util/calendar/DayInput.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/logic/Border.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/controller/Lab09TaskB1.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/controller/Lab09TaskA2.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/logic/CalenderWorker.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/logic/PlayWorker.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/controller/Lab09TaskD.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/logic/NumberWorker.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/util/DialogUserUserInput.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/util/DialogUserInput.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/controller/Lab09TaskC.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/logic/TaskWorker.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/util/UserInput.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/logic/ReportWorker.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/controller/Lab09TaskE.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/model/CalenderWorker.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/model/ScoreCalculator.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/model/NumberGuesser.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/Lab09TaskAdditional.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/util/EvenUserInput.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/model/NumberWorker.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/logic/ShopAssistance.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/view/Printer.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/Lab10MainTask.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Orange.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Milk.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Bread.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Product.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Bucket.java" />
+        <option value="e" />
       </list>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="34" />
-    <option name="y" value="21" />
-    <option name="width" value="1680" />
-    <option name="height" value="979" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <autoscrollFromSource ProjectPane="true" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ObjectOrientedProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObjectOrientedProgramming" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObjectOrientedProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObjectOrientedProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObjectOrientedProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObjectOrientedProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="alexeyd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObjectOrientedProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObjectOrientedProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="alexeyd" type="462c0819:PsiDirectoryNode" />
-              <item name="lab10" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObjectOrientedProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObjectOrientedProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="alexeyd" type="462c0819:PsiDirectoryNode" />
-              <item name="lab10" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObjectOrientedProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObjectOrientedProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="alexeyd" type="462c0819:PsiDirectoryNode" />
-              <item name="lab10" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObjectOrientedProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObjectOrientedProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="alexeyd" type="462c0819:PsiDirectoryNode" />
-              <item name="lab10" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObjectOrientedProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObjectOrientedProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="alexeyd" type="462c0819:PsiDirectoryNode" />
-              <item name="lab10" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ObjectOrientedProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ObjectOrientedProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="alexeyd" type="462c0819:PsiDirectoryNode" />
-              <item name="lab10" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1UEYtrwS9UtvDfFnAD4ihxlKq7q" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="E:/IdeadProjects/mzaharchenia/Tag/Phase1_Sustaining_Branch_IR_Release_February_2019" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="by.bntu.fitr.povt.alexeyd.lab11.model.logic" />
+      <recent name="by.bntu.fitr.povt.alexeyd.lab12.model.logic" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="by.bntu.fitr.povt.alexeyd.lab10.model" />
-      <recent name="by.bntu.fitr.povt.alexeyd.lab10" />
-      <recent name="by.bntu.fitr.povt.alexeyd.lab09.dto" />
+      <recent name="by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.bread" />
+      <recent name="by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.orange" />
+      <recent name="by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.milk" />
+      <recent name="by.bntu.fitr.povt.alexeyd.lab15.logic.strategy" />
+      <recent name="by.bntu.fitr.povt.alexeyd.lab15.logic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="by.bntu.fitr.povt.alexeyd.lab10" />
-      <recent name="by.bntu.fitr.povt.alexeyd.lab10.view" />
-      <recent name="by.bntu.fitr.povt.alexeyd.lab09.util" />
-      <recent name="by.bntu.fitr.povt.alexeyd.lab09.controller" />
+      <recent name="by.bntu.fitr.povt.alexeyd.lab16.view" />
+      <recent name="by.bntu.fitr.povt.alexeyd.lab16.entity.serializable.external" />
+      <recent name="by.bntu.fitr.povt.alexeyd.lab15.logic" />
+      <recent name="by.bntu.fitr.povt.alexeyd.lab16.logic" />
+      <recent name="by.bntu.fitr.povt.alexeyd.lab12" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab09\util\calendar" />
-      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab09" />
+      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\resources" />
+      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab15\controller" />
+      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab13" />
+      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab12" />
+      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab11" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="by.bntu.fitr.povt.alexeyd.lab16.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -344,13 +94,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lab10MainTask">
-    <configuration name="Lab09TaskC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab09.Lab09TaskC" />
+  <component name="RunManager" selected="Application.Lab15MainTask">
+    <configuration name="Lab15MainTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab15.Lab15MainTask" />
       <module name="ObjectOrientedProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab09.*" />
+          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -358,15 +108,63 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lab10MainTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab10.Lab10MainTask" />
+    <configuration name="Lab16MainTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab16.Lab16MainTask" />
       <module name="ObjectOrientedProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab10.*" />
+          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopAssistanceTest.calculateAvgPrice (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ObjectOrientedProgramming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic" />
+      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic.ShopAssistanceTest" />
+      <option name="METHOD_NAME" value="calculateAvgPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopAssistanceTest.calculateAvgWeight (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ObjectOrientedProgramming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic" />
+      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic.ShopAssistanceTest" />
+      <option name="METHOD_NAME" value="calculateAvgWeight" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopAssistanceTest.getPrize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ObjectOrientedProgramming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic" />
+      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic.ShopAssistanceTest" />
+      <option name="METHOD_NAME" value="getPrize" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -386,8 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lab10MainTask" />
-        <item itemvalue="Application.Lab09TaskC" />
+        <item itemvalue="Application.Lab15MainTask" />
+        <item itemvalue="Application.Lab16MainTask" />
+        <item itemvalue="JUnit.ShopAssistanceTest.calculateAvgWeight (1)" />
+        <item itemvalue="JUnit.ShopAssistanceTest.calculateAvgPrice (1)" />
+        <item itemvalue="JUnit.ShopAssistanceTest.getPrize" />
       </list>
     </recent_temporary>
   </component>
@@ -408,6 +209,36 @@
       <workItem from="1559042519460" duration="2568000" />
       <workItem from="1559047283273" duration="11394000" />
       <workItem from="1559209509236" duration="16619000" />
+      <workItem from="1559567903879" duration="12000" />
+      <workItem from="1559567991884" duration="48000" />
+      <workItem from="1559568228052" duration="24000" />
+      <workItem from="1559568659647" duration="18000" />
+      <workItem from="1559648754870" duration="6860000" />
+      <workItem from="1560167516832" duration="3177000" />
+      <workItem from="1560346413391" duration="7304000" />
+      <workItem from="1560417100134" duration="288000" />
+      <workItem from="1560417405285" duration="135000" />
+      <workItem from="1560417544309" duration="42526000" />
+      <workItem from="1561564683741" duration="4614000" />
+      <workItem from="1562249177740" duration="1394000" />
+      <workItem from="1563440538994" duration="2052000" />
+      <workItem from="1563951719207" duration="6384000" />
+      <workItem from="1572861903920" duration="32527000" />
+      <workItem from="1574923439991" duration="5719000" />
+      <workItem from="1574956404253" duration="6883000" />
+      <workItem from="1575873261471" duration="5867000" />
+      <workItem from="1575960531952" duration="1935000" />
+      <workItem from="1576316569664" duration="28165000" />
+      <workItem from="1576566143940" duration="2633000" />
+      <workItem from="1576653587269" duration="2956000" />
+      <workItem from="1576681705022" duration="3738000" />
+      <workItem from="1576753584222" duration="4317000" />
+      <workItem from="1576764244759" duration="8000" />
+      <workItem from="1576833442761" duration="2092000" />
+      <workItem from="1576844119529" duration="4000" />
+      <workItem from="1576928814243" duration="12491000" />
+      <workItem from="1577085227847" duration="30006000" />
+      <workItem from="1577441534630" duration="37149000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Added Lab08.">
       <created>1557832672850</created>
@@ -451,11 +282,253 @@
       <option name="project" value="LOCAL" />
       <updated>1559054902095</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added JUnit jars for Lab11.">
+      <created>1560416511747</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1560416511747</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added test-class for Lab10.">
+      <created>1560417702262</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1560417702262</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added test for Lab10.">
+      <created>1560419978511</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560419978511</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fixed Lab10. Added constructor with parameters.">
+      <created>1560791453045</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1560791453045</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed Lab10. Refactoring. Added initialized block.">
+      <created>1560840368991</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1560840368991</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added Lab12.">
+      <created>1560932164952</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560932164952</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fixed ReadMe.">
+      <created>1563440676583</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1563440676583</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fixed Lab11.">
+      <created>1572879611339</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1572879611339</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fixed Lab11.">
+      <created>1572959128431</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1572959128431</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fixed Lab11.">
+      <created>1574956584084</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1574956584084</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fixed Lab11.">
+      <created>1574960585650</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1574960585650</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fixed Lab11.">
+      <created>1574961475247</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1574961475247</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixed Lab12.">
+      <created>1575879152533</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1575879152533</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Fixed Lab11, Lab12.">
+      <created>1575962151763</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1575962151763</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fixed Lab12.">
+      <created>1576324534113</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1576324534113</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Refactored Lab12.">
+      <created>1576326746226</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1576326746226</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Initialized lab13.">
+      <created>1576330865912</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1576330865912</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fixed Lab13.">
+      <created>1576340975507</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1576340975507</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added default-sorting using compareTo-method for Product-pojo.">
+      <created>1576342158196</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1576342158196</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Refactored Lab12.">
+      <created>1576481398581</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1576481398581</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added methods for searching.">
+      <created>1576567514717</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1576567514717</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Fixed Lab13.">
+      <created>1576739000343</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1576739000343</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Initialized tests for Lab11, Lab12.">
+      <created>1576740211246</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1576740211246</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Added tests for Lab11, Lab12.">
+      <created>1576754473372</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1576754473372</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added factory pattern.">
+      <created>1576940280602</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1576940280602</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Added textGenerator.">
+      <created>1577088985324</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1577088985324</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Fixed Lab12.">
+      <created>1577096345549</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1577096345549</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added factory for printers.">
+      <created>1577098840252</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1577098840252</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Added decorator for input and output reader.">
+      <created>1577109657722</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1577109657722</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Refactoring Lab15.">
+      <created>1577113486119</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1577113486119</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Refactored Lab16.">
+      <created>1577462548985</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1577462548985</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Refactored according SOLID and GRASP principles Lab15, Lab16.">
+      <created>1577535477461</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1577535477461</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Fixed Lab16.">
+      <created>1577538855183</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1577538855183</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Refactored Lab15, Lab16.">
+      <created>1577546510121</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1577546510121</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Fixed Lab15, Lab16.">
+      <created>1577547435216</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1577547435216</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114392000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -465,72 +538,6 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2803838" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44395116" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.53385127" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32963374" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32852387" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32963374" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32852387" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Maven" order="9" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2973274" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.35287845" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32850778" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32962137" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32850778" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -545,15 +552,76 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: Added Lab08." />
-    <MESSAGE value="fix: Added to Lab09 task C, D." />
-    <MESSAGE value="Fixed Lab03." />
-    <MESSAGE value="Added task E from Lab09." />
-    <MESSAGE value="Refactoring. Lab09. Controller." />
-    <MESSAGE value="Refactored Lab09." />
-    <MESSAGE value="Fixed Lab09 task C." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Lab09 task C." />
+    <MESSAGE value="Added test for Lab10." />
+    <MESSAGE value="Fixed Lab10. Added constructor with parameters." />
+    <MESSAGE value="Fixed Lab10. Refactoring. Added initialized block." />
+    <MESSAGE value="Added Lab12." />
+    <MESSAGE value="Fixed ReadMe." />
+    <MESSAGE value="Fixed Lab11." />
+    <MESSAGE value="Fixed Lab11, Lab12." />
+    <MESSAGE value="Initialized lab13." />
+    <MESSAGE value="Added default-sorting using compareTo-method for Product-pojo." />
+    <MESSAGE value="Refactored Lab12." />
+    <MESSAGE value="Added methods for searching." />
+    <MESSAGE value="Fixed Lab13." />
+    <MESSAGE value="Initialized tests for Lab11, Lab12." />
+    <MESSAGE value="Added tests for Lab11, Lab12." />
+    <MESSAGE value="Added factory pattern." />
+    <MESSAGE value="Added textGenerator." />
+    <MESSAGE value="Fixed Lab12." />
+    <MESSAGE value="Added factory for printers." />
+    <MESSAGE value="Added decorator for input and output reader." />
+    <MESSAGE value="Refactoring Lab15." />
+    <MESSAGE value="Refactored Lab16." />
+    <MESSAGE value="Refactored according SOLID and GRASP principles Lab15, Lab16." />
+    <MESSAGE value="Fixed Lab16." />
+    <MESSAGE value="Refactored Lab15, Lab16." />
+    <MESSAGE value="Fixed Lab15, Lab16." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Lab15, Lab16." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -561,552 +629,97 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/logic/CalenderWorker.java</url>
           <line>71</line>
-          <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/util/DialogUserInput.java</url>
           <line>39</line>
-          <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/logic/ReportWorker.java</url>
           <line>5</line>
-          <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/controller/Controller.java</url>
           <line>72</line>
-          <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/model/NumberWorker.java</url>
           <line>13</line>
-          <properties />
           <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab11/controller/Controller.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab12/controller/MainController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab12/controller/MainController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/by/bntu/fitr/povt/alexeyd/lab13/model/logic/ShopAssistanceTest.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/by/bntu/fitr/povt/alexeyd/lab12/model/logic/ShopAssistanceTest.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab15/factory/MyDataStoreFactory.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab15/factory/BinaryDataGenerator.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab15/factory/RandomDataGenerator.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab15/factory/decorator/SimpleInputDecorator.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab16/controller/MainController.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab16/utils/InputUtil.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab16/view/SerializableBinaryPriner.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab12/controller/Controller.java</url>
+          <line>11</line>
+          <properties class="by.bntu.fitr.povt.alexeyd.lab12.controller.Controller" method="executeAdditionTaskA">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateCodeFragment">
-      <expression>
-        <expression-string>optionVariants[i]</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>optionVariants[i] == answer</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>optionVariants.length</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>optionIsExists(answer)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/model/PlayWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/model/TaskWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/model/ScoreCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Java/by/bntu/fitr/povt/alexeyd/lab1/Main.class" />
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/model/RowGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding>
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/model/NumberGuesser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/ObjectOrientedProgramming/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="221">
-            <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/model/CalenderWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/Lab09TaskB1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/Lab09TaskD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/Lab09TaskE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/Lab09TaskAdditional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/util/DialogUserInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/util/calendarInputs/DayInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="15" column="38" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/util/calendarInputs/MonthInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/dto/Border.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/model/NumberWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/util/UserInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/util/EvenUserInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/Lab09TaskC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab08/model/NumberWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab08/Lab08TaskE5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" lean-forward="true" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab08/Lab08TaskD5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab08/Lab08TaskC5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab08/Lab08TaskB5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab08/Lab08TaskA5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab08/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab07/Lab07AdditionTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab07/Lab07Task1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab07/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab06/Lab06Task11.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/view/Printer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="68" column="50" lean-forward="true" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Tomato.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Lemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab06/Lab06Task10.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab06/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab06/view/Printer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab09/Lab09TaskA2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/view/Printer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding>
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Bread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-          <folding>
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Bucket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Milk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/logic/ShopAssistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/model/entity/Orange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-          <folding>
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab10/Lab10MainTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>src</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>ObjectOrientedProgramming</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>resources</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
