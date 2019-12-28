@@ -1,10 +1,10 @@
 package by.bntu.fitr.povt.alexeyd.lab16.entity;
 
-import java.io.IOException;
-import java.io.ObjectStreamException;
-import java.io.Serializable;
+import java.io.*;
 
 public class Milk extends Product implements Serializable {
+
+    //static final long serialVersionUID = 0L;
 
     public static int milkAmount;
     private int volume;
@@ -100,4 +100,22 @@ public class Milk extends Product implements Serializable {
     private void readObjectNoData() throws ObjectStreamException {
 
     }
+
+/*    @Override
+    public void writeExternal(ObjectOutput out) throws IOException {
+        out.writeInt(this.volume);
+        out.writeDouble(this.fat);
+        out.writeDouble(this.carbons);
+        out.writeBoolean(this.processed);
+        out.writeBoolean(this.organic);
+    }
+
+    @Override
+    public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+        this.volume = in.readInt();
+        this.fat = in.readDouble();
+        this.carbons = in.readDouble();
+        this.processed = in.readBoolean();
+        this.organic = in.readBoolean();
+    }*/
 }

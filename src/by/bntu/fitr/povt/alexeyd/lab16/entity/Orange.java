@@ -1,10 +1,10 @@
 package by.bntu.fitr.povt.alexeyd.lab16.entity;
 
-import java.io.IOException;
-import java.io.ObjectStreamException;
-import java.io.Serializable;
+import java.io.*;
 
 public class Orange extends Product implements Serializable {
+
+    //static final long serialVersionUID = 0L;
 
     public static int orangeAmount;
     private double diameter;
@@ -100,4 +100,22 @@ public class Orange extends Product implements Serializable {
     private void readObjectNoData() throws ObjectStreamException {
 
     }
+
+/*    @Override
+    public void writeExternal(ObjectOutput out) throws IOException {
+        out.writeDouble(this.diameter);
+        out.writeDouble(this.vitaminC);
+        out.writeBoolean(this.organic);
+        out.writeUTF(this.sort);
+        out.writeUTF(this.form);
+    }
+
+    @Override
+    public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+        this.diameter = in.readDouble();
+        this.vitaminC = in.readInt();
+        this.organic = in.readBoolean();
+        this.sort = in.readUTF();
+        this.form = in.readUTF();
+    }*/
 }

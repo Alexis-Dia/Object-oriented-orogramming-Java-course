@@ -4,6 +4,8 @@ import java.io.*;
 
 public class Product implements Comparable<Product>, Serializable {
 
+    //static final long serialVersionUID = 0L;
+
     public static int productAmount;
     private boolean helpChildren;
     private int weight;
@@ -92,4 +94,19 @@ public class Product implements Comparable<Product>, Serializable {
         return Double.valueOf(this.getPrice()).compareTo(Double.valueOf(o.getPrice()));
     }
 
+/*    @Override
+    public void writeExternal(ObjectOutput out) throws IOException {
+        out.writeBoolean(this.helpChildren);
+        out.writeInt(this.weight);
+        out.writeDouble(this.price);
+        out.writeInt(this.id);
+    }
+
+    @Override
+    public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+        this.helpChildren = in.readBoolean();
+        this.weight = in.readInt();
+        this.price = in.readDouble();
+        this.id = in.readInt();
+    }*/
 }

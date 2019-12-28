@@ -4,6 +4,8 @@ import java.io.*;
 
 public class Product implements Comparable<Product>, Externalizable {
 
+    //static final long serialVersionUID = 0L;
+
     public static int productAmount;
     private boolean helpChildren;
     private int weight;

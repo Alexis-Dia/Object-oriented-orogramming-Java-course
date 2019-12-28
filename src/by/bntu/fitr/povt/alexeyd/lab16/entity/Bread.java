@@ -1,10 +1,10 @@
 package by.bntu.fitr.povt.alexeyd.lab16.entity;
 
-import java.io.IOException;
-import java.io.ObjectStreamException;
-import java.io.Serializable;
+import java.io.*;
 
 public class Bread extends Product implements Serializable {
+
+    //static final long serialVersionUID = 0L;
 
     public static int bredAmount;
     private boolean organic;
@@ -110,4 +110,22 @@ public class Bread extends Product implements Serializable {
     private void readObjectNoData() throws ObjectStreamException {
 
     }
+
+/*    @Override
+    public void writeExternal(ObjectOutput out) throws IOException {
+        out.writeBoolean(this.organic);
+        out.writeUTF(this.sort);
+        out.writeUTF(this.flour);
+        out.writeUTF(this.color);
+        out.writeUTF(this.shape);
+    }
+
+    @Override
+    public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+        this.organic = in.readBoolean();
+        this.sort = in.readUTF();
+        this.flour = in.readUTF();
+        this.color = in.readUTF();
+        this.shape = in.readUTF();
+    }*/
 }
