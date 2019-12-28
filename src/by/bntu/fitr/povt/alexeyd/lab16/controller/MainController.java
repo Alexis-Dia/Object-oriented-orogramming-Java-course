@@ -36,14 +36,14 @@ public class MainController {
 
     public void executeMainTask() {
 
+        //InputUtil.write(Constant.SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH, list);
+
         DataStoreFactory dataStoreFactory = new MyDataStoreFactory();
-        DataGenerator dataGenerator = dataStoreFactory.orderData(Constant.TEXT);
+        DataGenerator dataGenerator = dataStoreFactory.orderData(Constant.BINARY_SERIALIZABLE);
 
         /*Input decorator pattern in action:*/
         dataGenerator = new SimpleInputDecorator(dataGenerator);
         List<Product> products = dataGenerator.read();
-
-        //InputUtil.write(SRC_RESOURCES_INPUT_AUTOSERIALIZABLE_BINARY_PATH, products);
 
         //products.remove(3);
         double avgBucketPrice = ShopAssistance.calculateAvgPrice(products);

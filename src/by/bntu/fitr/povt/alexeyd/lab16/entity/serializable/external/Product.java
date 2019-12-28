@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab16.entity;
+package by.bntu.fitr.povt.alexeyd.lab16.entity.serializable.external;
 
 import java.io.*;
 
@@ -27,12 +27,12 @@ public class Product implements Comparable<Product>, Externalizable {
         productAmount = 0;
     }
 
-    /* initialization block (it's called every time an object is created)*/ {
+    /* initialization block (it's called every time an object is created)*/
+    {
         productAmount++;
     }
 
-    public Product() {
-    }
+    public Product() {}
 
     public Product(boolean helpChildren, int weight, double price, int id) {
         this.helpChildren = helpChildren;
@@ -41,7 +41,7 @@ public class Product implements Comparable<Product>, Externalizable {
         this.id = id;
     }
 
-    public static void increaseCount() {
+    public static void increaseCount () {
         productAmount--;
     }
 
@@ -107,5 +107,4 @@ public class Product implements Comparable<Product>, Externalizable {
     public int compareTo(Product o) {
         return Double.valueOf(this.getPrice()).compareTo(Double.valueOf(o.getPrice()));
     }
-
 }
