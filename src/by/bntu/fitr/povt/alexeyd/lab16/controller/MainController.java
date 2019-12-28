@@ -8,6 +8,8 @@ import by.bntu.fitr.povt.alexeyd.lab16.factory.decorator.SimpleInputDecorator;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.Constant;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.ShopAssistance;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.SubGroup;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.Bucket;
+import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.MilkBucket;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.ComparatorByPriceAndId;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.bread.ComparatorBySortAndFlavor;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.milk.ComparatorByFatAndCarbons;
@@ -18,19 +20,14 @@ import by.bntu.fitr.povt.alexeyd.lab16.view.Printer;
 
 import java.util.*;
 
+import static by.bntu.fitr.povt.alexeyd.lab16.utils.ShopAssistance.COMPARE_BY_FAT_AND_CARBONS;
+
 public class MainController {
 
-    private static final String COMPARE_BY_FAT_AND_CARBONS = "CompareByFatAndCarbons";
-    private static final String COMPARE_BY_SORT_AND_FLAVOR = "CompareBySortAndFlavor";
-    private static final String COMPARE_BY_SHAPE_AND_DIAMETER = "CompareByShapeAndDiameter";
-    private static final Map<String, Comparator> STRATEGIES_MAP;
-
-    static {
-        STRATEGIES_MAP = new HashMap<>();
-        STRATEGIES_MAP.put(COMPARE_BY_FAT_AND_CARBONS, new ComparatorByFatAndCarbons());
-        STRATEGIES_MAP.put(COMPARE_BY_SORT_AND_FLAVOR, new ComparatorBySortAndFlavor());
-        STRATEGIES_MAP.put(COMPARE_BY_SHAPE_AND_DIAMETER, new ComparatorByShapeAndDiameter());
-    }
+    private static final String FOUND_INDEX = "Found index: ";
+    private static final String AVG_BUCKET_PRICE = "\nAvg bucket price = ";
+    private static final String AVG_BUCKET_WEIGHT = "\nAvg bucket weight = ";
+    private static final String YOU_WON_A_PRIZE = "\nYou won a prize!\n";
 
     public void executeMainTask() {
 
@@ -49,7 +46,7 @@ public class MainController {
         boolean prize = ShopAssistance.getPrize(products);
 
         /*Strategy pattern in action:*/
-/*        Bucket bucket = ShopAssistance.getExampleOfBucket(STRATEGIES_MAP, COMPARE_BY_FAT_AND_CARBONS);
+/*        Bucket bucket = ShopAssistance.getExampleOfBucket(COMPARE_BY_FAT_AND_CARBONS);
         products = ((MilkBucket) bucket).getAll();*/
 
         //Collections.sort(products);
@@ -61,10 +58,10 @@ public class MainController {
         /*Output decorator pattern in action:*/
         //printer = new LowerCaseOutputDecorator(new UpperCaseOutputDecorator(printer));
 
-        printer.printToConsole("Found index: " + products.get(SubGroup.FRUIT.getGroupCode()));
-        printer.printToConsole("\nAvg bucket price = " + avgBucketPrice);
-        printer.printToConsole("\nAvg bucket weight = " + avgBucketWeight);
-        printer.printToConsole(prize ? "\nYou won a prize!\n" : "\n");
+        printer.printToConsole(FOUND_INDEX + products.get(SubGroup.FRUIT.getGroupCode()));
+        printer.printToConsole(AVG_BUCKET_PRICE + avgBucketPrice);
+        printer.printToConsole(AVG_BUCKET_WEIGHT + avgBucketWeight);
+        printer.printToConsole(prize ? YOU_WON_A_PRIZE : "\n");
         printer.write(products);
     }
 

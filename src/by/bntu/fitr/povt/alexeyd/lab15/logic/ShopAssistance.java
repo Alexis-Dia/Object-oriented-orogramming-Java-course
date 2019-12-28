@@ -1,5 +1,8 @@
 package by.bntu.fitr.povt.alexeyd.lab15.logic;
 
+import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.comparator.ComparatorByFatAndCarbons;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.comparator.ComparatorByShapeAndDiameter;
+import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.comparator.ComparatorBySortAndFlavor;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Bread;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Milk;
 import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Orange;
@@ -12,6 +15,10 @@ import java.util.*;
 import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.*;
 
 public class ShopAssistance {
+
+    public static final String COMPARE_BY_FAT_AND_CARBONS = "CompareByFatAndCarbons";
+    public static final String COMPARE_BY_SORT_AND_FLAVOR = "CompareBySortAndFlavor";
+    public static final String COMPARE_BY_SHAPE_AND_DIAMETER = "CompareByShapeAndDiameter";
 
     private static final int MAX_NUMBER_OF_FIELDS = 10;
     private static final int DEFAULT_VOLUME = 0;
@@ -49,6 +56,14 @@ public class ShopAssistance {
     private static final String FORM = "form";
     private static final String DEFAULT_FORM = "Form isn't exists";
     private static final String DIAMETER = "diameter";
+    private static final Map<String, Comparator> STRATEGIES_MAP;
+
+    static {
+        STRATEGIES_MAP = new HashMap<>();
+        STRATEGIES_MAP.put(COMPARE_BY_FAT_AND_CARBONS, new ComparatorByFatAndCarbons());
+        STRATEGIES_MAP.put(COMPARE_BY_SORT_AND_FLAVOR, new ComparatorBySortAndFlavor());
+        STRATEGIES_MAP.put(COMPARE_BY_SHAPE_AND_DIAMETER, new ComparatorByShapeAndDiameter());
+    }
 
     public static double calculateAvgPrice(List<Product> list) {
         double total = 0.0;
@@ -224,7 +239,7 @@ public class ShopAssistance {
         return list;
     }
 
-    public static Bucket getExampleOfBucket(Map<String, Comparator> strategiesMap, String nameOfComparator) {
+    public static Bucket getExampleOfBucket( String nameOfComparator) {
         Bucket bucket = new MilkBucket();
         bucket.addProduct(new Milk(false, 450, 0.3, 500, 1.2, 7.7,
             false, true, 32635625));
@@ -232,7 +247,7 @@ public class ShopAssistance {
             false, true, 32635624));
         bucket.addProduct(new Milk(false, 450, 1.1, 500, 2.1, 0.1,
             false, true, 32635621));
-        bucket.setComparator(strategiesMap.get(nameOfComparator));
+        bucket.setComparator(STRATEGIES_MAP.get(nameOfComparator));
         bucket.performSorting();
         return bucket;
     }
