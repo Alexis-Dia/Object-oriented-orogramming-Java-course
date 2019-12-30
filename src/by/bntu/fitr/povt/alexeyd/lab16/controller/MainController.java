@@ -8,19 +8,13 @@ import by.bntu.fitr.povt.alexeyd.lab16.factory.decorator.SimpleInputDecorator;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.Constant;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.ShopAssistance;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.SubGroup;
-import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.Bucket;
-import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.MilkBucket;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.ComparatorByPriceAndId;
-import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.bread.ComparatorBySortAndFlavor;
-import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.milk.ComparatorByFatAndCarbons;
-import by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.orange.ComparatorByShapeAndDiameter;
 import by.bntu.fitr.povt.alexeyd.lab16.view.MyPrintFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.view.PrintFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.view.Printer;
 
-import java.util.*;
-
-import static by.bntu.fitr.povt.alexeyd.lab16.utils.ShopAssistance.COMPARE_BY_FAT_AND_CARBONS;
+import java.util.Collections;
+import java.util.List;
 
 public class MainController {
 

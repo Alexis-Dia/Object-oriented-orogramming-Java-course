@@ -5,7 +5,7 @@ import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
 import java.util.List;
 
 public class ConsolePrinter implements Printer {
-    public void write(List<Product> products) {
+    public void write(List products) {
         System.out.print(products);
     }
 

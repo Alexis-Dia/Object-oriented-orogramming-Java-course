@@ -7,22 +7,15 @@ import by.bntu.fitr.povt.alexeyd.lab15.factory.decorator.SimpleInputDecorator;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.Constant;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.ShopAssistance;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.SubGroup;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.Bucket;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.MilkBucket;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.comparator.ComparatorByFatAndCarbons;
 import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.comparator.ComparatorByPriceAndId;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.comparator.ComparatorByShapeAndDiameter;
-import by.bntu.fitr.povt.alexeyd.lab15.logic.strategy.comparator.ComparatorBySortAndFlavor;
-import by.bntu.fitr.povt.alexeyd.lab15.model.entity.Product;
 import by.bntu.fitr.povt.alexeyd.lab15.view.MyPrintFactory;
 import by.bntu.fitr.povt.alexeyd.lab15.view.PrintFactory;
 import by.bntu.fitr.povt.alexeyd.lab15.view.Printer;
 import by.bntu.fitr.povt.alexeyd.lab15.view.decorator.LowerCaseOutputDecorator;
 import by.bntu.fitr.povt.alexeyd.lab15.view.decorator.UpperCaseOutputDecorator;
 
-import java.util.*;
-
-import static by.bntu.fitr.povt.alexeyd.lab15.logic.ShopAssistance.COMPARE_BY_FAT_AND_CARBONS;
+import java.util.Collections;
+import java.util.List;
 
 public class MainController {
 
@@ -38,7 +31,7 @@ public class MainController {
 
         /*Input decorator pattern in action:*/
         dataGenerator = new SimpleInputDecorator(dataGenerator);
-        List<Product> products = dataGenerator.read();
+        List products = dataGenerator.read();
 
         //products.remove(3);
         double avgBucketPrice = ShopAssistance.calculateAvgPrice(products);

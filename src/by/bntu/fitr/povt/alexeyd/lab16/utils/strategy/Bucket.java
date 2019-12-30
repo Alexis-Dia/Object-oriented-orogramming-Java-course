@@ -11,7 +11,7 @@ public abstract class Bucket {
 
     Comparator comparator;
 
-    List<Product> products;
+    List products;
 
     public abstract void addProduct(Product product);
 

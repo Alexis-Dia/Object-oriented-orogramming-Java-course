@@ -1,7 +1,5 @@
 package by.bntu.fitr.povt.alexeyd.lab16.view;
 
-import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
-
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -14,7 +12,7 @@ public class SerializableBinaryPriner implements Printer {
 
     // before JDK 6.0
     @Override
-    public void write(List<Product> products) {
+    public void write(List products) {
         ObjectOutputStream stream = null;
         try {
             stream = new ObjectOutputStream(   //Allows immediately write primitives

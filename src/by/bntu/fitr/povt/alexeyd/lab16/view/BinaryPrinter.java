@@ -15,7 +15,7 @@ public class BinaryPrinter implements Printer {
 
     // before JDK 6.0
     @Override
-    public void write(List<Product> products) {
+    public void write(List products) {
         OutputStream outputStream = null;
         try {
             outputStream = new FileOutputStream(SRC_RESOURCES_OUTPUT_BINARY_PATH,true);

@@ -12,7 +12,7 @@ import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.SRC_RESOURCES_OUTPU
 public class TextPrinter implements Printer {
 
     @Override
-    public void write(List<Product> products) {
+    public void write(List products) {
         try(Writer stream = new FileWriter(SRC_RESOURCES_OUTPUT_TEXT_PATH, true)) {
             stream.write(products.toString());
         } catch (IOException e) {

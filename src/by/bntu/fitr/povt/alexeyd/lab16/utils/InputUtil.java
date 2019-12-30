@@ -1,13 +1,11 @@
 package by.bntu.fitr.povt.alexeyd.lab16.utils;
 
-import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
-
 import java.io.*;
 import java.util.List;
 
 public class InputUtil {
 
-    public static void write(String fileName, List<Product> product) {
+    public static void write(String fileName, List product) {
         ObjectOutputStream stream = null;
         try {
             stream = new ObjectOutputStream(   //Allows immediately write primitives
@@ -75,15 +73,15 @@ public class InputUtil {
         return data;
     }
 
-    public static List<Product> readUsingObjectInputStream(String fileName) {
-        List<Product> student = null;
+    public static List readUsingObjectInputStream(String fileName) {
+        List student = null;
         ObjectInputStream stream = null;
         try {
             stream = new ObjectInputStream(   //Allows immediately write primitives
                 new BufferedInputStream(
                     new FileInputStream(fileName)));
 
-            student= (List<Product>) stream.readObject();
+            student= (List) stream.readObject();
 
         } catch (IOException | ClassNotFoundException exception) { //since JDK7.0
             System.out.println(exception);

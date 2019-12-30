@@ -8,5 +8,5 @@ import java.util.List;
 
 public abstract class InputDecorator implements DataGenerator {
 
-    public abstract List<Product> read();
+    public abstract List read();
 }

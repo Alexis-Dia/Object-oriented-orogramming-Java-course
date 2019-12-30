@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface DataGenerator {
 
-    List<Product> read();
+    List read();
 }

@@ -1,6 +1,5 @@
 package by.bntu.fitr.povt.alexeyd.lab16.factory;
 
-import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
 import by.bntu.fitr.povt.alexeyd.lab16.utils.ShopAssistance;
 
 import java.util.Arrays;
@@ -26,12 +25,12 @@ public class RandomDataGenerator implements DataGenerator {
     private static final double HALF = 0.5;
     private int numberOfProducts = new Random().nextInt(MAX_NUMBER_OF_PRODUCT) + MIN_NUMBER_OF_PRODUCTS;
 
-    public List<Product> read() {
+    public List read() {
         String rowData = EMPTY_STRING;
         rowData = initializeProduct(rowData);
         rowData = removeLastComma(rowData);
         String[][] rowArr = ShopAssistance.prepareData(rowData);
-        List<Product> products = ShopAssistance.parseProduct(rowArr);
+        List products = ShopAssistance.parseProduct(rowArr);
         return products;
     }
 
