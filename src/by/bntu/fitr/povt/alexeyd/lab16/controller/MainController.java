@@ -1,6 +1,5 @@
 package by.bntu.fitr.povt.alexeyd.lab16.controller;
 
-import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
 import by.bntu.fitr.povt.alexeyd.lab16.factory.DataGenerator;
 import by.bntu.fitr.povt.alexeyd.lab16.factory.DataStoreFactory;
 import by.bntu.fitr.povt.alexeyd.lab16.factory.MyDataStoreFactory;
@@ -32,7 +31,7 @@ public class MainController {
 
         /*Input decorator pattern in action:*/
         dataGenerator = new SimpleInputDecorator(dataGenerator);
-        List<Product> products = dataGenerator.read();
+        List products = dataGenerator.read();
 
         //products.remove(3);
         double avgBucketPrice = ShopAssistance.calculateAvgPrice(products);

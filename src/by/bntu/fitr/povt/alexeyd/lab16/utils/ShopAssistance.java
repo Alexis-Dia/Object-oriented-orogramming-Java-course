@@ -94,7 +94,7 @@ public class ShopAssistance {
         return false;
     }
 
-    public static List findByPrice(List<Product> list, double min, double max) {
+    public static List findByPrice(List list, double min, double max) {
         List result = new ArrayList<>();
         for (Object ob: list) {
             double price = ((Product) ob).getPrice();

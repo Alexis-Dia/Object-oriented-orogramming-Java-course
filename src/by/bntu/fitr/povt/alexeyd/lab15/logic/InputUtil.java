@@ -7,7 +7,7 @@ import java.util.List;
 
 public class InputUtil {
 
-    public static void write(String fileName, List<Product> product) {
+    public static void write(String fileName, List product) {
         ObjectOutputStream stream = null;
         try {
             stream = new ObjectOutputStream(   //Allows immediately write primitives
