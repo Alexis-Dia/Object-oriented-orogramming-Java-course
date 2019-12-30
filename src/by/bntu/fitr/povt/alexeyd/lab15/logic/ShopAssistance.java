@@ -59,7 +59,7 @@ public class ShopAssistance {
     private static final Map<String, Comparator> STRATEGIES_MAP;
 
     static {
-        STRATEGIES_MAP = new HashMap<>();
+        STRATEGIES_MAP = new HashMap();
         STRATEGIES_MAP.put(COMPARE_BY_FAT_AND_CARBONS, new ComparatorByFatAndCarbons());
         STRATEGIES_MAP.put(COMPARE_BY_SORT_AND_FLAVOR, new ComparatorBySortAndFlavor());
         STRATEGIES_MAP.put(COMPARE_BY_SHAPE_AND_DIAMETER, new ComparatorByShapeAndDiameter());
@@ -95,7 +95,7 @@ public class ShopAssistance {
     }
 
     public static List findByPrice(List list, double min, double max) {
-        List result = new ArrayList<>();
+        List result = new ArrayList();
         for (Object ob: list) {
             double price = ((Product) ob).getPrice();
             if (price >= min && price <=max) {
@@ -107,7 +107,7 @@ public class ShopAssistance {
     }
 
     public static List findByWeight(List list, int min, int max) {
-        List result = new ArrayList<>();
+        List result = new ArrayList();
         for (Object ob: list) {
             int weight = ((Product) ob).getWeight();
             if (weight >= min && weight <=max) {
@@ -119,7 +119,7 @@ public class ShopAssistance {
     }
 
     public static List findById(List list, int value) {
-        List result = new ArrayList<>();
+        List result = new ArrayList();
         for (Object ob: list) {
             int id = ((Product) ob).getId();
             if (id == value) {
@@ -229,7 +229,7 @@ public class ShopAssistance {
     }
 
     public List getExampleOfProductList() {
-        List list = new ArrayList<>();
+        List list = new ArrayList();
         list.add(new Milk(false, 450, 0.3, 500, 1.2, 7.7,
             false, true, 32635625));
         list.add(new Milk(false, 450, 1.2, 500, 0.2, 0.7,

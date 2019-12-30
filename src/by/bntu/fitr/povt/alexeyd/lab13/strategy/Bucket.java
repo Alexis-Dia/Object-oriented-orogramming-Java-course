@@ -16,7 +16,7 @@ public abstract class Bucket {
     public abstract void addProduct(Product product);
 
     public Bucket() {
-        products = new ArrayList<>();
+        products = new ArrayList();
     }
 
     public void setComparator(Comparator comparator) {

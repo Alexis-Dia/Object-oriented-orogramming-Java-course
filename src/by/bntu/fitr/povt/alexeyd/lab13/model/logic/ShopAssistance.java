@@ -37,7 +37,7 @@ public class ShopAssistance {
     }
 
     public static List findByPrice(List list, double min, double max) {
-        List result = new ArrayList<>();
+        List result = new ArrayList();
         for (Object ob: list) {
             double price = ((Product)ob).getPrice();
             if (price >= min && price <=max) {
@@ -49,7 +49,7 @@ public class ShopAssistance {
     }
 
     public static List findByWeight(List list, int min, int max) {
-        List result = new ArrayList<>();
+        List result = new ArrayList();
         for (Object ob: list) {
             int weight = ((Product)ob).getWeight();
             if (weight >= min && weight <=max) {
@@ -61,7 +61,7 @@ public class ShopAssistance {
     }
 
     public static List findById(List list, int value) {
-        List result = new ArrayList<>();
+        List result = new ArrayList();
         for (Object ob: list) {
             int id = ((Product)ob).getId();
             if (id == value) {

@@ -24,7 +24,7 @@ public class MainController {
     private static final Map<String, Comparator> STRATEGIES_MAP;
 
     static {
-        STRATEGIES_MAP = new HashMap<>();
+        STRATEGIES_MAP = new HashMap();
         STRATEGIES_MAP.put(COMPARE_BY_FAT_AND_CARBONS, new ComparatorByFatAndCarbons());
         STRATEGIES_MAP.put(COMPARE_BY_SORT_AND_FLAVOR, new ComparatorBySortAndFlavor());
         STRATEGIES_MAP.put(COMPARE_BY_SHAPE_AND_DIAMETER, new ComparatorByShapeAndDiameter());
