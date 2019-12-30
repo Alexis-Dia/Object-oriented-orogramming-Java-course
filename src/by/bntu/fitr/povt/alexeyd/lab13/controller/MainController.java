@@ -35,7 +35,7 @@ public class MainController {
     private UserInput userInput = new UserInput();
 
     public void executeMainTask() {
-        List<Product> products = new ArrayList();
+        List products = new ArrayList();
 
         products.add(new Bread(true, 500, 1.2, true, "Borodinskiy",
             "Chilli", "Brown", "Square", 1276234));

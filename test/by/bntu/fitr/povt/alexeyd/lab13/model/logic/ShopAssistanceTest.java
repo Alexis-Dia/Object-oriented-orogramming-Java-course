@@ -21,7 +21,7 @@ public class ShopAssistanceTest {
     public static final int MIN_WEIGHT = 100;
     public static final int MAX_WEIGHT = 300;
     public static final int PID = 32635625;
-    private List<Product> products;
+    private List products;
     ShopAssistance shopAssistance = new ShopAssistance();
 
     @Before
@@ -50,31 +50,31 @@ public class ShopAssistanceTest {
 
     @Test
     public void getPrize() {
-        Product product = products.get(0);
+        Product product = (Product) products.get(0);
         assertTrue(CoreMatchers.is(product.isHelpChildren()).matches(true));
     }
 
     @Test
     public void findByPrice() {
-        List<Product> list = shopAssistance.findByPrice(products, MIN_PRICE, MAX_PRICE);
-        for (Product product: list) {
-            assertTrue(product.getPrice() >= MIN_PRICE && product.getPrice() <= MAX_PRICE);
+        List list = shopAssistance.findByPrice(products, MIN_PRICE, MAX_PRICE);
+        for (Object product: list) {
+            assertTrue(((Product )product).getPrice() >= MIN_PRICE && ((Product )product).getPrice() <= MAX_PRICE);
         }
     }
 
     @Test
     public void findByWeight() {
-        List<Product> list = shopAssistance.findByWeight(products, MIN_WEIGHT, MAX_WEIGHT);
-        for (Product product: list) {
-            assertTrue(product.getWeight() >= MIN_WEIGHT && product.getWeight() <= MAX_WEIGHT);
+        List list = shopAssistance.findByWeight(products, MIN_WEIGHT, MAX_WEIGHT);
+        for (Object product: list) {
+            assertTrue(((Product )product).getWeight() >= MIN_WEIGHT && ((Product )product).getWeight() <= MAX_WEIGHT);
         }
     }
 
     @Test
     public void findById() {
-        List<Product> list = shopAssistance.findById(products, PID);
-        for (Product product: list) {
-            assertTrue(product.getId() == PID);
+        List list = shopAssistance.findById(products, PID);
+        for (Object product: list) {
+            assertTrue(((Product )product).getId() == PID);
         }
     }
 
