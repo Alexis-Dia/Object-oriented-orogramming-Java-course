@@ -6,7 +6,7 @@ import by.bntu.fitr.povt.alexeyd.lab18.utils.ShopAssistance;
 
 import java.util.List;
 
-import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.SRC_RESOURCES_INPUT_BINARY_PATH;
+import static by.bntu.fitr.povt.alexeyd.lab18.utils.Constant.SRC_RESOURCES_INPUT_BINARY_PATH;
 
 public class BinaryDataGenerator implements DataGenerator {
 

@@ -5,7 +5,7 @@ import by.bntu.fitr.povt.alexeyd.lab18.utils.Constant;
 import java.util.HashMap;
 import java.util.Map;
 
-import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.*;
+import static by.bntu.fitr.povt.alexeyd.lab18.utils.Constant.*;
 
 public class MyDataStoreFactory extends DataStoreFactory {
 

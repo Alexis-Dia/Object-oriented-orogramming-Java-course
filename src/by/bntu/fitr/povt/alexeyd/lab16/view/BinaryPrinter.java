@@ -1,15 +1,13 @@
 package by.bntu.fitr.povt.alexeyd.lab16.view;
 
-import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
-
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.Charset;
 import java.util.List;
 
-import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.SRC_RESOURCES_OUTPUT_BINARY_PATH;
-import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.UTF_8;
+import static by.bntu.fitr.povt.alexeyd.lab16.utils.Constant.UTF_8;
+import static by.bntu.fitr.povt.alexeyd.lab16.utils.Constant.SRC_RESOURCES_OUTPUT_BINARY_PATH;
 
 public class BinaryPrinter implements Printer {
 

@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.*;
+import static by.bntu.fitr.povt.alexeyd.lab18.utils.Constant.*;
 
 public class RandomDataGenerator implements DataGenerator {
 

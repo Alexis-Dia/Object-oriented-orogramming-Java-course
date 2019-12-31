@@ -9,8 +9,8 @@ import java.io.OutputStream;
 import java.nio.charset.Charset;
 import java.util.List;
 
-import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.SRC_RESOURCES_OUTPUT_BINARY_PATH;
-import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.UTF_8;
+import static by.bntu.fitr.povt.alexeyd.lab18.utils.Constant.SRC_RESOURCES_OUTPUT_BINARY_PATH;
+import static by.bntu.fitr.povt.alexeyd.lab18.utils.Constant.UTF_8;
 import static by.bntu.fitr.povt.alexeyd.lab18.utils.Constant.MY_SUPER_LOGGER;
 import static by.bntu.fitr.povt.alexeyd.lab18.utils.Constant.SEND_ERROR_MESSAGE_TO_LOG;
 

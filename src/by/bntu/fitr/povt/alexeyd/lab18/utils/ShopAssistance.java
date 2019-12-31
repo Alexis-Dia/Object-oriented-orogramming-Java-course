@@ -12,7 +12,7 @@ import by.bntu.fitr.povt.alexeyd.lab18.utils.strategy.comparator.orange.Comparat
 
 import java.util.*;
 
-import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.*;
+import static by.bntu.fitr.povt.alexeyd.lab18.utils.Constant.*;
 
 public class ShopAssistance {
 
