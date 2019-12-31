@@ -34,7 +34,7 @@
         <appender-ref ref="FirstFileAppender"/>
     </logger>
 
-    <logger name="by.bntu.fitr.povt.alexeyd.lab18.exercise4.xml.secondpackage.Second">
+    <logger name="by.bntu.fitr.povt.alexeyd.lab18.exerercisesFromLecture.exercise4.xml.secondpackage.Second">
         <param name="additivity" value="false"/>
         <param name="level" value="INFO"/>
         <appender-ref ref="SecondFileAppender"/>
