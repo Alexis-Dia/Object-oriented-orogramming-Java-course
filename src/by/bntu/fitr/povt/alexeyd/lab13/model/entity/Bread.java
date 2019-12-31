@@ -88,6 +88,7 @@ public class Bread extends Product {
                 ", flour='" + flour + '\'' +
                 ", color='" + color + '\'' +
                 ", shape='" + shape + '\'' +
+                 ", id=" + getId() + '\'' +
                 '}';
     }
 }

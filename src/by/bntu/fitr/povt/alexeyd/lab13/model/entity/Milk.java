@@ -73,11 +73,15 @@ public class Milk extends Product {
     @Override
     public String toString() {
         return "Milk{" +
-                "volume=" + volume +
-                ", fat=" + fat +
-                ", carbons=" + carbons +
-                ", processed=" + processed +
-                ", organic=" + organic +
-                '}';
+            "volume=" + volume +
+            ", fat=" + fat +
+            ", carbons=" + carbons +
+            ", processed=" + processed +
+            ", organic=" + organic +
+            ", helpChildren=" + isHelpChildren() + '\'' +
+            ", weight=" + getWeight() + '\'' +
+            ", price=" + getPrice() + '\'' +
+            ", id=" + getId() + '\'' +
+            '}';
     }
 }
