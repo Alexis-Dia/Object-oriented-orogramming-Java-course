@@ -1,11 +1,16 @@
 package by.bntu.fitr.povt.alexeyd.lab18.utils;
 
 import by.bntu.fitr.povt.alexeyd.lab18.entity.Product;
+import org.apache.log4j.Logger;
 
 import java.io.*;
 import java.util.List;
 
+import static by.bntu.fitr.povt.alexeyd.lab18.utils.Constant.MY_SUPER_LOGGER;
+
 public class InputUtil {
+
+    private static final Logger LOG = Logger.getLogger(MY_SUPER_LOGGER);
 
     public static void write(String fileName, List<Product> product) {
         ObjectOutputStream stream = null;
@@ -17,14 +22,16 @@ public class InputUtil {
             stream.writeObject(product);
 
         } catch (IOException exception) {
-            //log
+            LOG.error(exception);
+            exception.printStackTrace();
         } finally {
             if (stream != null) {
                 try {
                     stream.flush();
                     stream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
+                } catch (IOException exception) {
+                    LOG.error(exception);
+                    exception.printStackTrace();
                 }
             }
 
@@ -43,8 +50,9 @@ public class InputUtil {
                 data += String.valueOf(symbol);
                 //System.out.println(temp + " ");
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException exception) {
+            LOG.error(exception);
+            exception.printStackTrace();
         }
         return data;
     }
@@ -67,8 +75,9 @@ public class InputUtil {
             if (inputStream != null) {
                 try {
                     inputStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
+                } catch (IOException exception) {
+                    LOG.error(exception);
+                    exception.printStackTrace();
                 }
             }
         }
@@ -91,8 +100,9 @@ public class InputUtil {
             if (stream != null) {
                 try {
                     stream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
+                } catch (IOException exception) {
+                    LOG.error(exception);
+                    exception.printStackTrace();
                 }
             }
 

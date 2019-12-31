@@ -1,6 +1,7 @@
 package by.bntu.fitr.povt.alexeyd.lab18;
 
 import by.bntu.fitr.povt.alexeyd.lab18.controller.MainController;
+import org.apache.log4j.Logger;
 
 /**
  * Number of laboratory work is №18. Generics in Java.
@@ -12,8 +13,17 @@ import by.bntu.fitr.povt.alexeyd.lab18.controller.MainController;
  */
 public class Lab18MainTask {
 
+    private static final Logger LOG = Logger.getLogger("MySuperLogger");
+
     public static void main(String[] args) {
         MainController controller = new MainController();
         controller.executeMainTask();
+        LOG.trace("Send trace message to log");//Когда дебажим и тресируем
+        LOG.debug("Send debug message to log");//Когда дебажим и тресируем
+        LOG.info("Send info message to log");  //Когда нужен конечный результат выполнения приложения
+        LOG.warn("Send warn message to log");  //Там когда могут происходить непредвиденные ситуации не фатальные, но в то же время требуют внимания со стороны администратора
+        LOG.error("Send error message to log");//Пишутся в блоке try catch и именно те Exceptions которые фатальные либо Error все остальные эксепшены Exceptions
+        LOG.fatal("Send fatal message to log");
+
     }
 }

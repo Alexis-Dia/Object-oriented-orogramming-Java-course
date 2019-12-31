@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.List;
 
-import static by.bntu.fitr.povt.alexeyd.lab16.utils.Constant.SRC_RESOURCES_OUTPUT_BINARY_PATH;
+import static by.bntu.fitr.povt.alexeyd.lab17.utils.Constant.SRC_RESOURCES_OUTPUT_BINARY_PATH;
 
 public class SerializableBinaryPriner implements Printer {
 

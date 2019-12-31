@@ -2,20 +2,28 @@ package by.bntu.fitr.povt.alexeyd.lab16.view;
 
 import by.bntu.fitr.povt.alexeyd.lab16.utils.Constant;
 
-import static by.bntu.fitr.povt.alexeyd.lab15.logic.Constant.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MyPrintFactory extends PrintFactory {
 
+    private static final Map<String, Printer> PRINTERS_MAP;
+
+    static {
+        PRINTERS_MAP = new HashMap();
+        PRINTERS_MAP.put(Constant.OutputName.CONSOLE.getName(), new ConsolePrinter());
+        PRINTERS_MAP.put(Constant.OutputName.TEXT.getName(), new TextPrinter());
+        PRINTERS_MAP.put(Constant.OutputName.BINARY.getName(), new BinaryPrinter());
+        PRINTERS_MAP.put(Constant.OutputName.BINARY_SERIALIZABLE.getName(), new SerializableBinaryPriner());
+    }
+
     @Override
     Printer createFactory(String item) {
-        if (item.equals(CONSOLE)) {
-            return new ConsolePrinter();
-        } else if (item.equals(TEXT)) {
-            return new TextPrinter();
-        } else if (item.equals(BINARY)) {
-            return new BinaryPrinter();
-        } else if (item.equals(Constant.BINARY_SERIALIZABLE)) {
-            return new SerializableBinaryPriner();
+        if (item.equals(Constant.OutputName.CONSOLE.getName()) ||
+            item.equals(Constant.OutputName.TEXT.getName()) ||
+            item.equals(Constant.OutputName.BINARY.getName()) ||
+            item.equals(Constant.OutputName.BINARY_SERIALIZABLE.getName())) {
+            return PRINTERS_MAP.get(item);
         } else return null;
     }
 }

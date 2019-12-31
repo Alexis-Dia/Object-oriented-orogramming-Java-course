@@ -16,6 +16,9 @@ public class Constant {
     public static final String RANDOM = "random";
     public static final String BINARY_SERIALIZABLE = "binarySerializable";
     public static final String CUSTOM_BINARY_SERIALIZABLE = "customBinarySerializable";
+    public static final String LOGGER = "logger";
+    public static final String MY_SUPER_LOGGER = "MySuperLogger";
+    public static final String SEND_ERROR_MESSAGE_TO_LOG = "Send error message to log";
 
     public static final String UTF_8 = "UTF-8";
     public static final String EMPTY_STRING = "";
@@ -67,7 +70,8 @@ public class Constant {
         TEXT("text"),
         BINARY("binary"),
         BINARY_SERIALIZABLE("binarySerializable"),
-        CUSTOM_BINARY_SERIALIZABLE("customBinarySerializable");
+        CUSTOM_BINARY_SERIALIZABLE("customBinarySerializable"),
+        LOGGER("logger");
 
         private String name;
 

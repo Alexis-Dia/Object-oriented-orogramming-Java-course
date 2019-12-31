@@ -1,7 +1,5 @@
 package by.bntu.fitr.povt.alexeyd.lab15.logic;
 
-import by.bntu.fitr.povt.alexeyd.lab16.entity.Product;
-
 import java.io.*;
 import java.util.List;
 

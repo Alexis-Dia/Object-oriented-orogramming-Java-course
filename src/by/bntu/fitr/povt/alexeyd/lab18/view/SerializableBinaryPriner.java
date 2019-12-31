@@ -1,6 +1,7 @@
 package by.bntu.fitr.povt.alexeyd.lab18.view;
 
 import by.bntu.fitr.povt.alexeyd.lab18.entity.Product;
+import org.apache.log4j.Logger;
 
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
@@ -8,9 +9,11 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.List;
 
-import static by.bntu.fitr.povt.alexeyd.lab16.utils.Constant.SRC_RESOURCES_OUTPUT_BINARY_PATH;
+import static by.bntu.fitr.povt.alexeyd.lab18.utils.Constant.*;
 
 public class SerializableBinaryPriner implements Printer {
+
+    private static final Logger LOG = Logger.getLogger(MY_SUPER_LOGGER);
 
     // before JDK 6.0
     @Override
@@ -24,7 +27,8 @@ public class SerializableBinaryPriner implements Printer {
             stream.writeObject(products);
 
         } catch (IOException exception) {
-            //log
+            LOG.error(exception);
+            exception.printStackTrace();
         } finally {
             if (stream != null) {
                 try {
