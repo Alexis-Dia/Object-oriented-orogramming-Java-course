@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.alexeyd.lab20.concurency;
+package by.bntu.fitr.povt.alexeyd.lab20;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

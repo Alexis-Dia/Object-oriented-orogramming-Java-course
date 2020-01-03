@@ -1,11 +1,11 @@
-package by.bntu.fitr.povt.alexeyd.lab20.concurency;
+package by.bntu.fitr.povt.alexeyd.lab20;
 
 import java.util.Random;
 
 public class Utils {
 
     private static final int LOW_PLATE_NUMBER = 1000;
-    private static final int HIGH_BACK_PLATE_NUMBER = 9999;
+    private static final int HIGH_BACK_PLATE_NUMBER = 8999;
     private static final int NUMERAL_O = 48;
     private static final int LETTER_Z = 122;
     private static final int TARGET_STRING_LENGTH = 2;
