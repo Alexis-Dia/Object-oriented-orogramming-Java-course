@@ -1,8 +1,8 @@
-package by.bntu.fitr.povt.alexeyd.lab20;
+package by.bntu.fitr.povt.alexeyd.lab20.utils;
 
 import java.util.Random;
 
-public class Utils {
+public class BusStationUtils {
 
     private static final int LOW_PLATE_NUMBER = 1000;
     private static final int HIGH_BACK_PLATE_NUMBER = 8999;

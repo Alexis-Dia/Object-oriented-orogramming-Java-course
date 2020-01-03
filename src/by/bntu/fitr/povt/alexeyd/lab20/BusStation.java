@@ -7,7 +7,6 @@ import java.util.concurrent.TimeUnit;
 
 public class BusStation {
 
-    public static final int MAX_CAPACITY_NUMBER_OF_BUSES_IN_THE_ONE_STATION = 2;
     public static final String DOT = ". ";
     public static final String THE_STATION_NUMBER = "The bus station number ";
     public String busStationNumber;
