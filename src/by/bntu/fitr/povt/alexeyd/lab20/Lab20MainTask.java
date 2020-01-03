@@ -8,6 +8,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
+ * https://habr.com/ru/post/277669/
  * Number of laboratory work is №20. Java Threads. Synchronization. The Singleton Pattern.
  * This programme was created by Alexey Nikolaevich Druzik in 01.03.2020, v1.1. Number of group is 30701117.
  * MainTask №5. Bus stops. There are several stops on the route. On the one stop can stop on several buses at the same
