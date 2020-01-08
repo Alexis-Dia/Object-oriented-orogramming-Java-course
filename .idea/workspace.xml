@@ -5,8 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectOrientedProgramming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectOrientedProgramming.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab15/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab15/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/outputProduct.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/outputProduct.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +41,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab20" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
@@ -58,25 +57,25 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="by.bntu.fitr.povt.alexeyd.lab20.utils" />
+      <recent name="by.bntu.fitr.povt.alexeyd.lab18.exrercisesFromLecture" />
       <recent name="by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.bread" />
       <recent name="by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.orange" />
       <recent name="by.bntu.fitr.povt.alexeyd.lab16.utils.strategy.comparator.milk" />
-      <recent name="by.bntu.fitr.povt.alexeyd.lab15.logic.strategy" />
-      <recent name="by.bntu.fitr.povt.alexeyd.lab15.logic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="by.bntu.fitr.povt.alexeyd.lab16.view" />
+      <recent name="by.bntu.fitr.povt.alexeyd.lab18.view" />
       <recent name="by.bntu.fitr.povt.alexeyd.lab16.entity.serializable.external" />
       <recent name="by.bntu.fitr.povt.alexeyd.lab15.logic" />
       <recent name="by.bntu.fitr.povt.alexeyd.lab16.logic" />
-      <recent name="by.bntu.fitr.povt.alexeyd.lab12" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\resources" />
-      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab15\controller" />
-      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab13" />
-      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab12" />
-      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab11" />
+      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab20\" />
+      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab20\concurency" />
+      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab18\" />
+      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab18\exerercisesFromLecture" />
+      <recent name="E:\Bntu\java\myLabs\ObjectOrientedProgramming\src\by\bntu\fitr\povt\alexeyd\lab17" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="by.bntu.fitr.povt.alexeyd.lab16.controller" />
@@ -94,13 +93,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lab15MainTask">
-    <configuration name="Lab15MainTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab15.Lab15MainTask" />
+  <component name="RunManager" selected="Application.BusStationsTest">
+    <configuration name="BusStationsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab20.concurency.BusStationsTest" />
       <module name="ObjectOrientedProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab15.*" />
+          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab20.concurency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lab16MainTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab16.Lab16MainTask" />
+    <configuration name="Lab18MainTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab18.Lab18MainTask" />
       <module name="ObjectOrientedProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab16.*" />
+          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,50 +120,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopAssistanceTest.calculateAvgPrice (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Lab20MainTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab20.Lab20MainTask" />
       <module name="ObjectOrientedProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic.*" />
+          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab20.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic" />
-      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic.ShopAssistanceTest" />
-      <option name="METHOD_NAME" value="calculateAvgPrice" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopAssistanceTest.calculateAvgWeight (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Parking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab20.Parking" />
       <module name="ObjectOrientedProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic.*" />
+          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab20.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic" />
-      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic.ShopAssistanceTest" />
-      <option name="METHOD_NAME" value="calculateAvgWeight" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopAssistanceTest.getPrize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab20.Test" />
       <module name="ObjectOrientedProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic.*" />
+          <option name="PATTERN" value="by.bntu.fitr.povt.alexeyd.lab20.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic" />
-      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.povt.alexeyd.lab12.model.logic.ShopAssistanceTest" />
-      <option name="METHOD_NAME" value="getPrize" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -184,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lab15MainTask" />
-        <item itemvalue="Application.Lab16MainTask" />
-        <item itemvalue="JUnit.ShopAssistanceTest.calculateAvgWeight (1)" />
-        <item itemvalue="JUnit.ShopAssistanceTest.calculateAvgPrice (1)" />
-        <item itemvalue="JUnit.ShopAssistanceTest.getPrize" />
+        <item itemvalue="Application.Lab20MainTask" />
+        <item itemvalue="Application.BusStationsTest" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Parking" />
+        <item itemvalue="Application.Lab18MainTask" />
       </list>
     </recent_temporary>
   </component>
@@ -238,63 +228,8 @@
       <workItem from="1576844119529" duration="4000" />
       <workItem from="1576928814243" duration="12491000" />
       <workItem from="1577085227847" duration="30006000" />
-      <workItem from="1577441534630" duration="37149000" />
-    </task>
-    <task id="LOCAL-00001" summary="feat: Added Lab08.">
-      <created>1557832672850</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1557832672850</updated>
-    </task>
-    <task id="LOCAL-00002" summary="fix: Added to Lab09 task C, D.">
-      <created>1557845692562</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1557845692562</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added task E from Lab09.">
-      <created>1558108622088</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1558108622088</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Refactoring. Lab09. Controller.">
-      <created>1558371106355</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1558371106355</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Refactored Lab09.">
-      <created>1558434919111</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1558434919111</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Fixed Lab09 task C.">
-      <created>1559054902095</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1559054902095</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Added JUnit jars for Lab11.">
-      <created>1560416511747</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1560416511747</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added test-class for Lab10.">
-      <created>1560417702262</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1560417702262</updated>
+      <workItem from="1577441534630" duration="61665000" />
+      <workItem from="1577791039843" duration="27335000" />
     </task>
     <task id="LOCAL-00009" summary="Added test for Lab10.">
       <created>1560419978511</created>
@@ -527,7 +462,119 @@
       <option name="project" value="LOCAL" />
       <updated>1577547435216</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Fixed Lab15.">
+      <created>1577548732830</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1577548732830</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Fix.">
+      <created>1577549582633</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1577549582633</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Refactored.">
+      <created>1577550667732</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1577550667732</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Initialized Lab17.">
+      <created>1577685197638</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1577685197638</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Fixed Lab15, Lab16.">
+      <created>1577687798561</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1577687798561</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Fixed Lab13.">
+      <created>1577688134247</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1577688134247</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Fixed Lab13, Lab15, Lab16.">
+      <created>1577688945498</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1577688945498</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Fixed Lab13, Lab15, Lab16.">
+      <created>1577689403773</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1577689403773</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Fixed toString.">
+      <created>1577781473642</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1577781473643</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Fixed Lab18.">
+      <created>1577783969112</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1577783969113</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Fixed Lab18.">
+      <created>1577799728822</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1577799728822</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Refactored Lab16, Lab17, Lab18.">
+      <created>1577800113827</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1577800113827</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Fixed Lab20.">
+      <created>1578051487405</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1578051487405</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Fixed Lab20.">
+      <created>1578055264488</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1578055264488</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Fixed Lab20.">
+      <created>1578057245918</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1578057245918</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Fixed Lab20.">
+      <created>1578058348579</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1578058348579</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TodoView">
@@ -580,6 +627,31 @@
             </State>
           </value>
         </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -592,22 +664,13 @@
     <option name="OPEN_TABS">
       <set>
         <option value="1" />
+        <option value="2" />
       </set>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added test for Lab10." />
-    <MESSAGE value="Fixed Lab10. Added constructor with parameters." />
-    <MESSAGE value="Fixed Lab10. Refactoring. Added initialized block." />
-    <MESSAGE value="Added Lab12." />
-    <MESSAGE value="Fixed ReadMe." />
-    <MESSAGE value="Fixed Lab11." />
-    <MESSAGE value="Fixed Lab11, Lab12." />
-    <MESSAGE value="Initialized lab13." />
-    <MESSAGE value="Added default-sorting using compareTo-method for Product-pojo." />
     <MESSAGE value="Refactored Lab12." />
     <MESSAGE value="Added methods for searching." />
-    <MESSAGE value="Fixed Lab13." />
     <MESSAGE value="Initialized tests for Lab11, Lab12." />
     <MESSAGE value="Added tests for Lab11, Lab12." />
     <MESSAGE value="Added factory pattern." />
@@ -620,8 +683,18 @@
     <MESSAGE value="Refactored according SOLID and GRASP principles Lab15, Lab16." />
     <MESSAGE value="Fixed Lab16." />
     <MESSAGE value="Refactored Lab15, Lab16." />
+    <MESSAGE value="Fixed Lab15." />
+    <MESSAGE value="Fix." />
+    <MESSAGE value="Refactored." />
+    <MESSAGE value="Initialized Lab17." />
     <MESSAGE value="Fixed Lab15, Lab16." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Lab15, Lab16." />
+    <MESSAGE value="Fixed Lab13." />
+    <MESSAGE value="Fixed Lab13, Lab15, Lab16." />
+    <MESSAGE value="Fixed toString." />
+    <MESSAGE value="Fixed Lab18." />
+    <MESSAGE value="Refactored Lab16, Lab17, Lab18." />
+    <MESSAGE value="Fixed Lab20." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Lab20." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -683,33 +756,58 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab15/factory/BinaryDataGenerator.java</url>
-          <line>16</line>
+          <line>15</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab15/factory/RandomDataGenerator.java</url>
-          <line>71</line>
+          <line>70</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab15/factory/decorator/SimpleInputDecorator.java</url>
-          <line>17</line>
+          <line>16</line>
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab16/controller/MainController.java</url>
-          <line>46</line>
+          <line>38</line>
           <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab16/utils/InputUtil.java</url>
-          <line>10</line>
+          <line>8</line>
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab16/view/SerializableBinaryPriner.java</url>
-          <line>17</line>
+          <line>15</line>
           <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab16/controller/MainController.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab18/utils/ShopAssistance.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab18/controller/MainController.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab18/factory/SerializableBinaryDataGenerator.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab18/utils/InputUtil.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/by/bntu/fitr/povt/alexeyd/lab12/controller/Controller.java</url>
