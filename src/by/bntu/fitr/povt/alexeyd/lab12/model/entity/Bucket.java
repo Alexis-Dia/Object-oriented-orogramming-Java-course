@@ -92,13 +92,11 @@ public class Bucket {
     @Override
     public String toString() {
         StringBuffer msg = new StringBuffer("List of products: \n");
-        for (int i = 0; i < container.length; i++) {
-            if (container[i] != null) {
-                for (int j = 0; j < container[i].length; j++) {
-                    if (container[i][j] != null) {
-                        msg.append(container[i][j]).append("\n");
-                    }
-                }
+        for (Product[] products : container) {
+            for (Product product : products) {
+               if (product != null) {
+                    msg.append(product).append("\n");
+               }
             }
         }
         return msg.toString();
