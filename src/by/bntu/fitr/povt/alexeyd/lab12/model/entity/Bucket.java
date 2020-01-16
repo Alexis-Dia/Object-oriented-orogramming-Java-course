@@ -93,8 +93,8 @@ public class Bucket {
     public String toString() {
         StringBuffer msg = new StringBuffer("List of products: \n");
         for (int i = 0; i < container.length; i++) {
-            if (container[i] != null) {
-                msg.append(container[i]).append("\n");
+            if (container[i][0] != null) {
+                msg.append(container[i][0]).append("\n");
             }
         }
         return msg.toString();
